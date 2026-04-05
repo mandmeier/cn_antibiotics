@@ -1,0 +1,359 @@
+{
+"@context": "https://w3id.org/ro/crate/1.2/context",
+"@graph": [
+{
+"@type": "CreativeWork",
+"@id": "ro-crate-metadata.json",
+"conformsTo": { "@id": "https://w3id.org/ro/crate/1.2" },
+"about": { "@id": "https://catalogue.ceh.ac.uk/id/8af983e4-e97d-4c07-a34d-753243fa283b" }
+},
+{
+"@type":"Dataset",
+"name":"Antiviral, antibiotics and decongestants in wastewater treatment plants and receiving rivers in the Thames catchment",
+"@id": "https://catalogue.ceh.ac.uk/id/8af983e4-e97d-4c07-a34d-753243fa283b",
+"identifier": {"@id": "https://doi.org/10.5285/8af983e4-e97d-4c07-a34d-753243fa283b"},
+"creditText":"Singer, A.C., Järhult, J.D., Grabic, R., Khan, G.A., Lindberg, R.H., Fedorova, G., Fick, J., Bowes, M.J., Olsen, B., Söderström, H. (2014). Antiviral, antibiotics and decongestants in wastewater treatment plants and receiving rivers in the Thames catchment. NERC Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/8af983e4-e97d-4c07-a34d-753243fa283b",
+"hasPart": [
+{"@id":
+"data/RiverFlow.csv"
+} ,
+{"@id":
+"data/River_PharmaConcentrations.csv"
+} ,
+{"@id":
+"data/WWTPFlow.csv"
+} ,
+{"@id":
+"data/WWTP_PharmaConcentrations.csv"
+} ,
+{"@id":
+"supporting-documents/RiverSamplingLocations.csv"
+} ,
+{"@id":
+"supporting-documents/RiverSamplingLocationsMap.pdf"
+} ,
+{"@id":
+"supporting-documents/SupportingInformation_AntiviralAntibioticinWastewaterandRiver.rtf"
+} ],
+"description":"This dataset contains the concentration of eleven antibiotics (trimethoprim, oxytetracycline, ciprofloxacin, azithromycin, cefotaxime, doxycycline, sulfamethoxazole, erythromycin, clarithromycin, ofloxacin, norfloxacin), three decongestants (naphazoline, oxymetazoline, xylometazoline) and the antiviral drug oseltamivir's active metabolite, oseltamivir carboxylate, measured at 21 locations within the River Thames catchment in England. The measurements were taken weekly during November 2009, once in March 2010 and once in May 2011, with the aim to quantify pharmaceutical usage during the influenza pandemic of 2009 and how this compares to inter-pandemic drug use. River samples were acquired by grab samples in glass jars and analysed by liquid chromatography tandem mass spectrometry (LC MS). Two wastewater treatment plants (WWTPs) in southern England (Benson and Oxford) were also sampled during the peak of the second wave of the 2009 influenza A[H1N1]pdm09 pandemic (10-11 November 2009) and on 15 May 2011 using an automated sampler set to acquired hourly (time proportional) samples from the influent and effluent of the WWTPs. The WWTPs are the source for all the drugs found in the river, hence, these were studied to understand the differential fate of the analytes in the two very different WWTPs. Flows for the WWTP and River sampling locations are presented for each of the sampling times to allow for determining hourly loads for the WWTP and daily loads for the river.",
+"isAccessibleForFree": true,
+"dateCreated":"2009-11-03",
+"datePublished":"2014-08-01",
+"keywords": [
+"antiviral"
+,
+"Benson Sewage Works"
+,
+"decongestant"
+,
+"influenza"
+,
+"Oxford Sewage Works"
+,
+"River Thames"
+,
+"River Thames catchment (UK)"
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/16","name": "Water quality" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/15257","name": "pandemics","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/15328","name": "waste water treatment plant","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/2949","name": "epidemiology","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/473","name": "antibiotic","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/7244","name": "river","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+],
+"creator": [
+{"@id": "https://orcid.org/0000-0003-4705-6063"},
+{"@id": "https://orcid.org/0000-0002-7075-1059"},
+{"@id": "https://orcid.org/0000-0002-0935-2075"},
+{"@id": "#creator3"},
+{"@id": "https://orcid.org/0000-0001-5352-0091"},
+{"@id": "https://orcid.org/0000-0001-5492-7459"},
+{"@id": "https://orcid.org/0000-0002-3949-7371"},
+{"@id": "https://orcid.org/0000-0002-0673-1934"},
+{"@id": "#creator8"},
+{"@id": "https://orcid.org/0000-0002-0842-3409"}
+],
+"contactPoint": [
+{"@id": "#contact0"}
+],
+"@reverse": {
+"citation":[
+{"@id": "https://doi.org/10.1371/journal.pone.0108621"}
+]
+},
+"temporalCoverage":[
+"2009-11-11/2011-05-11" ],
+"spatialCoverage": [ {"@id": "#bbox0"}],
+"license": "https://eidc.ac.uk/licences/ogl/plain",
+"distribution": [ {"@id": "#distribution0"}],
+"publisher":{"@id":"https://ror.org/04xw4m193"},
+"provider" : {"@id":"https://ror.org/04xw4m193"},
+"includedInDataCatalog":{ "@id": "#eidc-dataCatalogue"}
+},
+{
+"@id": "#eidc-dataCatalogue",
+"@type":"DataCatalog",
+"name":"Environmental Information Data Centre",
+"alternateName":"EIDC",
+"url":"https://catalogue.ceh.ac.uk/eidc/documents"
+},
+{
+"@id": "https://ror.org/04xw4m193",
+"@type":"Organization",
+"name":"NERC EDS Environmental Information Data Centre",
+"email": "info@eidc.ac.uk"
+}
+,{
+"@id": "https://doi.org/10.5285/8af983e4-e97d-4c07-a34d-753243fa283b",
+"@type":"PropertyValue",
+"propertyID": "https://registry.identifiers.org/registry/doi",
+"value": "doi:10.5285/8af983e4-e97d-4c07-a34d-753243fa283b",
+"url": "https://doi.org/10.5285/8af983e4-e97d-4c07-a34d-753243fa283b"
+}
+, {
+"@id": "#bbox0",
+"@type":"Place",
+"geo": {
+"@id": "#geoshape0"
+}
+},
+{
+"@id": "#geoshape0",
+"@type": "GeoShape",
+"box":"-2.013 51.217, -0.31 52.113"
+}
+,
+{
+"@id": "https://orcid.org/0000-0003-4705-6063",
+"@type": "Person",
+"name": "Singer, A.C."
+, "familyName": "Singer"
+, "givenName": "A.C."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-7075-1059",
+"@type": "Person",
+"name": "Järhult, J.D."
+, "familyName": "Järhult"
+, "givenName": "J.D."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/048a87296"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-0935-2075",
+"@type": "Person",
+"name": "Grabic, R."
+, "familyName": "Grabic"
+, "givenName": "R."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/033n3pw66"
+}
+},
+{
+"@id": "#creator3",
+"@type": "Person",
+"name": "Khan, G.A."
+, "familyName": "Khan"
+, "givenName": "G.A."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/05kb8h459"
+}
+},
+{
+"@id": "https://orcid.org/0000-0001-5352-0091",
+"@type": "Person",
+"name": "Lindberg, R.H."
+, "familyName": "Lindberg"
+, "givenName": "R.H."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/05kb8h459"
+}
+},
+{
+"@id": "https://orcid.org/0000-0001-5492-7459",
+"@type": "Person",
+"name": "Fedorova, G."
+, "familyName": "Fedorova"
+, "givenName": "G."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/033n3pw66"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-3949-7371",
+"@type": "Person",
+"name": "Fick, J."
+, "familyName": "Fick"
+, "givenName": "J."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/05kb8h459"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-0673-1934",
+"@type": "Person",
+"name": "Bowes, M.J."
+, "familyName": "Bowes"
+, "givenName": "M.J."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+},
+{
+"@id": "#creator8",
+"@type": "Person",
+"name": "Olsen, B."
+, "familyName": "Olsen"
+, "givenName": "B."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/048a87296"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-0842-3409",
+"@type": "Person",
+"name": "Söderström, H."
+, "familyName": "Söderström"
+, "givenName": "H."
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/05kb8h459"
+}
+}
+,
+{
+"@id": "#contact0",
+"@type": "Person",
+"name": "Singer, A."
+, "familyName": "Singer"
+, "givenName": "Andrew"
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+}
+, {
+"@id": "https://doi.org/10.1371/journal.pone.0108621",
+"@type": "CreativeWork"
+,"creditText": "Singer, A. C.; Jarhult, J. D.; Grabic, R.; Khan, G. A.; Lindberg, R. H.; Fedorova, G.; Fick, J.; Bowes, M. J.; Olsen, B.; Soderstrom, H., 2014. Intra- and Interpandemic Variations of Antiviral, Antibiotics and Decongestants in Wastewater Treatment Plants and Receiving Rivers. PLoS One"
+,"url": "https://doi.org/10.1371/journal.pone.0108621"
+}
+, {
+"@id":
+"data/RiverFlow.csv"
+,"name": "RiverFlow.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "6cd1763bf9c81cc1944d3cf56fd2cf22108f20368cd04c468fb562570828645c"
+,"lastModified": "2014-08-01T13:34:10"
+,"bytes": 5338
+,"contentUrl": "data/RiverFlow.csv"
+}
+, {
+"@id":
+"data/River_PharmaConcentrations.csv"
+,"name": "River_PharmaConcentrations.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "1d758f97aee078ca42e9b9d776ca5babe694e525da9e6bdf9f5dda2bfa2dfb4f"
+,"lastModified": "2014-08-01T13:34:10"
+,"bytes": 10046
+,"contentUrl": "data/River_PharmaConcentrations.csv"
+}
+, {
+"@id":
+"data/WWTPFlow.csv"
+,"name": "WWTPFlow.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "664ab413aebdb6b3a7236a3d071f47f1a2665534ae39c1b8f6d14821f2cf4621"
+,"lastModified": "2014-08-01T13:34:10"
+,"bytes": 4710
+,"contentUrl": "data/WWTPFlow.csv"
+}
+, {
+"@id":
+"data/WWTP_PharmaConcentrations.csv"
+,"name": "WWTP_PharmaConcentrations.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "69c6654549cb9fd2b939e14e4f55fe8121c438a10140098ecc996a4107d4f36d"
+,"lastModified": "2014-08-01T13:34:10"
+,"bytes": 25228
+,"contentUrl": "data/WWTP_PharmaConcentrations.csv"
+}
+, {
+"@id":
+"supporting-documents/RiverSamplingLocations.csv"
+,"name": "RiverSamplingLocations.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "f8bd76377d1fc579216eff3bbb8d3256e5bef6d14a157565eb21740d74811846"
+,"lastModified": "2019-09-04T12:21:01"
+,"bytes": 1352
+,"contentUrl": "supporting-documents/RiverSamplingLocations.csv"
+}
+, {
+"@id":
+"supporting-documents/RiverSamplingLocationsMap.pdf"
+,"name": "RiverSamplingLocationsMap.pdf","@type": "File"
+,"encodingFormat": "application/pdf"
+,"sha256": "10e61384d9eb07f326ca0e328f516df0797b402838329cb9c8441d63f5f07c9b"
+,"lastModified": "2019-09-04T12:21:01"
+,"bytes": 1918957
+,"contentUrl": "supporting-documents/RiverSamplingLocationsMap.pdf"
+}
+, {
+"@id":
+"supporting-documents/SupportingInformation_AntiviralAntibioticinWastewaterandRiver.rtf"
+,"name": "SupportingInformation_AntiviralAntibioticinWastewaterandRiver.rtf","@type": "File"
+,"sha256": "7d34f2cc00aecd3420c1748b649824b76b318d844f33420f89671dfbb9c76896"
+,"lastModified": "2019-09-04T12:21:01"
+,"bytes": 82834
+,"contentUrl": "supporting-documents/SupportingInformation_AntiviralAntibioticinWastewaterandRiver.rtf"
+}
+, {
+"@id": "#distribution0",
+"@type":"DataDownload",
+"contentUrl":"https://data-package.ceh.ac.uk/data/8af983e4-e97d-4c07-a34d-753243fa283b"
+,"encodingFormat":"application/zip"
+}
+, {
+"@id": "https://ror.org/00pggkr55",
+"@type": "Organization",
+"name": "UK Centre for Ecology & Hydrology",
+"identifier": "https://ror.org/00pggkr55"
+},
+{
+"@id": "https://ror.org/048a87296",
+"@type": "Organization",
+"name": "Uppsala University",
+"identifier": "https://ror.org/048a87296"
+},
+{
+"@id": "https://ror.org/033n3pw66",
+"@type": "Organization",
+"name": "University of South Bohemia in Ceske Budejovice",
+"identifier": "https://ror.org/033n3pw66"
+},
+{
+"@id": "https://ror.org/05kb8h459",
+"@type": "Organization",
+"name": "Umeå University",
+"identifier": "https://ror.org/05kb8h459"
+}
+]
+}

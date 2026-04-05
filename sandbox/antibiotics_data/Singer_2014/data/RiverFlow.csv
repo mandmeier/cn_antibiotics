@@ -1,0 +1,127 @@
+Location ID,Location Name,Date,Flow (m3/s)
+TC1,Thame at Wheatley,03/11/2009,1.83
+TC1,Thame at Wheatley,10/11/2009,1.01
+TC1,Thame at Wheatley,16/11/2009,2.88
+TC1,Thame at Wheatley,24/11/2009,5.56
+TC1,Thame at Wheatley,15/03/2010,3.6
+TC1,Thame at Wheatley,11/05/2011,0.882
+TC2,Ray at Islip,03/11/2009,0.56
+TC2,Ray at Islip,10/11/2009,0.3
+TC2,Ray at Islip,16/11/2009,1.04
+TC2,Ray at Islip,24/11/2009,4.04
+TC2,Ray at Islip,15/03/2010,1.71
+TC2,Ray at Islip,11/05/2011,0.31
+TC3,Cherwell at Hampton Poyle,03/11/2009,2.187
+TC3,Cherwell at Hampton Poyle,10/11/2009,1.44
+TC3,Cherwell at Hampton Poyle,16/11/2009,5.21
+TC3,Cherwell at Hampton Poyle,24/11/2009,6.506
+TC3,Cherwell at Hampton Poyle,15/03/2010,4.262
+TC3,Cherwell at Hampton Poyle,11/05/2011,1.611
+TC4,Evenlode at Cassington Mill,03/11/2009,1.796
+TC4,Evenlode at Cassington Mill,10/11/2009,1.177
+TC4,Evenlode at Cassington Mill,16/11/2009,5.223
+TC4,Evenlode at Cassington Mill,24/11/2009,9.829
+TC4,Evenlode at Cassington Mill,15/03/2010,4.279
+TC4,Evenlode at Cassington Mill,11/05/2011,1.466
+TC5,Thames at Swinford,03/11/2009,4.09
+TC5,Thames at Swinford,10/11/2009,2.02
+TC5,Thames at Swinford,16/11/2009,14.8
+TC5,Thames at Swinford,24/11/2009,31.2
+TC5,Thames at Swinford,15/03/2010,14.5
+TC5,Thames at Swinford,11/05/2011,4.14
+TC6,Thames at Newbridge,03/11/2009,2.94
+TC6,Thames at Newbridge,10/11/2009,1.485
+TC6,Thames at Newbridge,16/11/2009,11.248
+TC6,Thames at Newbridge,24/11/2009,23.959
+TC6,Thames at Newbridge,15/03/2010,10.746
+TC6,Thames at Newbridge,11/05/2011,10
+TC7,Windrush at Newbridge,03/11/2009,1.71
+TC7,Windrush at Newbridge,10/11/2009,1.44
+TC7,Windrush at Newbridge,16/11/2009,3.5
+TC7,Windrush at Newbridge,24/11/2009,5.86
+TC7,Windrush at Newbridge,15/03/2010,4.8
+TC7,Windrush at Newbridge,11/05/2011,1.83
+TC8,Leach at Lechlade,03/11/2009,0.153
+TC8,Leach at Lechlade,10/11/2009,0.146
+TC8,Leach at Lechlade,16/11/2009,0.287
+TC8,Leach at Lechlade,24/11/2009,0.762
+TC8,Leach at Lechlade,15/03/2010,1.12
+TC8,Leach at Lechlade,11/05/2011,0.287
+TC9,Cole at Lyte Bridge,03/11/2009,0.334
+TC9,Cole at Lyte Bridge,10/11/2009,0.231
+TC9,Cole at Lyte Bridge,16/11/2009,0.927
+TC9,Cole at Lyte Bridge,24/11/2009,3.04
+TC9,Cole at Lyte Bridge,15/03/2010,1.12
+TC9,Cole at Lyte Bridge,11/05/2011,0.302
+TC10,Coln at Welford,03/11/2009,1.11
+TC10,Coln at Welford,10/11/2009,1.26
+TC10,Coln at Welford,16/11/2009,2.04
+TC10,Coln at Welford,24/11/2009,3.15
+TC10,Coln at Welford,15/03/2010,3.21
+TC10,Coln at Welford,11/05/2011,1.49
+TC11,Ock at Abingdon,03/11/2009,0.636
+TC11,Ock at Abingdon,10/11/2009,0.505
+TC11,Ock at Abingdon,16/11/2009,0.995
+TC11,Ock at Abingdon,24/11/2009,1.97
+TC11,Ock at Abingdon,15/03/2010,1.95
+TC11,Ock at Abingdon,11/05/2011,0.62
+TC12,Pang at Tidmarsh,03/11/2009,0.293
+TC12,Pang at Tidmarsh,10/11/2009,0.245
+TC12,Pang at Tidmarsh,16/11/2009,0.415
+TC12,Pang at Tidmarsh,24/11/2009,0.472
+TC12,Pang at Tidmarsh,15/03/2010,1.01
+TC12,Pang at Tidmarsh,11/05/2011,0.37
+TC13,Thames at Sonning,03/11/2009,15.124
+TC13,Thames at Sonning,10/11/2009,11.738
+TC13,Thames at Sonning,16/11/2009,39.503
+TC13,Thames at Sonning,24/11/2009,54.777
+TC13,Thames at Sonning,15/03/2010,48.205
+TC13,Thames at Sonning,11/05/2011,16.7
+TC14,Lodden at Charvil,03/11/2009,5.61
+TC14,Lodden at Charvil,10/11/2009,3.73
+TC14,Lodden at Charvil,16/11/2009,12.1
+TC14,Lodden at Charvil,24/11/2009,14.1
+TC14,Lodden at Charvil,15/03/2010,7.28
+TC14,Lodden at Charvil,11/05/2011,4.68
+TC15,The Cut at Paley Street,03/11/2009,0.258
+TC15,The Cut at Paley Street,10/11/2009,0.114
+TC15,The Cut at Paley Street,16/11/2009,0.627
+TC15,The Cut at Paley Street,24/11/2009,0.655
+TC15,The Cut at Paley Street,15/03/2010,0.398
+TC15,The Cut at Paley Street,11/05/2011,0.158
+TC16,Thames at Runnymede,11/05/2011,15.533
+TC16,Thames at Runnymede,03/11/2009,18.052
+TC16,Thames at Runnymede,10/11/2009,13.434
+TC16,Thames at Runnymede,16/11/2009,56.844
+TC16,Thames at Runnymede,24/11/2009,57.096
+TC16,Thames at Runnymede,15/03/2010,54.743
+TC17,Wye at Bourne End,03/11/2009,0.59
+TC17,Wye at Bourne End,10/11/2009,0.651
+TC17,Wye at Bourne End,16/11/2009,0.805
+TC17,Wye at Bourne End,24/11/2009,0.73
+TC17,Wye at Bourne End,15/03/2010,1.2
+TC17,Wye at Bourne End,11/05/2011,1.2
+TC18,Thames at Wallingford,03/11/2009,13.156
+TC18,Thames at Wallingford,10/11/2009,9.836
+TC18,Thames at Wallingford,16/11/2009,51.543
+TC18,Thames at Wallingford,24/11/2009,73.537
+TC18,Thames at Wallingford,15/03/2010,54.348
+TC18,Thames at Wallingford,11/05/2011,13.641
+TC19,Thames at Hannington,03/11/2009,0.853
+TC19,Thames at Hannington,10/11/2009,0.9
+TC19,Thames at Hannington,16/11/2009,4.992
+TC19,Thames at Hannington,24/11/2009,9.677
+TC19,Thames at Hannington,15/03/2010,5.641
+TC19,Thames at Hannington,11/05/2011,1.492
+TC20,Kennet at Woolhampton,03/11/2009,4.537
+TC20,Kennet at Woolhampton,10/11/2009,3.724
+TC20,Kennet at Woolhampton,16/11/2009,5.737
+TC20,Kennet at Woolhampton,24/11/2009,7.352
+TC20,Kennet at Woolhampton,15/03/2010,12.313
+TC20,Kennet at Woolhampton,11/05/2011,5.77
+TC21,Emborne at Brimpton,03/11/2009,0.691
+TC21,Emborne at Brimpton,10/11/2009,0.329
+TC21,Emborne at Brimpton,16/11/2009,1.94
+TC21,Emborne at Brimpton,24/11/2009,2.58
+TC21,Emborne at Brimpton,15/03/2010,1.19
+TC21,Emborne at Brimpton,11/05/2011,0.365
