@@ -1,7 +1,7 @@
 # test if antibiotic resistance (CARSS) differs between Qu groups
 
 carss <- read_csv("data/cleaned/carss_cleaned.csv")
-qu <- read_csv("data/cleaned/qu_cleaned.csv")
+qu <- read_csv("data/cleaned/province_groups.csv")
 
 
 

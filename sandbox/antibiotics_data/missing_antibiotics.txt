@@ -1,0 +1,2 @@
+[1] "Flumequine"     "Levofloxacin"   "Nalidixic Acid" "Oxolinic Acid"  "Pipemidic Acid"
+[6] "Tilmicosin" 

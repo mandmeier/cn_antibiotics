@@ -6,28 +6,30 @@ Methacycline,Tetracyclines,Agriculture,High in soil & sediment; persistent; stro
 Minocycline,Tetracyclines,Agriculture,High in soil & sediment; persistent; strong sorption
 Oxytetracycline,Tetracyclines,Agriculture,High in soil & sediment; persistent; strong sorption
 Tetracycline,Tetracyclines,Agriculture,High in soil & sediment; persistent; strong sorption
-Cinoxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Ciprofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Danofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Difloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Enoxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Enrofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Fleroxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Gatifloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Lomefloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Mabofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Marbofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Moxifloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Nadifloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Nalidixic acid,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Norfloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Ofloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Oxolinic acid,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Pefloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Pipemidic acid,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Sarafloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Sparfloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
-Tosufloxacin,Fluoroquinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Cinoxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Ciprofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Danofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Difloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Enoxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Enrofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Fleroxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Flumequine,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Gatifloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Lomefloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Mabofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Marbofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Moxifloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Nadifloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Nalidixic Acid,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Norfloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Ofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Oxolinic Acid,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Pefloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Pipemidic Acid,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Sarafloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Sparfloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Tosufloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
+Levofloxacin,Quinolones,Clinical + Agriculture,Moderate in water & sediment; mobile but persistent
 Acetylspiramycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
 Azithromycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
 Clarithromycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
@@ -36,7 +38,8 @@ Josamycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
 Leucomycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
 Roxithromycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
 Spiramycin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
-Tylosin,Macrolides,Clinical,Higher in urban sludge; low agricultural use
+Tylosin,Macrolides,Agriculture,Veterinary macrolide; detected in livestock soils
+Tilmicosin,Macrolides,Agriculture,Veterinary macrolide; detected in livestock soils
 Amoxicillin,β-Lactams,Clinical,Low environmental persistence (degrade quickly); found mainly in wastewater
 Ampicillin,β-Lactams,Clinical,Low environmental persistence (degrade quickly); found mainly in wastewater
 Cefazolin,β-Lactams,Clinical,Low environmental persistence (degrade quickly); found mainly in wastewater

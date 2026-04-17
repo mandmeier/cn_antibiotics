@@ -192,18 +192,46 @@ zhang <- zhang %>%
 
 
 
-#### Select highest measured value for each sample_type, province, antibiotic
-
+#### Select median measured value for each sample_type, province, antibiotic
+# goal is to get ONE representative measurement per sample_type, antibiotic and province
+# median does not exclude data, and as opposed to using mean or max, we are not susceptible to one-off high measurements from heavily polluted sites
 
 zhang_cleaned <- zhang %>%
   group_by(sample_type, province, antibiotic) %>%
-  # get highest reported concentration
-  filter(mean_concentration == max(mean_concentration)) %>%
+
+  # get median reported concentration for all specimens taken in the province
+  # need to treat zero values in a defensible way. Likely not true zeroes, but below limit of detection.
+  # estimating LOD as "lowest measured value among all measurements in a group / 2"
+  ## in cases where NO values are reported > 0 we assume a real NA value (no data measured). These cases are removed
+  mutate(
+    lod_est = {
+      positives <- mean_concentration[mean_concentration > 0]
+
+      if (length(positives) == 0) {
+        NA_real_
+      } else {
+        min(positives, na.rm = TRUE)
+      }
+    }
+  ) %>%
+  # replace with LLOD/2 if reported as zero
+  mutate(
+    mean_concentration = case_when(
+      mean_concentration == 0 & !is.na(lod_est) ~ lod_est / 2,
+      mean_concentration == 0 & is.na(lod_est)  ~ NA_real_,
+      TRUE ~ mean_concentration
+    )
+  ) %>%
+  # calculate median
+  mutate(median_concentration = median(mean_concentration)) %>%
+  select(-mean_concentration) %>%
+  unique() %>%
   add_tally() %>%
   # in case of tie use first publication with the reported value
   slice_min(pub_id, n = 1, with_ties = FALSE) %>%
   arrange(sample_type, province, antibiotic) %>%
   select(-n) %>%
+  relocate(median_concentration, .after = "antibiotic") %>%
   ungroup()
 
 

@@ -11,9 +11,6 @@ Anhui,S. aureus,Gentamicin,5.5
 Anhui,S. aureus,Chloramphenicol,3.9
 Anhui,S. aureus,Rifampicin,1
 Anhui,S. aureus,Nitrofurantoin,0.2
-Anhui,S. aureus,Teicoplanin,0
-Anhui,S. aureus,Vancomycin,0
-Anhui,S. aureus,Linezolid,0
 Beijing,S. aureus,Penicillin G,84.9
 Beijing,S. aureus,Erythromycin,58.5
 Beijing,S. aureus,Oxacillin,31.1
@@ -26,9 +23,6 @@ Beijing,S. aureus,Gentamicin,12.1
 Beijing,S. aureus,Chloramphenicol,5.4
 Beijing,S. aureus,Nitrofurantoin,0.2
 Beijing,S. aureus,Rifampicin,1.4
-Beijing,S. aureus,Teicoplanin,0
-Beijing,S. aureus,Vancomycin,0
-Beijing,S. aureus,Linezolid,0
 Tianjin,S. aureus,Penicillin G,82.9
 Tianjin,S. aureus,Erythromycin,58
 Tianjin,S. aureus,Clindamycin,24
@@ -41,9 +35,6 @@ Tianjin,S. aureus,Chloramphenicol,8.6
 Tianjin,S. aureus,Tetracycline,9.1
 Tianjin,S. aureus,Rifampicin,0.6
 Tianjin,S. aureus,Nitrofurantoin,0.1
-Tianjin,S. aureus,Teicoplanin,0
-Tianjin,S. aureus,Vancomycin,0
-Tianjin,S. aureus,Linezolid,0
 Hebei,S. aureus,Penicillin G,92.5
 Hebei,S. aureus,Erythromycin,68.2
 Hebei,S. aureus,Clindamycin,36.8
@@ -56,9 +47,6 @@ Hebei,S. aureus,Levofloxacin,11.7
 Hebei,S. aureus,Chloramphenicol,5.2
 Hebei,S. aureus,Rifampicin,1.6
 Hebei,S. aureus,Nitrofurantoin,0.1
-Hebei,S. aureus,Teicoplanin,0
-Hebei,S. aureus,Vancomycin,0
-Hebei,S. aureus,Linezolid,0
 Shanxi,S. aureus,Penicillin G,93
 Shanxi,S. aureus,Erythromycin,58.6
 Shanxi,S. aureus,Clindamycin,30.8
@@ -71,9 +59,6 @@ Shanxi,S. aureus,Levofloxacin,9.7
 Shanxi,S. aureus,Chloramphenicol,5.4
 Shanxi,S. aureus,Rifampicin,0.9
 Shanxi,S. aureus,Nitrofurantoin,0.3
-Shanxi,S. aureus,Teicoplanin,0
-Shanxi,S. aureus,Vancomycin,0
-Shanxi,S. aureus,Linezolid,0
 Inner Mongolia,S. aureus,Penicillin G,88.8
 Inner Mongolia,S. aureus,Erythromycin,68.5
 Inner Mongolia,S. aureus,Clindamycin,30
@@ -86,9 +71,6 @@ Inner Mongolia,S. aureus,Tetracycline,13.7
 Inner Mongolia,S. aureus,Gentamicin,9
 Inner Mongolia,S. aureus,Rifampicin,2.6
 Inner Mongolia,S. aureus,Nitrofurantoin,0.6
-Inner Mongolia,S. aureus,Teicoplanin,0
-Inner Mongolia,S. aureus,Vancomycin,0
-Inner Mongolia,S. aureus,Linezolid,0
 Liaoning,S. aureus,Chloramphenicol,8
 Liaoning,S. aureus,Clindamycin,35.7
 Liaoning,S. aureus,Ciprofloxacin,26.1
@@ -1091,7 +1073,7 @@ Tibet,A. baumannii,Ceftriaxone,61.7
 Tibet,A. baumannii,Ciprofloxacin,51.6
 Tibet,A. baumannii,Gentamicin,33.5
 Tibet,A. baumannii,Levofloxacin,28.1
-Tibet,A. baumannii,Minocycline,0
+Tibet,A. baumannii,Minocycline,2.45
 Xinjiang,A. baumannii,Ampicillin,43.9
 Xinjiang,A. baumannii,Cefotaxime,59.6
 Xinjiang,A. baumannii,Ceftriaxone,43.3

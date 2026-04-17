@@ -6,6 +6,7 @@ options(scipen = 999)
 
 suppressPackageStartupMessages({
   library(cluster)
+  library(conflicted)
   library(factoextra)
   library(ggplot2)
   library(ggpubr)
@@ -20,4 +21,6 @@ suppressPackageStartupMessages({
 })
 
 
+
+conflict_prefer("filter", "dplyr")
 
