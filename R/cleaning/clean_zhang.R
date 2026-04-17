@@ -1,15 +1,5 @@
 # clean_zhang
 
-# use china mirror for faster package install
-#options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
-options(scipen = 999)
-
-library(readxl)
-library(dplyr)
-library(stringr)
-library(readr)
-
-
 #### Zhang_2022 ####
 
 
@@ -18,8 +8,8 @@ library(readr)
 # 2) using the highest (max) reported concentration of antibiotics for each province, antibiotic, and sample type,
 # This generates one representative and recent value per province, assuming that environmental concentrations tend to increase over the years
 
-# get standardized names
-source("R/codelists.R")
+# get standardized names of antibiotics
+antibiotic_groups <- read_csv("data/cleaned/antibiotic_groups.csv")
 
 zhang_raw <- readxl::read_excel("data/raw/Zhang_2022.xls", sheet = "Records")
 
@@ -38,7 +28,7 @@ zhang <- zhang_raw %>%
 # use curated list of antibiotics that are also available in CARSS dataset
 
 # Ensure antibiotics vector is lowercase for consistent matching
-abx_curated <- tolower(codelists$antibiotics)
+abx_curated <- tolower(antibiotic_groups$antibiotic)
 
 zhang <- zhang %>%
   # 1. Basic normalization & salt/water stripping

@@ -5,6 +5,8 @@
 # load integrated data
 province_stats <- read_csv("antibiotics_data/clean_data/province_stats.csv")
 
+#load integrated data
+yearbook <- read_csv("data/cleaned/yearbook_cleaned.csv")
 
 
 summary(vars)
