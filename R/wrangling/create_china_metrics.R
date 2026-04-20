@@ -52,8 +52,7 @@ antibiotic_metrics_china <- chm_resistance %>%
   mutate(
     china_mean = mean(value),
     fold_change = value / mean(value),
-    log2_fc = log2(fold_change),
-    z_score = as.numeric(scale(value))
+    log2_fc = log2(fold_change)
   ) %>%
 
   # add province and antibiotic groups metadata

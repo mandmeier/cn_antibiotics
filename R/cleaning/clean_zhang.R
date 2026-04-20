@@ -217,7 +217,7 @@ zhang_cleaned <- zhang %>%
   # replace with LLOD/2 if reported as zero
   mutate(
     mean_concentration = case_when(
-      mean_concentration == 0 & !is.na(lod_est) ~ lod_est / 2,
+      mean_concentration == 0 & !is.na(lod_est) ~ lod_est/2,
       mean_concentration == 0 & is.na(lod_est)  ~ NA_real_,
       TRUE ~ mean_concentration
     )
@@ -225,6 +225,8 @@ zhang_cleaned <- zhang %>%
   # calculate median
   mutate(median_concentration = median(mean_concentration)) %>%
   select(-mean_concentration) %>%
+  # remove true NA measurements (nothing measured for this antibiotic in this province)
+  filter(!is.na(median_concentration)) %>%
   unique() %>%
   add_tally() %>%
   # in case of tie use first publication with the reported value
