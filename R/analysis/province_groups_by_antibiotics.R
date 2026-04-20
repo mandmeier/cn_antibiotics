@@ -40,7 +40,7 @@ df_wide_mat[is.na(df_wide_mat)] <- 0
 z_scores_antibiotics_metrics <- as.data.frame(df_wide_mat) %>%
   rownames_to_column(var = "province")
 
-write_csv(z_scores_antibiotics_metrics, "data/analysis_ready/z_scores_antibiotics_metrics.csv")
+# write_csv(z_scores_antibiotics_metrics, "data/analysis_ready/z_scores_antibiotics_metrics.csv")
 
 
 # calculate principal components from z-score matrix
@@ -76,13 +76,16 @@ cluster_df <- data.frame(
 ) %>%
   remove_rownames() %>%
   arrange(k3_groups)
+#
+#
+# ## add cluster grouping to province groups
+# province_groups <- province_groups %>%
+#   left_join(cluster_df)
+#
+# write_csv(province_groups, "data/cleaned/province_groups.csv")
 
 
-## add cluster grouping to province groups
-province_groups <- province_groups %>%
-  left_join(cluster_df)
-
-write_csv(province_groups, "data/cleaned/province_groups.csv")
+province_groups <- read_csv("data/cleaned/province_groups.csv")
 
 
 
@@ -129,6 +132,7 @@ p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
   )
 
 p1
+
 
 # PC2 vs PC3
 p2 <- ggplot(plot_df, aes(PC2, PC3, color = cluster)) +
@@ -187,14 +191,69 @@ d3 <- plot_ly(
 d3
 
 
-#### plot clusters on China map
 
 
-library(sf) # geospatial data package
-
-# get CHina shapefile
-china_prov <- sf::st_read("sandbox/antibiotics_data/cn_shp/cn.shp")
+#### Figure Cluster PCA next to China plot
 
 
+# PC plot
+# PC1 vs PC2
+p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
+  geom_point(size = 2, alpha = 0.85) +
+  geom_text_repel(aes(label = province),
+                  size = 3,
+                  max.overlaps = 20) +
+  scale_color_brewer(palette = "Set1") +
+  labs(
+    #title = "PC1 vs PC2",
+    x = pc1_lab,
+    y = pc2_lab,
+    color = "Cluster"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    panel.grid.minor = element_blank()
+  )
 
+p1
+
+
+
+
+source("R/utils/plot_on_china_map.R")
+
+my_cols <- c(
+  "1" = "#F8766D",
+  "2" = "#619CFF",
+  "3" = "#00BA38"
+)
+
+
+plot_data <- province_groups %>%
+  mutate(k3_groups = as.factor(k3_groups))
+
+
+china_plot <- plot_on_china_map(
+  plot_data,
+  plot_variable = "k3_groups",
+  breaks = c("1", "2", "3", "no data"),
+  na_value = "no data",
+  labels = c("Cluster A", "Cluster B", "Cluster C", "No data"),
+  legend_title = "",
+  color_pallette = my_cols
+)
+
+china_plot
+
+
+
+
+
+# combine plots
+p_combined <- p1 + china_plot +
+  #plot_layout(guides = "collect") &
+  theme(legend.position = "right")
+
+p_combined
 

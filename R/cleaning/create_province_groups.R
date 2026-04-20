@@ -64,5 +64,11 @@ province_groups <- data.frame(
 
 colnames(province_groups) <- c("province", "qu_category", "qu_subcategory", "NBS_region", "RR_ranking")
 
+
+
 write_csv(province_groups, "data/cleaned/province_groups.csv")
+
+
+
+print("K-means clusters added in script province_groups_by_antibiotics.R")
 

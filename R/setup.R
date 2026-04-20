@@ -33,3 +33,10 @@ Sys.setenv(
   UDUNITS2_INCLUDE = "/opt/homebrew/include",
   UDUNITS2_LIBS = "/opt/homebrew/lib"
 )
+
+# paths to GDAL software (dependency of sf package)
+Sys.setenv(
+  PATH = paste("/opt/homebrew/bin", Sys.getenv("PATH"), sep=":"),
+  GDAL_CONFIG = "/opt/homebrew/bin/gdal-config",
+  PROJ_LIB = "/opt/homebrew/share/proj"
+)
