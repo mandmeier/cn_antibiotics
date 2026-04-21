@@ -3,7 +3,7 @@
 
 
 carss <- read_csv("data/cleaned/carss_cleaned.csv")
-zhang <- read_csv("data/cleaned/zhang_cleaned.csv")
+env_abx <- read_csv("data/analysis_ready//env_abx_per_province.csv")
 
 province_groups <- read_csv("data/cleaned/province_groups.csv")
 
@@ -22,7 +22,7 @@ chm_resistance <- carss %>%
   mutate(unit = "% resistant strains", .after = value)
 
 
-env_concentration <- zhang %>%
+env_concentration <- env_abx %>%
   select(province, antibiotic, sample_type, median_concentration) %>%
   mutate(sample_type = paste(sample_type, "concentration")) %>%
   rename(metric = sample_type) %>%
@@ -33,7 +33,7 @@ env_concentration <- zhang %>%
 
 
 # find antibiotics for which we have both environmental and clinical data
-common_antibiotics <- intersect(unique(carss$antibiotic), unique(zhang$antibiotic))
+common_antibiotics <- intersect(unique(carss$antibiotic), unique(env_abx$antibiotic))
 
 
 antibiotic_metrics_china <- chm_resistance %>%

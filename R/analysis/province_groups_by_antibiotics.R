@@ -77,15 +77,20 @@ cluster_df <- data.frame(
   remove_rownames() %>%
   arrange(k3_groups)
 #
-#
-# ## add cluster grouping to province groups
-# province_groups <- province_groups %>%
-#   left_join(cluster_df)
-#
-# write_csv(province_groups, "data/cleaned/province_groups.csv")
+
+
 
 
 province_groups <- read_csv("data/cleaned/province_groups.csv")
+
+
+
+# add cluster grouping to province groups
+province_groups <- province_groups %>%
+  #select(-k2_groups, -k3_groups, -k4_groups) %>%
+  left_join(cluster_df)
+
+# write_csv(province_groups, "data/cleaned/province_groups_NEW.csv")
 
 
 
@@ -138,11 +143,11 @@ p1
 p2 <- ggplot(plot_df, aes(PC2, PC3, color = cluster)) +
   geom_point(size = 2, alpha = 0.85) +
   geom_text_repel(aes(label = province),
-                  size = 3,
+                  size = 2,
                   max.overlaps = 20) +
   scale_color_brewer(palette = "Set1") +
   labs(
-    title = "PC2 vs PC3",
+    #title = "PC2 vs PC3",
     x = pc2_lab,
     y = pc3_lab,
     color = "Cluster"
@@ -153,6 +158,7 @@ p2 <- ggplot(plot_df, aes(PC2, PC3, color = cluster)) +
     panel.grid.minor = element_blank()
   )
 
+p2
 
 # combine plots
 p_combined <- p1 + p2 +
@@ -199,11 +205,11 @@ d3
 # PC plot
 # PC1 vs PC2
 p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
-  geom_point(size = 2, alpha = 0.85) +
+  geom_point(size = 2.5, alpha = 0.85) +
   geom_text_repel(aes(label = province),
                   size = 3,
                   max.overlaps = 20) +
-  scale_color_brewer(palette = "Set1") +
+  scale_colour_manual(values = c("#537490", "#C98296", "#F78793")) +
   labs(
     #title = "PC1 vs PC2",
     x = pc1_lab,
@@ -224,11 +230,25 @@ p1
 source("R/utils/plot_on_china_map.R")
 
 my_cols <- c(
-  "1" = "#F8766D",
-  "2" = "#619CFF",
-  "3" = "#00BA38"
+  "1" = "#537490",
+  "2" = "#C98296",
+  "3" = "#F78793"
 )
 
+#
+# my_cols <- c(
+#   "1" = "#619CFF",
+#   "2" = "#00BA38",
+#   "3" = "#F8766D"
+# )
+#
+#
+# my_cols <- c(
+#   "1" = "#619CFF",
+#   "2" = "#00BA38",
+#   "3" = "#F8766D"
+# )
+#
 
 plot_data <- province_groups %>%
   mutate(k3_groups = as.factor(k3_groups))
@@ -239,7 +259,7 @@ china_plot <- plot_on_china_map(
   plot_variable = "k3_groups",
   breaks = c("1", "2", "3", "no data"),
   na_value = "no data",
-  labels = c("Cluster A", "Cluster B", "Cluster C", "No data"),
+  labels = c("Cluster 1", "Cluster 2", "Cluster 3", "No data"),
   legend_title = "",
   color_pallette = my_cols
 )
