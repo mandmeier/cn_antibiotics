@@ -12,7 +12,7 @@ antibiotic_groups <- read_csv("data/cleaned/antibiotic_groups.csv")
 
 
 
-# bacterial resistance relatice to China mean
+# bacterial resistance relative to China mean
 
 chm_resistance <- carss %>%
   mutate(bacteria = paste(bacteria, "resistance")) %>%

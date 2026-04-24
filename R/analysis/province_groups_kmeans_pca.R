@@ -1,4 +1,4 @@
-# k-means
+# k-means and PCA of by-province environmental and clinical antibiotics metrics
 
 
 ## use zscores of all metrics to cluster provinces (k-means)
@@ -90,7 +90,7 @@ province_groups <- province_groups %>%
   #select(-k2_groups, -k3_groups, -k4_groups) %>%
   left_join(cluster_df)
 
-# write_csv(province_groups, "data/cleaned/province_groups_NEW.csv")
+# write_csv(province_groups, "data/cleaned/province_groups.csv")
 
 
 
