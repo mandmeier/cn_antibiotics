@@ -5,7 +5,8 @@ env_abx <- read_csv("data/raw/environmental_antibiotics_data_manual.csv")
 #### Harmonized Dataset showing ALL measurements (including location specific for hotspot analysis)
 env_abx_harmonized <- env_abx %>%
   select(-`...15`, -`...16`) %>%
-  # harmonize units
+  # harmonize units (recalculate values where necessary)
+  #
   mutate(concentration_unit = ifelse(grepl("water", sample_type), "ng/L", "μg/kg dw")) %>%
   # filter missing antibiotics
   filter(!is.na(antibiotic)) %>%
