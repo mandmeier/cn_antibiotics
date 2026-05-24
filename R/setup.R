@@ -13,6 +13,7 @@ suppressPackageStartupMessages({
   library(ggpubr)
   library(Hmisc)
   library(readr)
+  library(openxlsx2)
   library(readxl)
   library(sf)
   library(stringr)
