@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 sandbox/
+.DS_Store
+**/.DS_Store
+.cursor/**/*.mdc
