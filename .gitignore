@@ -3,6 +3,8 @@
 .RData
 .Ruserdata
 sandbox/
+articles/
+data/raw/yearbook_data/yearbook_analysis_images/
 .DS_Store
 **/.DS_Store
 .cursor/**/*.mdc
