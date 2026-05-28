@@ -106,6 +106,7 @@ environmental_clean <- environmental %>%
       "Sulphachloropyridazine" = "Sulfachloropyridazine",
       "Sulfachinoxalin" = "Sulfachinoxaline",
       "Sulfadimidin" = "Sulfadimidine",
+      "Sulfadimethazine" = "Sulfadimidine",
       "Sulfadoxin" = "Sulfadoxine",
       "Sulfamerazin" = "Sulfamerazine",
       "sulfamethazine" = "Sulfadimidine",
@@ -192,6 +193,7 @@ environmental_clean <- environmental %>%
       antibiotic
     )
   ) %>%
+  # remove non-antibiotics or antibiotics group measurements
   filter(!antibiotic %in% c(
     "Atenolol",
     "Metoprolol",
@@ -200,7 +202,9 @@ environmental_clean <- environmental %>%
     "Pimaricin",
     "Monensin",
     "Narasin",
-    "Nicarbazin"
+    "Nicarbazin",
+    "All Antibiotics",
+    "Chloramphenicol derivatives"
   )) %>%
   # Removed solid waste: different antibiotics concentration pattern from other
   # matrices and only n = 2 samples.

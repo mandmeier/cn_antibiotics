@@ -122,7 +122,7 @@ library(patchwork)
 
 
 
-clusters <- clusters2
+clusters <- clusters3
 
 plot_df <- data.frame(
   province = rownames(pca$x),
@@ -231,7 +231,7 @@ p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
   geom_text_repel(aes(label = province),
                   size = 3,
                   max.overlaps = 20) +
-  scale_colour_manual(values = c("#537490", "#F78793")) +
+  scale_colour_manual(values = c("#537490", "#88e788", "#F78793")) +
   labs(
     #title = "PC1 vs PC2",
     x = pc1_lab,
@@ -259,7 +259,8 @@ source("R/utils/plot_on_china_map.R")
 
 my_cols <- c(
   "1" = "#537490",
-  "2" = "#F78793"
+  "2" = "#88e788",
+  "3" = "#F78793"
 )
 
 
@@ -272,10 +273,10 @@ plot_data <- province_groups %>%
 
 china_plot <- plot_on_china_map(
   plot_data,
-  plot_variable = "k2_groups",
-  breaks = c("1", "2", "no data"),
+  plot_variable = "k3_groups",
+  breaks = c("1", "2", "3", "no data"),
   na_value = "no data",
-  labels = c("Cluster 1", "Cluster 2", "No data"),
+  labels = c("Cluster 1", "Cluster 2", "Cluster 3", "No data"),
   legend_title = "",
   color_pallette = my_cols
 )
