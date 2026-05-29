@@ -1,0 +1,11 @@
+province,metric,panel_value_2024,yearbook_clean_value,unit_panel,unit_yearbook_clean,match,source_file
+Jiangsu,E03_09_Gross_Regional_Product,137008.0,137008.0,100_million_yuan,100_million_yuan,True,data/raw/yearbook_analysis_images/2025/E03-09.jpg
+Anhui,E12_05_Consumption_of_Chemical_Fertilizers,275.5,275.5,10000_tons,10000_tons,True,data/raw/yearbook_analysis_images/2025/E12-05.jpg
+Anhui,E12_05_Irrigated_Area_of_Cultivated_Land,4701.1,4701.1,1000_hectares,1000_hectares,True,data/raw/yearbook_analysis_images/2025/E12-05.jpg
+Jiangsu,E12_13_Hogs_year_end,1421.6,1421.6,10000_heads,10000_heads,True,data/raw/yearbook_analysis_images/2025/E12-13.jpg
+Sichuan,E12_14_Pork,479.4,479.4,10000_tons,10000_tons,True,data/raw/yearbook_analysis_images/2025/E12-14.jpg
+Jiangsu,E12_15_Total_Aquatic_Products,536.1,536.1,10000_tons,10000_tons,True,data/raw/yearbook_analysis_images/2025/E12-15.jpg
+Guangdong,E20_07_Expenditure_on_R_and_D,37052727.0,37052727.0,10000_yuan,10000_yuan,True,data/raw/yearbook_analysis_images/2025/E20-07.jpg
+Jiangsu,E22_01_Hospitals,2246.0,2246.0,count,counts,True,data/raw/yearbook_analysis_images/2025/E22-01.jpg
+Henan,E22_06_Hospitals,57.19,57.19,10000_beds,10000_beds,True,data/raw/yearbook_analysis_images/2025/E22-06.jpg
+Shandong,E22_06_Total,76.1,76.1,10000_beds,10000_beds,True,data/raw/yearbook_analysis_images/2025/E22-06.jpg
