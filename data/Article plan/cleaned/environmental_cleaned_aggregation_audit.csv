@@ -1,2 +1,0 @@
-original_rows,rows_after_province_filter,excluded_nonstandard_province_rows,final_rows_after_aggregation,rows_collapsed_by_aggregation,groups_with_multiple_rows,missing_mean_concentration,missing_max_concentration,missing_sample_year
-7379,7210,169,6715,495,282,150,3631,560
