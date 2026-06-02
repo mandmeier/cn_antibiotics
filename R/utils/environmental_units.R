@@ -1,7 +1,10 @@
 # Shared environmental sample matrix and concentration unit conversion helpers.
 
 normalize_unit_string <- function(unit) {
-  str_to_lower(str_replace_all(unit, "μ", "µ"))
+  unit |>
+    str_to_lower() |>
+    str_replace_all("μ", "µ") |>
+    str_replace_all("^ug", "µg")
 }
 
 unit_is_dry_weight <- function(unit_norm) {
@@ -15,6 +18,7 @@ unit_conversion_factor <- function(unit) {
     grepl("^mg/kg", unit_norm) ~ 1e3,
     grepl("^(ug|µg)/kg", unit_norm) ~ 1,
     grepl("^ng/g", unit_norm) ~ 1,
+    grepl("^ng/kg", unit_norm) ~ 0.001,
     grepl("^(ug|µg)/g", unit_norm) ~ 1e3,
     grepl("^mg/l", unit_norm) ~ 1e6,
     grepl("^(ug|µg)/l", unit_norm) ~ 1e3,

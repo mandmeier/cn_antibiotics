@@ -74,6 +74,67 @@ pca <- prcomp(df_wide_mat, center = FALSE, scale. = FALSE)
 pc_scores <- pca$x[,1:4]
 set.seed(42)
 
+#### Choose k: elbow and silhouette on PCA scores (first 4 PCs)
+# Compare k = 1, 2, ... up to k_max; inspect the knee in total within-cluster SS.
+k_max <- min(10, nrow(pc_scores) - 1)
+k_values <- seq_len(k_max)
+
+kmeans_elbow <- lapply(k_values, function(k) {
+  km <- kmeans(pc_scores, centers = k, nstart = 25)
+  data.frame(
+    k = k,
+    tot_withinss = km$tot.withinss,
+    betweenss = km$betweenss,
+    totss = km$totss
+  )
+})
+kmeans_elbow <- dplyr::bind_rows(kmeans_elbow)
+
+kmeans_silhouette <- lapply(k_values[k_values >= 2], function(k) {
+  km <- kmeans(pc_scores, centers = k, nstart = 25)
+  sil <- cluster::silhouette(km$cluster, dist(pc_scores))
+  data.frame(k = k, avg_silhouette = mean(sil[, 3]))
+})
+kmeans_elbow <- dplyr::left_join(
+  kmeans_elbow,
+  dplyr::bind_rows(kmeans_silhouette),
+  by = "k"
+)
+
+library(ggplot2)
+
+p_elbow <- ggplot(kmeans_elbow, aes(k, tot_withinss)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 2.5) +
+  scale_x_continuous(breaks = k_values) +
+  labs(
+    title = "K-means elbow (PCA scores, first 4 PCs)",
+    subtitle = "Look for the knee: diminishing drop in within-cluster SS as k increases",
+    x = "Number of clusters (k)",
+    y = "Total within-cluster sum of squares"
+  ) +
+  theme_minimal(base_size = 12)
+
+p_silhouette <- ggplot(
+  kmeans_elbow %>% dplyr::filter(!is.na(avg_silhouette)),
+  aes(k, avg_silhouette)
+) +
+  geom_line(linewidth = 0.8, colour = "steelblue") +
+  geom_point(size = 2.5, colour = "steelblue") +
+  scale_x_continuous(breaks = k_values) +
+  labs(
+    title = "Mean silhouette width by k",
+    subtitle = "Higher is better separated clusters (k >= 2 only)",
+    x = "Number of clusters (k)",
+    y = "Average silhouette width"
+  ) +
+  theme_minimal(base_size = 12)
+
+print(p_elbow)
+print(p_silhouette)
+
+kmeans_elbow
+
 # K-means clustering
 
 

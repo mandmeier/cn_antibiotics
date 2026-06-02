@@ -1,0 +1,1439 @@
+sample_type,province,location,sample_year,season,antibiotic,mean_concentration,max_concentration,concentration_unit,reference_number
+surface water,Chongqing,Chongqing,2021,,Enrofloxacin,1.99,1.99,ng/g,N154
+surface water,Chongqing,Chongqing,2021,,Enrofloxacin,1.39,1.39,ng/g,N154
+surface water,Chongqing,Chongqing,2021,,Erythromycin,1.99,1.99,ng/g,N154
+surface water,Chongqing,Chongqing,2021,,Erythromycin,1.39,1.39,ng/g,N154
+surface water,Chongqing,Chongqing,2021,,Oxytetracycline,1.02,1.02,ng/L,N154
+surface water,Chongqing,Chongqing,2021,,Tetracycline,1.02,1.02,ng/L,N154
+sediment,Jiangsu,Jiangsu,2021,,Ciprofloxacin,5.14,10,ng/g,N154
+surface water,Jiangsu,Jiangsu,2021,,Norfloxacin,5.14,10,ng/g,N154
+surface water,Jiangsu,Jiangsu,2021,,Ofloxacin,5.14,10,ng/g,N154
+surface water,Jiangsu,Jiangsu,2021,,Sulfamethoxazole,4.19,7.95,ng/L,N154
+sediment,Shanghai,Shanghai,2021,,Ciprofloxacin,5.14,10,ng/g,N154
+surface water,Shanghai,Shanghai,2021,,Norfloxacin,5.14,10,ng/g,N154
+surface water,Shanghai,Shanghai,2021,,Ofloxacin,5.14,10,ng/g,N154
+municipal wastewater effluent,Heilongjiang,,2024,,Ciprofloxacin (CIP),177.65,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,,2024,,Ciprofloxacin (CIP),194.83,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,,2024,,Enoxacin (ENX),140.11,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,,2024,,Enoxacin (ENX),75.33,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,Heilongjiang,2024,,Norfloxacin,1003.68,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,Heilongjiang,2024,,Norfloxacin,702.02,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,Heilongjiang,2024,,Ofloxacin,141.84,,ng/L,N18
+municipal wastewater effluent,Heilongjiang,Heilongjiang,2024,,Ofloxacin,102.16,,ng/L,N18
+municipal wastewater influent,Heilongjiang,Heilongjiang,2024,,Ciprofloxacin,,3962.18,ng/L,N18
+urban wastewater (effluent),Heilongjiang,,2024,,NOR (summer),1003.68,,ng/L,N18
+urban wastewater (effluent),Heilongjiang,,2024,,NOR (winter),702.02,,ng/L,N18
+urban wastewater (effluent),Heilongjiang,,2024,,OFX (summer),141.84,,ng/L,N18
+urban wastewater (effluent),Heilongjiang,,2024,,OFX (winter),102.16,,ng/L,N18
+urban wastewater (influent),Heilongjiang,,2024,,Ciprofloxacin (CIP),,3962.18,ng/L,N18
+urban wastewater (influent),Heilongjiang,,2024,,Norfloxacin (NOR),,32381.56,ng/L,N18
+urban wastewater (influent),Heilongjiang,,2024,,Ofloxacin (OFX),,11173.27,ng/L,N18
+municipal sludge,Beijing,,2015–2016,,Ofloxacin (OFL),2982.61,11138.52,µg/kg (dw),N19
+wastewater influent,Liaoning,,2016,,Sulfamethoxazole (SMX),,850,ng/L,N28
+wastewater influent,Liaoning,,2016,,Trimethoprim (TMP),,234,ng/L,N28
+surface water,Shaanxi,,2022-2023,,Chlortetracycline (CTC),,6.85,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Ciprofloxacin,,71.27,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Norfloxacin,,20.17,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Ofloxacin,,6.12,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Oxytetracycline,,2.2,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Roxithromycin,,54.75,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Sulfamethoxazole,,3.47,ng/L,N34
+surface water,Shaanxi,,2022-2023,,Tetracycline,,2.02,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Chlortetracycline (CTC),,6.85,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Ciprofloxacin (CIP),,71.27,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Norfloxacin (NOR),,20.17,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Ofloxacin (OFX),,6.12,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Oxytetracycline (OTC),,2.2,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Roxithromycin (ROX),,54.75,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Sulfamethoxazole (SMX),,3.47,ng/L,N34
+surface water,Shaanxi (Xi’an),,2022-2023,,Tetracycline (TC),,2.02,ng/L,N34
+surface water,Shanxi,,2022,,Azithromycin,,584,ng/L,N36
+surface water,Shanxi,,2022,,Azithromycin,97.33,238.91,ng/L,N36
+surface water,Shanxi,,2022,,Total Chloramphenicols (CAs),246.3,,ng/L,N36
+surface water,Shanxi,,2022,,Total Macrolides (MLs),837,,ng/L,N36
+surface water,Shanxi,,2022,,Total Quinolones (QNs),414,,ng/L,N36
+surface water,Shanxi,,2022,,Total Sulfonamides (SAs),667.6,,ng/L,N36
+surface water,Shanxi,,2022,,Total Tetracyclines (TCs),413.6,,ng/L,N36
+surface water,Sichuan,Sichuan,2021,,Amoxicillin,8.82,47.09,ng/L,N37
+surface water,Sichuan,,2021,,Amoxicillin (AMX),8.82,47.09,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Ampicillin,1.23,22.61,ng/L,N37
+surface water,Sichuan,,2021,,Ampicillin (AMP),1.23,22.61,ng/L,N37
+surface water,Sichuan,,2021,,Cefotaxime (CTX),0.31,12.93,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Cephalexin,5.56,88.65,ng/L,N37
+surface water,Sichuan,,2021,,Cephalexin (CEX),5.56,88.65,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Chloramphenicol,25.48,577.46,ng/L,N37
+surface water,Sichuan,,2021,,Chloramphenicol (CAP),25.48,577.46,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Chlortetracycline,2.07,58.94,ng/L,N37
+surface water,Sichuan,,2021,,Chlortetracycline (CTC),2.07,58.94,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Clindamycin,4.52,129.74,ng/L,N37
+surface water,Sichuan,,2021,,Clindamycin (CLI),4.52,129.74,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Enrofloxacin,24.42,170.56,ng/L,N37
+surface water,Sichuan,,2021,,Enrofloxacin (ENR),24.42,170.56,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Levofloxacin,15.51,86.97,ng/L,N37
+surface water,Sichuan,,2021,,Levofloxacin (LEV),15.51,86.97,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Moxifloxacin,14.62,74,ng/L,N37
+surface water,Sichuan,,2021,,Moxifloxacin (MOX),14.62,74,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Norfloxacin,24.87,127.42,ng/L,N37
+surface water,Sichuan,,2021,,Norfloxacin (NOR),24.87,127.42,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Oxytetracycline,60.04,938.4,ng/L,N37
+surface water,Sichuan,,2021,,Oxytetracycline (OTC),60.04,938.4,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Sulfadiazine,1.71,15.56,ng/L,N37
+surface water,Sichuan,,2021,,Sulfadiazine (SD),1.71,15.56,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Sulfamethoxazole,1.44,31.47,ng/L,N37
+surface water,Sichuan,,2021,,Sulfamethoxazole (SMZ),1.44,31.47,ng/L,N37
+surface water,Sichuan,Sichuan,2021,,Tetracycline,84.35,2233.71,ng/L,N37
+surface water,Sichuan,,2021,,Tetracycline (TE),84.35,2233.71,ng/L,N37
+sediment,Henan,,,,SMX,,1.23,ng/g,N38
+sediment,Henan,reservoir-based drinking water sources,,,Sulfamethoxazole,,1.23,ng/g,N38
+surface water,Henan,reservoir-based drinking water sources,,,Roxithromycin,,1.91,ng/L,N38
+surface water,Henan,,,,Roxithromycin (ROX),,1.91,ng/L,N38
+municipal wastewater effluent,Hainan,,2013–2023,,Ciprofloxacin (CIP),1510,4060,ng/L,N39
+municipal wastewater effluent,Hainan,,2013–2023,,Ofloxacin (OFL),7283,19570,ng/L,N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Carbadox,2,9.42,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Chlortetracycline,4.06,16.12,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Ciprofloxacin,0.78,144.88,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Clarithromycin,2.98,10.11,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Danofloxacin,0.4,2.77,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Difloxacin,0.25,2.01,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Doxycycline,24.47,138.94,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Enrofloxacin,5.68,27.24,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Erythromycin,10.96,40.05,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Fleroxacin,4.89,8.83,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Lincomycin,1.82,6.88,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Lomefloxacin,7.17,55.23,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Marbofloxacin,0.31,0.81,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Methacycline,3.24,23.58,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Monensin,0.07,0.96,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Narasin,1.04,5.18,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Norfloxacin,163.59,1154.33,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Ormetoprim,0.03,0.21,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Oxytetracycline,354.5,1840.3,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Pefloxacin,22.33,131.23,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Roxithromycin,3.52,11.22,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sarafloxacin,0.18,0.74,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfacetamide,0.12,0.64,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfachlorpyridazine,0.01,0.11,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfadiazine,0.03,0.23,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfadimethoxine,0.05,0.47,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfamerazine,0.13,0.68,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfameter,0.2,1.09,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfamethazine,0.14,0.64,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfamethoxazole,0.03,0.17,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfamonomethoxine,0.11,0.36,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfapyridine,0.03,0.28,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfaquinoxaline,0.02,0.2,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfathiazole,0.02,0.24,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Sulfisoxazole,0.02,0.19,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Tetracycline,81.09,477.89,ng/g (dw),N39
+sediment,Hainan,Typical island province in China (surface water sediment),2013–2023,,Trimethoprim,0.16,0.38,ng/g (dw),N39
+solid waste,Hainan,,2013–2023,,Oxytetracycline (OTC),156.47,4746,ng/g (dw),N39
+solid waste,Hainan,,2013–2023,,Tetracycline (TC),834,4462,ng/g (dw),N39
+surface water,Hainan,,2013–2023,,Ciprofloxacin (CIP),90.76,1069.06,ng/L,N39
+surface water,Hainan,,2013–2023,,Enrofloxacin (ENR),2.78,28.29,ng/L,N39
+surface water,Hainan,,2013–2023,,Roxithromycin (RTM),3.83,70.17,ng/L,N39
+surface water,Hainan,,2013–2023,,Sulfamethoxazole (SMX),199.74,1070.4,ng/L,N39
+surface water,Hainan,,2013–2023,,Trimethoprim (TMP),14.32,182.61,ng/L,N39
+surface water sediment,Hainan,,2013–2023,,Sulfamethoxazole (SMX),0.03,0.17,ng/g (dw),N39
+surface water sediment,Hainan,,2013–2023,,Trimethoprim (TMP),0.16,0.38,ng/g (dw),N39
+municipal sludge,Hebei,Hebei,Pre-2020,,Tetracyclines (total),,4063,µg/g (dw),N4
+municipal sludge,Jiangsu,,Pre-2020,,Macrolides (total),,6890.95,µg/kg (dw),N4
+surface water,Hainan,,2024,,Doxycycline (DOX),18.49,66.88,ng/L,N41
+surface water,Hainan,,2024,,Fleroxacin (FLE),98.69,1542.67,ng/L,N41
+surface water,Hainan,,2024,,Oxytetracycline (OTC),79.85,274.13,ng/L,N41
+surface water,Hainan,,2024,,Sulfachloropyridazine (SCP),0.44,7,ng/L,N41
+surface water,Hainan,,2024,,Sulfadiazine (SD),0.94,4.79,ng/L,N41
+surface water,Hainan,,2024,,Sulfaguanidine (SGD),0.11,1.64,ng/L,N41
+surface water,Hainan,,2024,,Sulfamethazine (SMT),0.2,1.83,ng/L,N41
+surface water,Hainan,,2024,,Sulfamethoxazole (SMX),5.01,20.47,ng/L,N41
+surface water,Hainan,,2024,,Sulfamethoxydiazine (SMD),0.22,1.38,ng/L,N41
+surface water,Hainan,,2024,,Sulfamonomethoxine (SMM),0.31,0.83,ng/L,N41
+surface water,Hainan,,2024,,Sulfaquinoxaline (SQ),0.33,5.23,ng/L,N41
+surface water,Hainan,,2024,,Sulfathiazole (ST),0.51,3.56,ng/L,N41
+surface water,Hainan,,2024,,Trimethoprim (TMP),0.16,1.2,ng/L,N41
+coastal water,Guangxi,,2018,,Sulfamethoxazole (SMX),0.09,7.43,ng/L,N42
+surface water,Guangxi,Guangxi,2018,,Sulfamethoxazole (SMX),0.09,7.43,ng/L,N42
+surface water,Guangxi,Guangxi,2018,,Trimethoprim (TMP),0.02,1.13,ng/L,N42
+sediment,Liaoning,Liaoning,2013,,Sulfamonomethoxine (SMM),,7,ng/g (dw),N42
+coastal water,Shandong,,2019,,Norfloxacin (NOR),4.98,48.31,ng/L,N42
+surface water,Shandong,Shandong,2019,,Norfloxacin (NOR),4.98,48.31,ng/L,N42
+sediment,Guangdong,"Pearl River, site Z1",2015,,Ciprofloxacin,242.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Ciprofloxacin,380.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Ciprofloxacin,210.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Ciprofloxacin,100.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Ciprofloxacin,57,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Ciprofloxacin,21.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Ciprofloxacin,20.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Ciprofloxacin,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Ciprofloxacin,23.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Ciprofloxacin,7.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Ciprofloxacin,349.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Ciprofloxacin,7.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Ciprofloxacin,7.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Ciprofloxacin,88.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Ciprofloxacin,53.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Ciprofloxacin,41.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Ciprofloxacin,17.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Ciprofloxacin,18.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Ciprofloxacin,24.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Ciprofloxacin,4.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Ciprofloxacin,14,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Ciprofloxacin,10.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Ciprofloxacin,69.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Ciprofloxacin,162.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Ciprofloxacin,41.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Ciprofloxacin,57.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Ciprofloxacin,58.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Ciprofloxacin,26,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Ciprofloxacin,20.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Ciprofloxacin,14.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Ciprofloxacin,2.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Ciprofloxacin,14.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ciprofloxacin,242.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ciprofloxacin,280.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ciprofloxacin,183.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ciprofloxacin,7.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ciprofloxacin,57,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ciprofloxacin,124.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Ciprofloxacin,41.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Ciprofloxacin,69.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ciprofloxacin,23.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ciprofloxacin,21.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ciprofloxacin,57.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ciprofloxacin,20.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ciprofloxacin,24.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ciprofloxacin,14.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ciprofloxacin,4.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ciprofloxacin,10.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ciprofloxacin,41.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Erythromycin,350.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Erythromycin,128.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Erythromycin,112.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Erythromycin,81.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Erythromycin,26.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Erythromycin,33.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Erythromycin,101.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Erythromycin,66.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Erythromycin,95,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Erythromycin,53.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Erythromycin,206.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Erythromycin,92.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Erythromycin,78.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Erythromycin,137.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Erythromycin,38.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Erythromycin,111.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Erythromycin,13.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Erythromycin,167.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Erythromycin,156,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Erythromycin,351.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Erythromycin,353,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Erythromycin,7.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Erythromycin,49.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Erythromycin,57.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Erythromycin,78.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Erythromycin,35.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Erythromycin,53.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Erythromycin,49.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Erythromycin,33.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Erythromycin,17.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Erythromycin,83.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Erythromycin,85.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Erythromycin,86.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Erythromycin,92.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Erythromycin,150.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Erythromycin,208.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Erythromycin,156.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Erythromycin,81.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Erythromycin,201.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Erythromycin,78.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Erythromycin,151.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Erythromycin,167.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Erythromycin,66.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Erythromycin,26.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Erythromycin,153,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Erythromycin,35.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Erythromycin,17.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Erythromycin,33.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Erythromycin,83.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Erythromycin,86.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Erythromycin,111.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Lomefloxacin,50.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Lomefloxacin,79.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Lomefloxacin,59.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Lomefloxacin,38.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Lomefloxacin,7.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Lomefloxacin,16.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Lomefloxacin,91.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Lomefloxacin,8.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Lomefloxacin,23.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Lomefloxacin,27.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Lomefloxacin,19.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Lomefloxacin,56.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Lomefloxacin,62.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Lomefloxacin,26.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Lomefloxacin,39.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Lomefloxacin,27.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Lomefloxacin,27.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Lomefloxacin,91.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Lomefloxacin,59.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Lomefloxacin,21.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Lomefloxacin,17.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Lomefloxacin,22.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Lomefloxacin,74.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Lomefloxacin,71.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Lomefloxacin,32.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Lomefloxacin,29.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Lomefloxacin,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Lomefloxacin,13.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Lomefloxacin,14.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Lomefloxacin,23.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Lomefloxacin,36,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Lomefloxacin,23,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Lomefloxacin,74.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Lomefloxacin,50.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Lomefloxacin,69.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Lomefloxacin,19.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Lomefloxacin,38.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Lomefloxacin,91.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Lomefloxacin,71.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Lomefloxacin,26.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Lomefloxacin,56.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Lomefloxacin,8.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Lomefloxacin,7.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Lomefloxacin,39.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Lomefloxacin,59.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Lomefloxacin,14.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Lomefloxacin,22.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Lomefloxacin,23.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Lomefloxacin,23,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Lomefloxacin,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Norfloxacin,171.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Norfloxacin,156.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Norfloxacin,71.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Norfloxacin,61.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Norfloxacin,16.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Norfloxacin,29.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Norfloxacin,27.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Norfloxacin,20.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Norfloxacin,16.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Norfloxacin,6.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Norfloxacin,26.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Norfloxacin,253.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Norfloxacin,178.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Norfloxacin,143.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Norfloxacin,30.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Norfloxacin,14.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Norfloxacin,13,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Norfloxacin,37.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Norfloxacin,33.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Norfloxacin,4.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Norfloxacin,3.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Norfloxacin,8.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Norfloxacin,146.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Norfloxacin,151.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Norfloxacin,93.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Norfloxacin,54.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Norfloxacin,146.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Norfloxacin,171.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Norfloxacin,154.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Norfloxacin,26.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Norfloxacin,61.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Norfloxacin,127.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Norfloxacin,37.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Norfloxacin,39.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Norfloxacin,143.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Norfloxacin,253.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Norfloxacin,20.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Norfloxacin,16.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Norfloxacin,30.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Norfloxacin,33.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Norfloxacin,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Norfloxacin,8.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Norfloxacin,3.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Norfloxacin,3.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Norfloxacin,15.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Norfloxacin,39.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Norfloxacin,30.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Norfloxacin,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Norfloxacin,3.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Norfloxacin,7.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Norfloxacin,3.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Ofloxacin,72.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Ofloxacin,95.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Ofloxacin,70.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Ofloxacin,27.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Ofloxacin,62.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Ofloxacin,91.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Ofloxacin,82.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Ofloxacin,109.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Ofloxacin,9.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Ofloxacin,9.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Ofloxacin,37.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Ofloxacin,48.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Ofloxacin,76.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Ofloxacin,41.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Ofloxacin,18.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Ofloxacin,73.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Ofloxacin,107.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Ofloxacin,101.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Ofloxacin,79.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Ofloxacin,12.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Ofloxacin,30.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Ofloxacin,34.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ofloxacin,108.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ofloxacin,72.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Ofloxacin,198.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ofloxacin,37.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ofloxacin,87.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Ofloxacin,142.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Ofloxacin,101.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Ofloxacin,41.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Ofloxacin,128.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ofloxacin,109.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ofloxacin,62.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Ofloxacin,18.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ofloxacin,79.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ofloxacin,117.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Ofloxacin,34.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ofloxacin,9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ofloxacin,36.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Ofloxacin,47,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Ofloxacin,108.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Ofloxacin,73.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Ofloxacin,29.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Ofloxacin,38.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Ofloxacin,47,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Ofloxacin,89.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Ofloxacin,76.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Ofloxacin,117.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Ofloxacin,9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Ofloxacin,11,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Ofloxacin,36.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Oxytetracycline,45.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Oxytetracycline,75.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Oxytetracycline,53.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Oxytetracycline,28.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Oxytetracycline,131.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Oxytetracycline,150.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Oxytetracycline,52.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Oxytetracycline,250.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Oxytetracycline,19.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Oxytetracycline,23,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Oxytetracycline,18.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Oxytetracycline,17.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Oxytetracycline,119,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Oxytetracycline,27,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Oxytetracycline,19.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Oxytetracycline,88.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Oxytetracycline,227.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Oxytetracycline,51.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Oxytetracycline,93.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Oxytetracycline,20.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Oxytetracycline,17,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Oxytetracycline,18.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Oxytetracycline,64.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Oxytetracycline,45.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Oxytetracycline,26.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Oxytetracycline,108.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Oxytetracycline,48.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Oxytetracycline,52.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Oxytetracycline,71.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Oxytetracycline,57,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Oxytetracycline,35.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Oxytetracycline,160.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Oxytetracycline,121.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Oxytetracycline,99.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Oxytetracycline,93.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Oxytetracycline,103.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Oxytetracycline,78.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Oxytetracycline,100.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Oxytetracycline,113.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Oxytetracycline,93.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Oxytetracycline,24.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Oxytetracycline,21.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Oxytetracycline,32.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Oxytetracycline,26.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Oxytetracycline,93.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Oxytetracycline,80.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Oxytetracycline,260.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Oxytetracycline,173.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Oxytetracycline,10.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Oxytetracycline,11.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Oxytetracycline,13.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Roxithromycin,568.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Roxithromycin,219,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Roxithromycin,149.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Roxithromycin,119.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Roxithromycin,24.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Roxithromycin,46.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Roxithromycin,149.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Roxithromycin,84.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Roxithromycin,131.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Roxithromycin,136.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Roxithromycin,153.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Roxithromycin,438.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Roxithromycin,156.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Roxithromycin,263.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Roxithromycin,265.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Roxithromycin,50.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Roxithromycin,60.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Roxithromycin,184.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Roxithromycin,51,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Roxithromycin,135.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Roxithromycin,58.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Roxithromycin,154.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Roxithromycin,190.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Roxithromycin,368.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Roxithromycin,339,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Roxithromycin,153.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Roxithromycin,119.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Roxithromycin,249.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Roxithromycin,184.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Roxithromycin,263.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Roxithromycin,438.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Roxithromycin,84.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Roxithromycin,24.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Roxithromycin,265.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Roxithromycin,51,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Roxithromycin,42,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Roxithromycin,154.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Roxithromycin,115.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Roxithromycin,131.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Roxithromycin,225.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Roxithromycin,190.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Roxithromycin,242.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Roxithromycin,257,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Roxithromycin,139,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Roxithromycin,225.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Roxithromycin,38.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Roxithromycin,17.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Roxithromycin,42,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Roxithromycin,115.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Roxithromycin,115.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Roxithromycin,131.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Sulfacetamide,11.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Sulfacetamide,18.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Sulfacetamide,15.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Sulfacetamide,27.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Sulfacetamide,20,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Sulfacetamide,22.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Sulfacetamide,71.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Sulfacetamide,103.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Sulfacetamide,48.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Sulfacetamide,16.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Sulfacetamide,17.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Sulfacetamide,36.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Sulfacetamide,13.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Sulfacetamide,26.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Sulfacetamide,18.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Sulfacetamide,20.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Sulfacetamide,65.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Sulfacetamide,120.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Sulfacetamide,58.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Sulfacetamide,44,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Sulfacetamide,24.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Sulfacetamide,27.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Sulfacetamide,35.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Sulfacetamide,16.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Sulfacetamide,13.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Sulfacetamide,13,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Sulfacetamide,14.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfacetamide,82,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfacetamide,22.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfacetamide,61.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfacetamide,20.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfacetamide,48.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfacetamide,46.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfacetamide,35.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfacetamide,58.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfacetamide,65.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfacetamide,13.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfacetamide,16.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfacetamide,44,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfacetamide,16.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfacetamide,18.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfacetamide,14.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfacetamide,15.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfacetamide,20,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfacetamide,36.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Sulfacetamide,112,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Sulfacetamide,82.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Sulfacetamide,66.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Sulfacetamide,41.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Sulfacetamide,36.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Sulfacetamide,14.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Sulfadiazine,12.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Sulfadiazine,62.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Sulfadiazine,35.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Sulfadiazine,38.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Sulfadiazine,34.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Sulfadiazine,15.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Sulfadiazine,5.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Sulfadiazine,16.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Sulfadiazine,21.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Sulfadiazine,14.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Sulfadiazine,28.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Sulfadiazine,70.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Sulfadiazine,71.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Sulfadiazine,16.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Sulfadiazine,13.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Sulfadiazine,12.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Sulfadiazine,24.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Sulfadiazine,12.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Sulfadiazine,19.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Sulfadiazine,15.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Sulfadiazine,17.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Sulfadiazine,61.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Sulfadiazine,86.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Sulfadiazine,40.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Sulfadiazine,47.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Sulfadiazine,17.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Sulfadiazine,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Sulfadiazine,33.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Sulfadiazine,15.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Sulfadiazine,15.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Sulfadiazine,22.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Sulfadiazine,15,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfadiazine,18.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfadiazine,24.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfadiazine,56.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfadiazine,17.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfadiazine,20.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfadiazine,38.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfadiazine,31.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfadiazine,45.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfadiazine,57,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfadiazine,7.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfadiazine,17.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfadiazine,44.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfadiazine,14.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfadiazine,15.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfadiazine,16.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfadiazine,20.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfadiazine,18.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfadiazine,37.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Sulfamethazine,793.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Sulfamethazine,295.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Sulfamethazine,302.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Sulfamethazine,216.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Sulfamethazine,48.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Sulfamethazine,38.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Sulfamethazine,78.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Sulfamethazine,46.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Sulfamethazine,43,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Sulfamethazine,77.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Sulfamethazine,52.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Sulfamethazine,812.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Sulfamethazine,285.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Sulfamethazine,263.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Sulfamethazine,197,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Sulfamethazine,81.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Sulfamethazine,77,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Sulfamethazine,64.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Sulfamethazine,84.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Sulfamethazine,39.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Sulfamethazine,53.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Sulfamethazine,47.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Sulfamethazine,160.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Sulfamethazine,239.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Sulfamethazine,198.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Sulfamethazine,223.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Sulfamethazine,71.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Sulfamethazine,41,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Sulfamethazine,49.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Sulfamethazine,76.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Sulfamethazine,49.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Sulfamethazine,31.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Sulfamethazine,68.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethazine,293.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethazine,312.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethazine,246.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethazine,47.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethazine,197,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethazine,194.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethazine,49.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethazine,198.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethazine,160.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethazine,84.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethazine,81.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethazine,223.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethazine,76.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethazine,46.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethazine,68.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethazine,43,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethazine,52.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethazine,48.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Sulfamethoxazole,165.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Sulfamethoxazole,76.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Sulfamethoxazole,153.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Sulfamethoxazole,191,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Sulfamethoxazole,32.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Sulfamethoxazole,26.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Sulfamethoxazole,6.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Sulfamethoxazole,26.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Sulfamethoxazole,32.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Sulfamethoxazole,27.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Sulfamethoxazole,23.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Sulfamethoxazole,66.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Sulfamethoxazole,194.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Sulfamethoxazole,120.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Sulfamethoxazole,85.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Sulfamethoxazole,52.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Sulfamethoxazole,18.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Sulfamethoxazole,56.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Sulfamethoxazole,37.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Sulfamethoxazole,24.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Sulfamethoxazole,31.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Sulfamethoxazole,18.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Sulfamethoxazole,161.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Sulfamethoxazole,102.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Sulfamethoxazole,50.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Sulfamethoxazole,56.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Sulfamethoxazole,80,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Sulfamethoxazole,69.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Sulfamethoxazole,36.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Sulfamethoxazole,18.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Sulfamethoxazole,39,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Sulfamethoxazole,55.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Sulfamethoxazole,60,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethoxazole,165.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethoxazole,66.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfamethoxazole,191,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethoxazole,18.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethoxazole,85.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfamethoxazole,156.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethoxazole,36.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethoxazole,50.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfamethoxazole,161.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethoxazole,37.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethoxazole,52.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfamethoxazole,56.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethoxazole,18.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethoxazole,26.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfamethoxazole,60,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethoxazole,32.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethoxazole,23.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfamethoxazole,32.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Sulfapyridine,76.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Sulfapyridine,160.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Sulfapyridine,112.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Sulfapyridine,95.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Sulfapyridine,36,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Sulfapyridine,25.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Sulfapyridine,10.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Sulfapyridine,18.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Sulfapyridine,22.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Sulfapyridine,23.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Sulfapyridine,25.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Sulfapyridine,40.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Sulfapyridine,234.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Sulfapyridine,129.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Sulfapyridine,164.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Sulfapyridine,16,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Sulfapyridine,23.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Sulfapyridine,28.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Sulfapyridine,17.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Sulfapyridine,21.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Sulfapyridine,24.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Sulfapyridine,25.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Sulfapyridine,86.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Sulfapyridine,68.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Sulfapyridine,83.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Sulfapyridine,70.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Sulfapyridine,30.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Sulfapyridine,35.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Sulfapyridine,41.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Sulfapyridine,33.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Sulfapyridine,33.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Sulfapyridine,39.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Sulfapyridine,31.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfapyridine,76.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfapyridine,40.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Sulfapyridine,95.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfapyridine,25.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfapyridine,164.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Sulfapyridine,68.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfapyridine,41.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfapyridine,83.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Sulfapyridine,86.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfapyridine,17.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfapyridine,16,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Sulfapyridine,70.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfapyridine,33.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfapyridine,18.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Sulfapyridine,31.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfapyridine,22.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfapyridine,25.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Sulfapyridine,36,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Tetracycline,6.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Tetracycline,12,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Tetracycline,17.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Tetracycline,14.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Tetracycline,62.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Tetracycline,19.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Tetracycline,100.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Tetracycline,66.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Tetracycline,10.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Tetracycline,3.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Tetracycline,14.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Tetracycline,13.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Tetracycline,65.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Tetracycline,52.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Tetracycline,14.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Tetracycline,84.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Tetracycline,19.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2016,,Tetracycline,23.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Tetracycline,14.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Tetracycline,4.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Tetracycline,11.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Tetracycline,3.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Tetracycline,40.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Tetracycline,98.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Tetracycline,12.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Tetracycline,13.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Tetracycline,14.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Tetracycline,39.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Tetracycline,35.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Tetracycline,33,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Tetracycline,9.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Tetracycline,10.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Tetracycline,5.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Tetracycline,36.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Tetracycline,23.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Tetracycline,19.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Tetracycline,43.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Tetracycline,29.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Tetracycline,18.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Tetracycline,35.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Tetracycline,27.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Tetracycline,20.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Tetracycline,64.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Tetracycline,59.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Tetracycline,53.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Tetracycline,53,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Tetracycline,56.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Tetracycline,35.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Tetracycline,40.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Tetracycline,34.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Tetracycline,52.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2015,,Trimethoprim,506.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2015,,Trimethoprim,121,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2015,,Trimethoprim,117.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2015,,Trimethoprim,70.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2015,,Trimethoprim,39.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2015,,Trimethoprim,24.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2015,,Trimethoprim,46,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2015,,Trimethoprim,43.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2015,,Trimethoprim,38.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2015,,Trimethoprim,31.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2015,,Trimethoprim,10.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2016,,Trimethoprim,132.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2016,,Trimethoprim,69.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2016,,Trimethoprim,107.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2016,,Trimethoprim,203.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2016,,Trimethoprim,68.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2016,,Trimethoprim,21.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2016,,Trimethoprim,59.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2016,,Trimethoprim,24.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2016,,Trimethoprim,32.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2016,,Trimethoprim,46.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2017,,Trimethoprim,33.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2017,,Trimethoprim,244.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2017,,Trimethoprim,240.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z4",2017,,Trimethoprim,110.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z5",2017,,Trimethoprim,33.1,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z6",2017,,Trimethoprim,43.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z7",2017,,Trimethoprim,41.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z8",2017,,Trimethoprim,64.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2017,,Trimethoprim,4.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2017,,Trimethoprim,20.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2017,,Trimethoprim,13,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Trimethoprim,156.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Trimethoprim,132.3,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z1",2018,,Trimethoprim,170.9,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Trimethoprim,46.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Trimethoprim,203.6,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z2",2018,,Trimethoprim,108.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Trimethoprim,41.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Trimethoprim,160.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z3",2018,,Trimethoprim,93.5,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Trimethoprim,59.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Trimethoprim,68.8,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z9",2018,,Trimethoprim,110.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Trimethoprim,64.7,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Trimethoprim,43.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z10",2018,,Trimethoprim,13,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Trimethoprim,38.2,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Trimethoprim,10.4,,ng/g (dw),N43
+sediment,Guangdong,"Pearl River, site Z11",2018,,Trimethoprim,39.3,,ng/g (dw),N43
+sediment,Henan,Jian'gang Reservoir outlet,2025,,Azithromycin,14.23,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir inlet,2025,,Azithromycin,2.09,,ng/g,N44
+sediment,Henan,Linqi Reservoir inlet,2025,,Chlortetracycline,1.33,,ng/g,N44
+sediment,Henan,Linqi Reservoir outlet,2025,,Chlortetracycline,5.47,,ng/g,N44
+sediment,Henan,Jian'gang Reservoir inlet,2025,,Chlortetracycline,1.23,,ng/g,N44
+sediment,Henan,Jian'gang Reservoir outlet,2025,,Chlortetracycline,1.28,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir inlet,2025,,Chlortetracycline,1.34,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Chlortetracycline,1.43,,ng/g,N44
+sediment,Henan,Linqi Reservoir inlet,2025,,Enrofloxacin,2.48,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir inlet,2025,,Enrofloxacin,4.71,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Enrofloxacin,3.16,,ng/g,N44
+sediment,Henan,Jian'gang Reservoir inlet,2025,,Lomefloxacin,8.57,,ng/g,N44
+sediment,Henan,Jian'gang Reservoir inlet,2025,,Norfloxacin,10.39,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Norfloxacin,12.99,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Oxytetracycline,1.36,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir inlet,2025,,Roxithromycin,0.31,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Roxithromycin,0.48,,ng/g,N44
+sediment,Henan,Linqi Reservoir outlet,2025,,Sulfadiazine,0.13,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Sulfadiazine,0.11,,ng/g,N44
+sediment,Henan,Linqi Reservoir outlet,2025,,Sulfamethoxazole,1.23,,ng/g,N44
+sediment,Henan,Jian'gang Reservoir outlet,2025,,Sulfamethoxazole,0.98,,ng/g,N44
+sediment,Henan,Linqi Reservoir inlet,2025,,Sulfapyridine,0.27,,ng/g,N44
+sediment,Henan,Linqi Reservoir outlet,2025,,Sulfapyridine,0.28,,ng/g,N44
+sediment,Henan,Linqi Reservoir inlet,2025,,Tetracycline,1.41,,ng/g,N44
+sediment,Henan,Heigangkou Reservoir outlet,2025,,Tetracycline,1.42,,ng/g,N44
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Chlortetracycline,50.33,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Chlortetracycline,52.98,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Chlortetracycline,18.54,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Chlortetracycline,96.85,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Chlortetracycline,28.21,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Chlortetracycline,49.68,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Chlortetracycline,16.12,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Chlortetracycline,85.15,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Ciprofloxacin,99.83,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Ciprofloxacin,123.96,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Ciprofloxacin,79.68,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Ciprofloxacin,451.79,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Ciprofloxacin,86.73,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Ciprofloxacin,107.31,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Ciprofloxacin,68.25,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Ciprofloxacin,316.84,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,105.76,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,116.56,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,122.1,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,135.17,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,321.42,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,458.49,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,84.89,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Norfloxacin,97.5,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,106.53,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,122.62,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,125.37,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,422.56,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,47.87,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,491.53,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,87.72,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Ofloxacin,89.93,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Oxytetracycline,40.41,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Oxytetracycline,44.87,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Oxytetracycline,36.22,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Oxytetracycline,256.7,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Oxytetracycline,42.3,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Oxytetracycline,36.62,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Oxytetracycline,62.33,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Oxytetracycline,101.67,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Roxithromycin,170.4,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Roxithromycin,46.23,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Roxithromycin,78.19,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Roxithromycin,353.33,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Roxithromycin,148.2,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Roxithromycin,34.14,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Roxithromycin,62.42,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Roxithromycin,270.22,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,103.14,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,110.25,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,117.63,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,133.34,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,142.6,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,145.7,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,87.67,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfadiazine,96.48,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,121.98,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,140.55,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,164.26,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,171.6,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,213.65,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,217.34,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,235.8,,ng/L,N45
+municipal wastewater influent,Hebei,,2023,,Sulfamethoxazole,275.04,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Tetracycline,76.83,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Tetracycline,18.03,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Tetracycline,14.72,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan urban WWTPs,2023,,Tetracycline,104.23,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Tetracycline,61.19,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Tetracycline,14.17,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Tetracycline,12.88,,ng/L,N45
+municipal wastewater influent,Hebei,Tangshan suburban WWTPs,2023,,Tetracycline,71.22,,ng/L,N45
+municipal sludge,Guangdong,"Guangzhou, Huangpu district, Kaifaqu",2005,,Erythromycin-H2O,76,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Erythromycin-H2O,195,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Huangpu district, Kaifaqu",2005,,Norfloxacin,301,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Norfloxacin,40,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Huangpu district, Kaifaqu",2005,,Ofloxacin,227,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Ofloxacin,886,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Huangpu district, Kaifaqu",2005,,Roxithromycin,40,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Roxithromycin,64,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Sulfadimidine,31,,ng/g,N46
+municipal sludge,Guangdong,"Guangzhou, Tianhe district, Liede",2005,,Sulfamethoxazole,20,,ng/g,N46
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Chloramphenicol,,3.44,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Ciprofloxacin,,19.43,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Florfenicol,,32.39,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Florfenicol,,34.61,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Norfloxacin,,32.48,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Trimethoprim,,3.16,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,Trimethoprim,,20.97,ng/L,N47
+surface water,Zhejiang,southern Tai Lake aquaculture ponds,2024,,sulfonamides,,8.83,ng/L,N47
+municipal sludge,Beijing,,2015–2016,,Ofloxacin,2982.61,11138.52,µg/kg (dw),N5
+municipal sludge,Beijing,,2015–2016,,Ofloxacin (OFL),2982.61,11138.52,µg/kg (dw),N5
+municipal sludge,Shandong,Jinan,2018,,Doxycycline,,41.58,µg/kg (dw),N51
+municipal wastewater effluent,Shandong,Jinan,2018,,Doxycycline,,5.43,ng/L,N51
+municipal wastewater effluent,Shandong,Jinan,2018,,Levofloxacin,204.74,933.24,ng/L,N51
+municipal wastewater effluent,Shandong,Jinan,2018,,Roxithromycin,,164.55,ng/L,N51
+municipal wastewater effluent,Shandong,Jinan,2018,,Sulfamethoxazole,,46.89,ng/L,N51
+municipal wastewater influent,Shandong,Jinan,2018,,Doxycycline,,5.55,ng/L,N51
+municipal wastewater influent,Shandong,Jinan,2018,,Levofloxacin,461.31,1981.42,ng/L,N51
+municipal wastewater influent,Shandong,Jinan,2018,,Roxithromycin,,215.62,ng/L,N51
+municipal wastewater influent,Shandong,Jinan,2018,,Sulfamethoxazole,,338.89,ng/L,N51
+municipal wastewater effluent,Anhui,Wuhu,2021–2022,,Ofloxacin,226,1979.2,ng/L,N52
+municipal wastewater effluent,Anhui,Wuhu,2021–2022,,Sulfachloropyridazine,12.3,298.9,ng/L,N52
+municipal wastewater effluent,Anhui,Wuhu,2021–2022,,Sulfamethoxazole,4.8,20.9,ng/L,N52
+municipal wastewater effluent,Anhui,Wuhu,2021–2022,,Sulfapyridine,6.7,40.1,ng/L,N52
+municipal wastewater effluent,Anhui,Wuhu,2021–2022,,Trimethoprim,1.7,10.7,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Ciprofloxacin,,18.5,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Enrofloxacin,14.8,292.7,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Lincomycin,42.9,,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Norfloxacin,112.1,843.8,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Ofloxacin,587.4,2843.8,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Sulfachloropyridazine,6.6,247.9,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Sulfadiazine,1.3,14.6,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Sulfamethoxazole,12.9,125.6,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Sulfapyridine,12.8,96.6,ng/L,N52
+municipal wastewater influent,Anhui,Wuhu,2021–2022,,Trimethoprim,9.5,35.6,ng/L,N52
+hospital wastewater,Heilongjiang,Harbin,2019,,Azithromycin,92,98.5,ng/L,N53
+hospital wastewater,Heilongjiang,Harbin,2019,,Cefadroxil,15.2,18.3,ng/L,N53
+hospital wastewater,Heilongjiang,Harbin,2019,,Ofloxacin,6.86,8.63,ng/L,N53
+hospital wastewater,Heilongjiang,Harbin,2019,,Roxithromycin,19.6,32.7,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Azithromycin,368,32800,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Enrofloxacin,921,3870,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Ofloxacin,88.8,159,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Roxithromycin,104,261,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Sulfadiazine,128,1350,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Sulfamethazine,14.3,24.6,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Sulfamethoxazole,5.09,18,ng/L,N53
+livestock wastewater,Heilongjiang,Harbin,2019,,Tylosin,77.8,4590,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Ampicillin,310,1460,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Azithromycin,357,862,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Azithromycin,85.5,125,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Enrofloxacin,1.82,7.27,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Ofloxacin,181,330,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Roxithromycin,497,1419,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Sulfadiazine,2.85,11.4,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Sulfamethazine,1.29,5.16,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Sulfamethoxazole,76.2,454,ng/L,N53
+municipal wastewater influent,Heilongjiang,Harbin,2019,,Sulfamethoxazole,91.6,130,ng/L,N53
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Erythromycin,19.24,,ng/L,N54
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Ofloxacin,13.41,,ng/L,N54
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Ofloxacin,455.71,,ng/L,N54
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Roxithromycin,5.59,,ng/L,N54
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Roxithromycin,1.94,,ng/L,N54
+pharmaceutical wastewater,Hebei,PMF1 (Hebei),2020–2021,,Erythromycin,10.49,,ng/L,N54
+pharmaceutical wastewater,Hebei,PMF1 (Hebei),2020–2021,,Erythromycin,31.81,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Clarithromycin,3.82,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Clarithromycin,45.26,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Erythromycin,41.31,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Erythromycin,100.53,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Norfloxacin,109.01,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Ofloxacin,179.03,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Ofloxacin,10.47,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Roxithromycin,68.26,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Roxithromycin,42.04,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Sulfadiazine,2.92,,ng/L,N54
+pharmaceutical wastewater,Jiangsu,PMF2 (Jiangsu),2020–2021,,Sulfadiazine,3.71,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Ciprofloxacin,4.71,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Ciprofloxacin,33.58,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Erythromycin,9.01,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Lincomycin,3.6,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Ofloxacin,35.12,,ng/L,N54
+pharmaceutical wastewater,Zhejiang,PMF3 (Zhejiang),2020–2021,,Ofloxacin,18.77,,ng/L,N54
+groundwater,Jiangxi,Jinjiang River Basin,2019–2021,,Azithromycin,4.07,12.2,ng/L,N55
+groundwater,Jiangxi,Jinjiang River Basin,2019–2021,,Tetracycline,9.11,26.04,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Norfloxacin,40.98,156.44,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Roxithromycin,32.88,53.58,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Sulfamethoxazole,33.65,62.24,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Azithromycin,3.64,32.15,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Chlortetracycline,2.76,13.03,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Ciprofloxacin,0.35,1.17,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Clarithromycin,0.47,1.05,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Enoxacin,3.5,9.16,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Enrofloxacin,2.68,19.96,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Erythromycin,10.27,24.61,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Norfloxacin,1.35,8.27,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Ofloxacin,2.66,9.31,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Oxytetracycline,9.75,30.43,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Roxithromycin,22.52,59.99,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Sulfadiazine,9.63,35.48,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Sulfamethazine,5.45,19.35,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Sulfamethoxazole,188.95,409.96,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Tetracycline,7.01,33.9,ng/L,N55
+municipal wastewater effluent,Sichuan,Southeast Sichuan (40 township WWTPs),2020,,Ofloxacin,,1147.9,ng/L,N56
+municipal wastewater effluent,Sichuan,Southeast Sichuan (40 township WWTPs),2020,,Total antibiotics (sum),242.06,575.07,ng/L,N56
+municipal wastewater influent,Sichuan,Southeast Sichuan (40 township WWTPs),2020,,Ofloxacin,,2935.4,ng/L,N56
+municipal wastewater influent,Sichuan,Southeast Sichuan (40 township WWTPs),2020,,Total antibiotics (sum),370.67,1220.34,ng/L,N56
+municipal wastewater effluent,Beijing,Beijing,2022–2023,,Sulfonamides + aminophenyl sulfone compounds (cumulative),723,,ng/L,N58
+municipal wastewater effluent,Shandong,Qingdao,2022–2023,,Sulfonamides + aminophenyl sulfone compounds (cumulative),378,,ng/L,N58
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Erythromycin,20,,ng/L,N59
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Ofloxacin,31.1,,ng/L,N59
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Roxithromycin,37.6,,ng/L,N59
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Total antibiotics (sum),,411,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Erythromycin,50.2,,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Ofloxacin,77.4,,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Roxithromycin,68,,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Total antibiotics (sum),,1025,ng/L,N59
+surface water,Hunan,Zijiang River (downstream of STPs),2022,,Total antibiotics (sum),81.9,213,ng/L,N59
+surface water,Hunan,Zijiang River (upstream of STPs),2022,,Total antibiotics (sum),50.6,85.8,ng/L,N59
+MSW incineration leachate,Henan,Luoyang MSW incineration plant,2022–2024,,Sulfamethoxazole,1401.5,,ng/L,N63
+MSW incineration leachate,Shanxi,Taiyuan MSW incineration plant,2022–2024,,Sulfamethoxazole,3085,,ng/L,N63
+municipal wastewater influent,Jiangsu,"Caoqiao WWTP, Wuxi (Taihu Lake Basin)",2022–2023,,Azithromycin,998,,ng/L,N66
+municipal wastewater influent,Jiangsu,"Caoqiao WWTP, Wuxi (Taihu Lake Basin)",2022–2023,,Clarithromycin,77,,ng/L,N66
+municipal wastewater influent,Jiangsu,"Caoqiao WWTP, Wuxi (Taihu Lake Basin)",2022–2023,,Erythromycin,684,,ng/L,N66
+municipal wastewater influent,Jiangsu,"Caoqiao WWTP, Wuxi (Taihu Lake Basin)",2022–2023,,Erythromycin-H2O,1782,,ng/L,N66
+municipal wastewater influent,Jiangsu,"Caoqiao WWTP, Wuxi (Taihu Lake Basin)",2022–2023,,Roxithromycin,597,,ng/L,N66
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Fluoroquinolones (sum),252,973,ng/L,N67
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Lincosamides (sum),16.4,384,ng/L,N67
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Macrolides (sum),88.8,311,ng/L,N67
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Sulfonamides (sum),69.8,416,ng/L,N67
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Total antibiotics (sum),,1280,ng/L,N67
+municipal wastewater (urban sewer),Heilongjiang,"Majia River drainage area, Harbin (urban sewer)",2023–2024,,Trimethoprim,3.29,79.5,ng/L,N67
+municipal sludge,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Total antibiotics (sum),0.8,,ng/g (dw),N68
+municipal wastewater effluent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Azithromycin,90,,ng/L,N68
+municipal wastewater effluent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Clindamycin,30.2,,ng/L,N68
+municipal wastewater effluent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Ofloxacin,331.5,,ng/L,N68
+municipal wastewater influent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Macrolides (sum),,334.5,ng/L,N68
+municipal wastewater influent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Norfloxacin,101.1,,ng/L,N68
+municipal wastewater influent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Ofloxacin,472.6,,ng/L,N68
+municipal wastewater influent,Xinjiang,"8 WWTPs in Tianshan Mountain basin, Northwest China",2024–2025,,Total antibiotics (sum),,1521.6,ng/L,N68
+municipal sludge,Beijing,"Municipal WWTP, Beijing",2023–2024,,Ofloxacin,11.83,,µg/L,N69
+municipal sludge,Beijing,"Municipal WWTP, Beijing",2023–2024,,Oxytetracycline,7.26,,µg/L,N69
+municipal wastewater effluent,Beijing,"Municipal WWTP, Beijing",2023–2024,,Norfloxacin,12.19,,µg/L,N69
+municipal wastewater influent,Beijing,"Municipal WWTP, Beijing",2023–2024,,Norfloxacin,19.2,,µg/L,N69
+municipal wastewater influent,Beijing,"Municipal WWTP, Beijing",2023–2024,,Total quinolones (sum),,44.79,µg/L,N69
+municipal wastewater effluent,Guangdong,"WWTP_MS A/O, Shenzhen",2024–2025,,Total antibiotics (sum),590.03,,ng/L,N70
+municipal wastewater effluent,Guangdong,"WWTP_MBR, Shenzhen",2024–2025,,Total antibiotics (sum),828.91,,ng/L,N70
+municipal wastewater influent,Guangdong,"2 WWTPs, Shenzhen",2024–2025,,Ofloxacin,,542,ng/L,N70
+municipal wastewater influent,Guangdong,"2 WWTPs, Shenzhen",2024–2025,,Sulfadiazine,,5,ng/L,N70
+municipal wastewater influent,Guangdong,"WWTP_MS A/O, Shenzhen",2024–2025,,Total antibiotics (sum),1865.52,,ng/L,N70
+municipal wastewater influent,Guangdong,"WWTP_MBR, Shenzhen",2024–2025,,Total antibiotics (sum),1573.93,,ng/L,N70
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Chlortetracycline,0.58,0.7,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Doxycycline,0.09,0.11,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Norfloxacin,9.05,12.92,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Ofloxacin,2.59,2.7,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Oxytetracycline,0.43,0.71,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Sulfadiazine,0.05,0.1,ng/g (dw),N71
+surface sediment,Jiangsu,"Taihu Lake (7 sites: Tuoshan, Manshan, Central, Southwest, SE, S, Yixing)",2017–2018,,Tetracycline,0.53,0.7,ng/g (dw),N71
+agricultural soil,Jiangsu,Zhangjiagang city (ZJG) farmland,2021–2022,,Fluoroquinolones (sum),30,458.3,ng/g (dw),N73
+agricultural soil,Jiangsu,Zhangjiagang city (ZJG) farmland,2021–2022,,Macrolides (sum),4.94,,ng/g (dw),N73
+agricultural soil,Jiangsu,Zhangjiagang city (ZJG) farmland,2021–2022,,Sulfonamides (sum),2.08,,ng/g (dw),N73
+agricultural soil,Jiangsu,Zhangjiagang city (ZJG) farmland,2021–2022,,Tetracyclines (sum),3.94,,ng/g (dw),N73
+agricultural soil,Jiangsu,Zhangjiagang city (ZJG) farmland,2021–2022,,Total antibiotics (sum),54.38,689.58,ng/g (dw),N73
+surface sediment,Jiangsu,"Irrigation river sediments, Zhangjiagang city",2021–2022,,Total antibiotics (sum),,658,ng/g (dw),N73
+surface water,Jiangsu,"Irrigation rivers, Zhangjiagang city",2021–2022,,Total antibiotics (sum),,1547.06,ng/L,N73
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Fluoroquinolones (sum),725.03,5835.89,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Fluoroquinolones (sum),231.87,1205.21,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Macrolides (sum),43.05,149.44,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Macrolides (sum),162.26,2410.84,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Sulfonamides (sum),123.79,835.32,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Tetracyclines (sum),107.82,401.19,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Tetracyclines (sum),77.03,442.27,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Total antibiotics (sum),,6515.99,ng/L,N74
+surface water,Jiangsu,"Lower Yangtze River, Jiangsu section (19 drinking water sources)",2021–2022,,Total antibiotics (sum),,2562.59,ng/L,N74
+surface water,Hunan,Zijiang River (middle Yangtze River tributary),2022,,Erythromycin-H2O,,14.7,ng/L,N75
+surface water,Hunan,Zijiang River (middle Yangtze River tributary),2022,,Ofloxacin,4.36,,ng/L,N75
+surface water,Hunan,Zijiang River (middle Yangtze River tributary),2022,,Total antibiotics (sum),,91.4,ng/L,N75
+surface water,Hunan,Zijiang River (middle Yangtze River tributary),2022,,Total antibiotics (sum),,34.7,ng/L,N75
+surface sediment,Jiangsu,Luoma Lake (LML),2020–2022,,"Macrolides (sum, dominant class in sediment)",,3.7,ng/g (dw),N76
+surface sediment,Tianjin,Yuqiao Reservoir (YQR),2020–2022,,"Macrolides (sum, dominant class in sediment)",,22.3,ng/g (dw),N76
+lake sediment,Hubei,"Honghu Lake, Liangzi Lake, Daye Lake, East Lake (Wuhan), Middle Yangtze River",2021–2022,,Enrofloxacin,40.7,,ng/g (dw),N78
+lake sediment,Hubei,"Honghu Lake, Liangzi Lake, Daye Lake, East Lake (Wuhan), Middle Yangtze River",2021–2022,,Erythromycin,1447.4,,ng/g (dw),N78
+lake sediment,Hubei,"Honghu Lake, Liangzi Lake, Daye Lake, East Lake (Wuhan), Middle Yangtze River",2021–2022,,Oxytetracycline,62.6,,ng/g (dw),N78
+lake sediment,Hubei,"Honghu Lake, Liangzi Lake, Daye Lake, East Lake (Wuhan), Middle Yangtze River",2021–2022,,Sulfamethoxazole,443.7,,ng/g (dw),N78
+lake sediment,Hubei,"Honghu Lake, Liangzi Lake, Daye Lake, East Lake (Wuhan), Middle Yangtze River",2021–2022,,Tetracycline,2.1,,ng/g (dw),N78
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Chlortetracycline (CTC),26.94,150.6,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Ciprofloxacin,1.38,3.21,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Doxycycline,46.77,167.42,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Enrofloxacin,17.29,25.56,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Norfloxacin,3.4,9.94,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Sulfacetamide (SAAM),19.01,36.18,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Sulfaquinoxaline (SQX),102.92,451.39,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Tetracycline,39.43,111.52,ng/L,N79
+river water (suspended matter fraction),Shanxi,Fen River Basin (23 sites),2021,,Total antibiotics (sum),463.56,1976.73,ng/L,N79
+aquaculture wastewater,Jiangsu,"Freshwater finfish ponds, Nanjing and Yixing (lower Yangtze River Basin)",2021,,Pimaricin (PMY),62.24,,ng/L,N80
+aquaculture wastewater,Jiangsu,"Freshwater finfish ponds, Nanjing and Yixing (lower Yangtze River Basin)",2021,,Sulfamethoxazole,53.82,,ng/L,N80
+aquaculture wastewater,Jiangsu,"Freshwater finfish ponds, Nanjing and Yixing (lower Yangtze River Basin)",2021,,Sulfonamides (sum),105.95,,ng/L,N80
+groundwater,Hebei,"12 groundwater sites, Shijiazhuang City",2022–2023,,Ciprofloxacin,1.37,14.79,ng/L,N81
+groundwater,Hebei,"12 groundwater sites, Shijiazhuang City",2022–2023,,Difloxacin (DIF),34.81,97.4,ng/L,N81
+groundwater,Hebei,"12 groundwater sites, Shijiazhuang City",2022–2023,,Enrofloxacin,159.4,1010,ng/L,N81
+groundwater,Hebei,"12 groundwater sites, Shijiazhuang City",2022–2023,,Norfloxacin,44.65,106.4,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Difloxacin (DIF),280.9,922,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Enrofloxacin,282.7,1675,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Flumequine (FLU),139.8,569.6,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Norfloxacin,9.32,19.84,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Ofloxacin,,1065,ng/L,N81
+surface water,Hebei,"9 ERURs, Shijiazhuang City",2022–2023,,Sarafloxacin (SAR),157.8,464.8,ng/L,N81
+surface water,Chongqing,"Yangtze River upstream (Chongqing, W1-W6/J1-J7/Y1-Y15)",2023,,Total antibiotics (sum),525.4,,ng/L,N82
+aquaculture pond water,Zhejiang,"26 freshwater aquaculture ponds, Zhoushan, NE Zhejiang",2022–2023,,Enrofloxacin,8,,ng/L,N83
+aquaculture pond water,Zhejiang,"26 freshwater aquaculture ponds, Zhoushan, NE Zhejiang",2022–2023,,Sulfamethazine (SMZ),2.5,,ng/L,N83
+municipal wastewater effluent,Shaanxi,WWTP effluent (W1) discharging to Weihe River,2021,,Azithromycin,735.89,,ng/L,N84
+municipal wastewater effluent,Shaanxi,WWTP effluent (W1) discharging to Weihe River,2021,,Clarithromycin,73.82,,ng/L,N84
+municipal wastewater effluent,Shaanxi,WWTP effluent (W1) discharging to Weihe River,2021,,Erythromycin,40.59,,ng/L,N84
+municipal wastewater effluent,Shaanxi,WWTP effluent (W1) discharging to Weihe River,2021,,Roxithromycin,200.47,,ng/L,N84
+surface water,Shaanxi,"Weihe River mainstream (8 main stream sites, M1-M8)",2021,,Azithromycin,27.97,,ng/L,N84
+surface water,Shaanxi,"Weihe River tributaries (8 tributary sites, T1-T8)",2021,,Azithromycin,34.82,,ng/L,N84
+surface water,Shaanxi,"Weihe River mainstream (8 main stream sites, M1-M8)",2021,,Clarithromycin,12.28,,ng/L,N84
+surface water,Shaanxi,"Weihe River tributaries (8 tributary sites, T1-T8)",2021,,Clarithromycin,20.87,,ng/L,N84
+surface water,Shaanxi,"Weihe River mainstream (8 main stream sites, M1-M8)",2021,,Erythromycin,21.94,,ng/L,N84
+surface water,Shaanxi,"Weihe River tributaries (8 tributary sites, T1-T8)",2021,,Erythromycin,15.69,,ng/L,N84
+surface water,Shaanxi,"Weihe River mainstream (8 main stream sites, M1-M8)",2021,,Roxithromycin,23.93,,ng/L,N84
+surface water,Shaanxi,"Weihe River tributaries (8 tributary sites, T1-T8)",2021,,Roxithromycin,31.98,,ng/L,N84
+surface water,Jilin,"Shitoukoumen Reservoir, Jilin Province",2022–2023,,Enrofloxacin,,9.6,ng/L,N85
+surface water,Jilin,"Shitoukoumen Reservoir, Jilin Province",2022–2023,,Norfloxacin,,103.5,ng/L,N85
+surface water,Jilin,4 inflow rivers to Shitoukoumen Reservoir,2022–2023,,Norfloxacin,,79.5,ng/L,N85
+surface water,Jilin,"Shitoukoumen Reservoir, Jilin Province",2022–2023,,Ofloxacin,18.6,338,ng/L,N85
+surface water,Jilin,"4 inflow rivers to Shitoukoumen Reservoir (Shuangyang, Yinma, Chalu, Songhua tributary)",2022–2023,,Ofloxacin,39.7,224.3,ng/L,N85
+river sediment,Shanxi,"Fen River (Fenhe River), Yellow River tributary",2022–2023,,Sulfonamides (sum),,14,ng/g (dw),N86
+river sediment,Shanxi,"Fen River (Fenhe River), downstream site S23",2022–2023,,Total antibiotics (sum),,146,ng/g (dw),N86
+surface water,Shanxi,"Fen River (Fenhe River), Yellow River tributary",2022–2023,,Sulfonamides (sum),,118,ng/L,N86
+surface water,Shanxi,"Fen River (Fenhe River), midstream site S8",2022–2023,,Total antibiotics (sum),,2212,ng/L,N86
+coastal/river sediment,Hainan,"Abandoned aquaculture sites – active discharge channel (Y3, Y16, Y55)",2021–2022,,Total antibiotics (sum),,29,ng/g (dw),N87
+surface water,Shandong,"Yellow River Delta (all sites, 2 seasons)",2023–2024,,Sulfonamides (sum),,56.8,ng/L,N88
+surface water,Shandong,"Yellow River (YR), upstream section of Yellow River Delta",2023–2024,,Total antibiotics (sum),,897,ng/L,N88
+surface water,Guangdong,Guangdong,2018,,Erythromycin-H2O (ETM-H2O),,263,ng/L,N42
+surface water,Guangdong,Guangdong,2013,,Sulfadimidine (SMD),,218,ng/L,N42
+sediment,Guangxi,Guangxi,2018,,Erythromycin-H2O (ETM-H2O),,0.57,ng/g (dw),N42
+municipal wastewater influent,Heilongjiang,Heilongjiang,2024,,Norfloxacin,,32381.6,ng/L,N18
+municipal wastewater influent,Heilongjiang,Heilongjiang,2024,,Ofloxacin,,11173.3,ng/L,N18
+sediment,Liaoning,Liaoning,2013,,Tetracycline (TC),1.66,1.74,ng/g (dw),N42
+surface water,Shandong,Shandong,2019,,Enrofloxacin (ENR),5.74,14.06,ng/L,N42
+surface water,Shandong,Shandong,2019,,Ofloxacin (OFL),,30.79,ng/L,N42
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Lincomycin,133.05,,ng/L,N54
+pharmaceutical wastewater,Guangdong,PMF4 (Guangdong),2020–2021,,Lincomycin,252.33,,ng/L,N54
+pharmaceutical wastewater,Hebei,PMF1 (Hebei),2020–2021,,Lincomycin,15.3,,ng/L,N54
+pharmaceutical wastewater,Hebei,PMF1 (Hebei),2020–2021,,Metacycline,16.87,,ng/L,N54
+pharmaceutical wastewater,Hebei,PMF1 (Hebei),2020–2021,,Metacycline,31.76,,ng/L,N54
+surface water,Heilongjiang,Xiaoxingkai Lake (XXL),2020–2022,,multiple classes,,26.3,ng/L,N76
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Amoxicillin,74.4,,ng/L,N59
+municipal wastewater effluent,Hunan,Zijiang River basin (12 STPs),2022,,Sulfamonomethoxine,19.1,,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Amoxicillin,170,,ng/L,N59
+municipal wastewater influent,Hunan,Zijiang River basin (12 STPs),2022,,Sulfamonomethoxine,49.8,,ng/L,N59
+aquaculture wastewater,Jiangsu,"Freshwater finfish ponds, Nanjing and Yixing (lower Yangtze River Basin)",2021,,Florfenicol,102.41,,ng/L,N80
+aquaculture wastewater,Jiangsu,"Freshwater crustacean ponds, Nanjing and Yixing (lower Yangtze River Basin)",2021,,Ofloxacin,39.52,,ng/L,N80
+surface water,Jiangsu,Luoma Lake (LML),2020–2022,,multiple classes,,57.5,ng/L,N76
+groundwater,Jiangxi,Jinjiang River Basin,2019–2021,,Enoxacin,10.95,24.08,ng/L,N55
+groundwater,Jiangxi,Jinjiang River Basin,2019–2021,,Roxithromycin,13.48,16.75,ng/L,N55
+groundwater,Jiangxi,Jinjiang River Basin,2019–2021,,Sulfamethoxazole,9.18,14.21,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Ciprofloxacin,80.87,316.76,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Doxycycline,459.67,1838.68,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Enrofloxacin,331.67,1318.86,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Ofloxacin,84.09,250.41,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Oxytetracycline,459.57,1826.29,ng/L,N55
+livestock wastewater,Jiangxi,Jinjiang River Basin (pig farm effluent + domestic sewage),2021,,Sulfadiazine,42.34,169.2,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Metronidazole,1.72,6.89,ng/L,N55
+surface water,Jiangxi,Jinjiang River Basin,2019–2021,,Sulfathiazole,1.91,17.19,ng/L,N55
+surface water,Jilin,Songhua Lake (SHL),2020–2022,,multiple classes,,57.7,ng/L,N76
+surface water,Liaoning,Dahuofang Reservoir (DHR),2020–2022,,multiple classes,,40.5,ng/L,N76
+municipal wastewater effluent,Shaanxi,WWTP effluent (W1) discharging to Weihe River,2021,,Spiramycin,21.83,,ng/L,N84
+surface water,Shaanxi,"Weihe River mainstream (8 main stream sites, M1-M8)",2021,,Spiramycin,23.14,,ng/L,N84
+surface water,Shaanxi,"Weihe River tributaries (8 tributary sites, T1-T8)",2021,,Spiramycin,20.88,,ng/L,N84
+municipal wastewater influent,Sichuan,Southeast Sichuan (40 township WWTPs),2020,,Lincomycin,102.32,,ng/L,N56
+surface water,Tianjin,Yuqiao Reservoir (YQR),2020–2022,,multiple classes,,12.3,ng/L,N76
+aquaculture pond sediment,Zhejiang,"26 freshwater aquaculture ponds, Zhoushan, NE Zhejiang",2022–2023,,Total antibiotics (QNs+SAs),,1169.3,ng/g (dw),N83
+aquaculture pond water,Zhejiang,"26 freshwater aquaculture ponds, Zhoushan, NE Zhejiang",2022–2023,,Total antibiotics (QNs+SAs),15.7,92.2,ng/L,N83
+surface water,Hainan,,2024,,Amoxicillin (AMX),4.31,14.38,ng/L,N41
+surface water,Hainan,,2024,,Cefazolin (CZO),1.37,3.28,ng/L,N41
+surface water,Hainan,,2024,,Cephalexin (LEX),2.06,9.38,ng/L,N41
+surface water,Hainan,,2024,,Ciprofloxacin (CIP),0.12,1.96,ng/L,N41
+surface water,Hainan,,2024,,Florfenicol (FLR),5.18,47.28,ng/L,N41
+surface water,Hainan,,2024,,Lomefloxacin (LOM),0.53,1.46,ng/L,N41
+surface water,Hainan,,2024,,Norfloxacin (NOR),4.6,24.56,ng/L,N41
+surface water,Hainan,,2024,,Ofloxacin (OFX),0.81,5.54,ng/L,N41
+surface water,Hainan,,2024,,Pefloxacin (PEF),0.69,3.32,ng/L,N41
+surface water,Hainan,,2024,,Penicillin (PEN),2.49,4.02,ng/L,N41
+municipal wastewater influent,Zhejiang,,2024,,Ofloxacin,17,17,ng/L,N452
+surface water,Sichuan,成都市,2021,,Amoxicillin,4.6,4.6,ng/L,N454
+surface water,Hunan,洞庭湖流域,2016,,Norfloxacin,11.39,11.39,ng/L,N457
+surface water,Hunan,洞庭湖流域,2016,,Chlorotetracycline,47.22,47.22,ng/L,N457
+surface water,Hunan,洞庭湖流域,2016,,Ciprofloxacin,15.64,15.64,ng/L,N457
+municipal wastewater effluent,Hainan,Hainan,2013–2023,,Ciprofloxacin (CIP),1510,4060,ng/L,N39
+municipal wastewater effluent,Hainan,Hainan,2013–2023,,Ofloxacin (OFL),7283,19570,ng/L,N39
+surface water,Hainan,Hainan,2013–2023,,Ciprofloxacin (CIP),90.76,1069.06,ng/L,N39
+surface water,Hainan,Hainan,2013–2023,,Sulfamethoxazole (SMX),199.74,1070.4,ng/L,N39
+surface water,Hainan,Hainan,2013–2023,,Trimethoprim (TMP),14.32,182.61,ng/L,N39
+surface water,Shanxi,Fenhe River Basin,2022,,Azithromycin,,584,ng/L,N36
+surface water,Shanxi,Fenhe River Basin,2022,,Azithromycin,97.33,238.91,ng/L,N36
+surface water,Shanxi,Fenhe River Basin,2022,,Total Quinolones (QNs),414,,ng/L,N36
+surface water,Shanxi,Fenhe River Basin,2022,,Total Tetracyclines (TCs),413.6,,ng/L,N36
+surface water,Anhui,Anqing,2020,,Sulfadiazine,2.26,5.77,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Sulfamerazine,4.57,27.4,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Sulfadimethoxine,0.37,2.31,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Trimethoprim,4.76,20.0,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Ciprofloxacin,42.9,99.5,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Enrofloxacin,17.2,43.6,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Ofloxacin,11.1,24.5,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Norfloxacin,30.4,48.6,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Roxithromycin,1.2,,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Erythromycin-H2O,12.3,29.5,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Clarithromycin,0.98,7.82,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Tetracycline,63.1,225,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Oxytetracycline,9.65,13.5,ng/L,NEW_ANHUI_CHEN_2021
+surface water,Anhui,Anqing,2020,,Clindamycin,1.76,6.42,ng/L,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Ciprofloxacin,1.28,6.94,ug/kg,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Norfloxacin,2.81,16.7,ug/kg,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Erythromycin-H2O,1.19,4.29,ug/kg,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Clarithromycin,2.26,17.3,ug/kg,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Tetracycline,23.3,43.3,ug/kg,NEW_ANHUI_CHEN_2021
+soil/sediment combined,Anhui,Anqing,2020,,Oxytetracycline,8.6,24.3,ug/kg,NEW_ANHUI_CHEN_2021
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Sulfamethoxazole,20.1,44.1,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Sulfamerazine,4.4,10.8,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Sulfadiazine,0.9,1.5,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Ofloxacin,67.1,284.9,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Enrofloxacin,23.7,49.3,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Ciprofloxacin,11.2,23.7,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Norfloxacin,35.8,83.8,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Oxytetracycline,174.9,835.1,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Tetracycline,12.2,14.6,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Erythromycin,103.2,366.1,ng/L,NEW_JILIN_DONG_2016
+surface water,Jilin,"Liao River, Jilin section",2015,summer and autumn,Roxithromycin,48.2,130.4,ng/L,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Sulfamethoxazole,1.4,1.7,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Sulfadiazine,4.4,4.4,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Ofloxacin,152.2,362.1,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Ciprofloxacin,15.3,37.5,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Norfloxacin,62.8,240.4,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Oxytetracycline,149.5,425.4,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Tetracycline,37.3,86.6,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Erythromycin,23.4,67.5,ng/g,NEW_JILIN_DONG_2016
+sediment,Jilin,"Liao River, Jilin section",2015,summer and autumn,Roxithromycin,3.6,11.3,ng/g,NEW_JILIN_DONG_2016
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Tetracyclines (class summary),15.12,609.63,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Sulfonamides (class summary),3.59,7.13,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Macrolides (class summary),1.41,15.12,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Chlortetracycline,8.65,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Doxycycline,0.56,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Tetracycline,0.44,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Horqin Left Middle Banner,2022,pre-sowing,Oxytetracycline,0.26,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Dailiji town,2022,pre-sowing,Chlortetracycline,77.52,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Zhurihe town,2022,pre-sowing,Chlortetracycline,13.07,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Shebotu town,2022,pre-sowing,Chlortetracycline,28.18,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Zhurihe town,2022,pre-sowing,Tetracycline,5.74,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+agricultural soil,Inner Mongolia,Zhurihe town,2022,pre-sowing,Doxycycline,6.51,,ug/kg,NEW_INNERMONGOLIA_BAO_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfadiazine,3.0,6.63,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamethoxazole,7.27,17.43,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfisomidine,0.19,1.56,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamethazine,0.74,1.95,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamethoxypyridazine,0.14,0.82,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamonomethoxine,7.59,46.28,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfachloropyridine,3.08,7.45,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Trimethoprim,1.63,8.81,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfaquinoline,0.14,0.63,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Norfloxacin,1.12,4.23,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Ciprofloxacin,1.75,4.99,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Enrofloxacin,3.08,20.41,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Ofloxacin,0.81,5.25,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Tetracycline,0.96,6.18,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Doxycycline,0.21,1.46,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Oxytetracycline,1.02,5.59,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Chlortetracycline,1.08,5.21,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Erythromycin,2.01,23.3,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Clarithromycin,2.66,49.72,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Azithromycin,2.55,47.34,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Roxithromycin,2.04,26.78,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Chloramphenicol,0.39,6.7,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Thiamphenicol,7.71,296.1,ng/L,NEW_HUBEI_CHEN_2023
+surface water,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Florfenicol,17.54,466.1,ng/L,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfadiazine,0.07,1.54,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamethazine,0.07,1.45,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Sulfamonomethoxine,0.05,0.17,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Trimethoprim,0.06,0.87,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Norfloxacin,2.3,19.3,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Ciprofloxacin,8.17,277.8,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Enrofloxacin,0.35,1.99,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Ofloxacin,3.28,32.08,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Tetracycline,0.77,7.31,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Doxycycline,0.44,3.89,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Oxytetracycline,0.42,10.41,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Chlortetracycline,0.73,3.86,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Erythromycin,0.21,1.39,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Clarithromycin,0.08,0.65,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Azithromycin,0.04,0.4,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Roxithromycin,0.09,1.04,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Chloramphenicol,0.01,0.03,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Thiamphenicol,0.02,0.66,ng/g,NEW_HUBEI_CHEN_2023
+sediment,Hubei,Wuhan section of the Yangtze River,2020-2021,"normal, dry, wet seasons",Florfenicol,0.01,0.05,ng/g,NEW_HUBEI_CHEN_2023
+municipal wastewater influent,Liaoning,"12 municipal WWTPs, Dalian",2016,March-May,Ofloxacin,609.8,,ng/L,CAND_DALIAN_2017
+municipal wastewater effluent,Liaoning,"12 municipal WWTPs, Dalian",2016,March-May,Ofloxacin,253.4,,ng/L,CAND_DALIAN_2017
+surface water,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Oxytetracycline,174.9,,ng/L,CAND_JILIN_LIAO_2016
+surface water,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Erythromycin,103.2,,ng/L,CAND_JILIN_LIAO_2016
+surface water,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Ofloxacin,67.1,,ng/L,CAND_JILIN_LIAO_2016
+surface sediment,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Ofloxacin,152.2,,ng/g,CAND_JILIN_LIAO_2016
+surface sediment,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Oxytetracycline,149.5,,ng/g,CAND_JILIN_LIAO_2016
+surface sediment,Jilin,"Liao River tributaries, Jilin Province",2015,summer+autumn,Norfloxacin,62.8,,ng/g,CAND_JILIN_LIAO_2016
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Enoxacin,2.67,72.02,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Ofloxacin,21.48,283.83,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Norfloxacin,0.37,3.70,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Ciprofloxacin,0.02,,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Enrofloxacin,0.20,1.85,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Oxytetracycline,0,,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Tetracycline,0,,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Chlortetracycline,4.45,141.80,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Clarithromycin,5.32,37.11,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Azithromycin,2.52,15.60,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Roxithromycin,14.57,71.94,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfadiazine,0.58,9.19,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfathiazole,0.08,,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfamerazine,0.35,5.76,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfachloropyridazine,0.19,0.83,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfamethoxazole,12.52,120.74,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfadoxine,1.99,16.65,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Sulfaquinoxaline,0.04,,ng/L,CAND_XIAOQING_2022
+surface water,Shandong,Tributaries of Xiaoqing River,,February/May/August combined,Trimethoprim,4.17,25.26,ng/L,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Enoxacin,0.13,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Ofloxacin,171.34,1827.18,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Norfloxacin,16.26,119.48,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Ciprofloxacin,10.08,50.23,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Enrofloxacin,6.43,62.37,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Oxytetracycline,4.62,20.67,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Tetracycline,0.30,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Chlortetracycline,7.86,51.10,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Clarithromycin,0.13,0.98,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Azithromycin,0.10,1.00,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Roxithromycin,0.76,1.88,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfadiazine,0.72,3.46,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfathiazole,0,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfamerazine,0,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfachloropyridazine,0.07,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfamethoxazole,0.74,4.48,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfadoxine,0.26,0.44,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Sulfaquinoxaline,0.02,,ug/kg dw,CAND_XIAOQING_2022
+surface sediment,Shandong,Tributaries of Xiaoqing River,,sediment summary,Trimethoprim,0.40,1.96,ug/kg dw,CAND_XIAOQING_2022
+surface water,Qinghai,Xining urban wetlands,2022,March,Enrofloxacin,4.63,27.06,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Ciprofloxacin (CFX),16.00,24.50,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Ofloxacin,180.21,1220.86,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Norfloxacin,56.98,520.86,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Lomefloxacin,2.36,7.74,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Fleroxacin,4.07,11.12,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Difloxacin,6.92,16.14,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Oxytetracycline,4.91,14.12,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Tetracycline,5.38,16.16,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Chlortetracycline,5.40,14.88,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Doxycycline,2.22,2.22,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Roxithromycin,1.62,1.62,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Azithromycin,173.81,193.82,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Erythromycin,9.24,17.00,ng/L,CAND_QINGHAI_2023
+surface water,Qinghai,Xining urban wetlands,2022,March,Tylosin,8.64,29.94,ng/L,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Ofloxacin,0.88,0.97,ng/g,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Oxytetracycline,0.02,0.02,ng/g,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Chlortetracycline,0.56,0.63,ng/g,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Roxithromycin,5.46,5.64,ng/g,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Erythromycin,2.11,3.41,ng/g,CAND_QINGHAI_2023
+sediment,Qinghai,Xining urban wetlands,2022,March,Tylosin,1.80,2.86,ng/g,CAND_QINGHAI_2023
+surface water,Henan,Kaifeng City surface waters,2020,November,Doxycycline,29.52,,ug/L,CAND_KAIFENG_2022
+surface water,Henan,Kaifeng City surface waters,2020,November,Oxytetracycline,13.71,,ug/L,CAND_KAIFENG_2022
+canal surface water,Henan,"Major canals with Yellow River-diverted water, Kaifeng",2020,November,Total quinolones (class sum),22.0,,ug/L,CAND_KAIFENG_2022
+canal surface water,Henan,"Major canals with Yellow River-diverted water, Kaifeng",2020,November,Total tetracyclines (class sum),14.9,,ug/L,CAND_KAIFENG_2022
+animal feed,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Oxytetracycline,19.38,143.98,mg/kg,CAND_YUNNAN_ERHAI_2020
+manure,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Doxycycline,,370.34,mg/kg,CAND_YUNNAN_ERHAI_2020
+livestock wastewater,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Penicillin G,,3145.18,mg/L,CAND_YUNNAN_ERHAI_2020

@@ -1,5 +1,5 @@
 # Compare antibiotic naming between environmental and resistance cleaned datasets.
-# Combo names in resistance (e.g. Trimethoprim/Sulfamethoxazole) are intentionally not split.
+# Combo / multiple-antibiotic CARSS panel entries are dropped in clean_resistance_data.R.
 
 env_path <- "data/cleaned/environmental_cleaned.csv"
 res_path <- "data/cleaned/resistance_clean.csv"
@@ -37,8 +37,8 @@ if (length(spelling_flags) > 0) {
 }
 
 cat(
-  "\nNote: resistance combo drugs (e.g. Trimethoprim/Sulfamethoxazole) and",
-  "environmental-only monitoring targets are expected naming differences.\n"
+  "\nNote: environmental-only monitoring targets are expected naming differences",
+  "versus single-agent CARSS resistance panel drugs.\n"
 )
 
 if (length(spelling_flags) > 0) {
