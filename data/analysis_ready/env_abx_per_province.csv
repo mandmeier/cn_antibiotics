@@ -65,7 +65,7 @@ municipal sludge,Beijing,Lomefloxacin,790,ng/g,2015,121
 municipal sludge,Beijing,Moxifloxacin,441.25,ng/g,2008,181
 municipal sludge,Beijing,Nalidixic Acid,1.55,ng/g,NA,21
 municipal sludge,Beijing,Norfloxacin,2601.85,ng/g,2015,121
-municipal sludge,Beijing,Ofloxacin,4349.375,ng/g,2015,121
+municipal sludge,Beijing,Ofloxacin,5548.75,ng/g,2015,121
 municipal sludge,Beijing,Oxytetracycline,569.755,ng/g,2015,121
 municipal sludge,Beijing,Pipemidic Acid,222.5,ng/g,2008,181
 municipal sludge,Beijing,Roxithromycin,16.2,ng/g,2015,121
@@ -92,9 +92,9 @@ municipal sludge,Chongqing,Enrofloxacin,6.6,ng/g,2015,121
 municipal sludge,Chongqing,Erythromycin,8.64,ng/g,2012,201
 municipal sludge,Chongqing,Erythromycin-H2O,8.64,ng/g,2015,121
 municipal sludge,Chongqing,Lomefloxacin,75.29999999999998,ng/g,2015,121
-municipal sludge,Chongqing,Moxifloxacin,16.05,ng/g,2012,201
-municipal sludge,Chongqing,Norfloxacin,275.36,ng/g,2015,121
-municipal sludge,Chongqing,Ofloxacin,284.015,ng/g,2015,121
+municipal sludge,Chongqing,Moxifloxacin,31.369999999999997,ng/g,2012,215
+municipal sludge,Chongqing,Norfloxacin,442.88,ng/g,2015,121
+municipal sludge,Chongqing,Ofloxacin,413.56,ng/g,2015,121
 municipal sludge,Chongqing,Oxytetracycline,387.8,ng/g,2015,121
 municipal sludge,Chongqing,Roxithromycin,43.78,ng/g,2015,121
 municipal sludge,Chongqing,Sulfadiazine,3.57,ng/g,2015,121
@@ -104,7 +104,7 @@ municipal sludge,Chongqing,Sulfamerazine,15.3,ng/g,2015,121
 municipal sludge,Chongqing,Sulfamethoxazole,4.2,ng/g,2015,121
 municipal sludge,Chongqing,Sulfathiazole,7.1,ng/g,2015,121
 municipal sludge,Chongqing,Tetracycline,57.4,ng/g,2015,121
-municipal sludge,Chongqing,Trimethoprim,10.805,ng/g,2015,121
+municipal sludge,Chongqing,Trimethoprim,13.29,ng/g,2015,121
 municipal sludge,Fujian,Chlortetracycline,1260,ng/g,2016,118
 municipal sludge,Fujian,Ciprofloxacin,313,ng/g,2016,118
 municipal sludge,Fujian,Danofloxacin,3.45,ng/g,2016,118
@@ -134,7 +134,7 @@ municipal sludge,Guangdong,Clarithromycin,29,ng/g,2010,190
 municipal sludge,Guangdong,Doxycycline,5707.5,ng/g,2016,155
 municipal sludge,Guangdong,Enoxacin,60,ng/g,2013,138
 municipal sludge,Guangdong,Enrofloxacin,1035.5,ng/g,2013,138
-municipal sludge,Guangdong,Erythromycin-H2O,76,ng/g,2005,1
+municipal sludge,Guangdong,Erythromycin-H2O,72.5,ng/g,2013,138
 municipal sludge,Guangdong,Fleroxacin,43.5,ng/g,2010,190
 municipal sludge,Guangdong,Levofloxacin,79,ng/g,2013,138
 municipal sludge,Guangdong,Lincomycin,1128.5,ng/g,2016,155
@@ -142,22 +142,22 @@ municipal sludge,Guangdong,Lomefloxacin,85.14999999999999,ng/g,2013,138
 municipal sludge,Guangdong,Marbofloxacin,5.25,ng/g,2016,155
 municipal sludge,Guangdong,Methacycline,416.75,ng/g,2016,155
 municipal sludge,Guangdong,Nadifloxacin,73,ng/g,2013,138
-municipal sludge,Guangdong,Norfloxacin,1960,ng/g,2005,1
-municipal sludge,Guangdong,Ofloxacin,1542.5,ng/g,2005,1
+municipal sludge,Guangdong,Norfloxacin,2002,ng/g,2013,138
+municipal sludge,Guangdong,Ofloxacin,1667.5,ng/g,2016,155
 municipal sludge,Guangdong,Oxytetracycline,27100,ng/g,2016,155
 municipal sludge,Guangdong,Pefloxacin,222.5,ng/g,2016,155
-municipal sludge,Guangdong,Roxithromycin,40,ng/g,2005,1
+municipal sludge,Guangdong,Roxithromycin,40,ng/g,2013,138
 municipal sludge,Guangdong,Sarafloxacin,2.175,ng/g,2016,155
 municipal sludge,Guangdong,Sulfacetamide,89,ng/g,2013,138
 municipal sludge,Guangdong,Sulfachinoxaline,63,ng/g,2013,138
 municipal sludge,Guangdong,Sulfachloropyridazine,149.5,ng/g,2013,138
 municipal sludge,Guangdong,Sulfadiazine,3.065,ng/g,2013,138
 municipal sludge,Guangdong,Sulfadimethoxine,5.907500000000001,ng/g,2016,155
-municipal sludge,Guangdong,Sulfadimidine,5.675,ng/g,2005,1
+municipal sludge,Guangdong,Sulfadimidine,5.66,ng/g,2013,138
 municipal sludge,Guangdong,Sulfafurazole,70,ng/g,2013,138
 municipal sludge,Guangdong,Sulfamerazine,41.84625,ng/g,2013,138
 municipal sludge,Guangdong,Sulfameter,44.31,ng/g,NA,2
-municipal sludge,Guangdong,Sulfamethoxazole,20,ng/g,2005,1
+municipal sludge,Guangdong,Sulfamethoxazole,23.127499999999998,ng/g,2013,138
 municipal sludge,Guangdong,Sulfamonomethoxine,233.5,ng/g,2016,155
 municipal sludge,Guangdong,Sulfanilamide,73,ng/g,2013,138
 municipal sludge,Guangdong,Sulfapyridine,96,ng/g,2013,138
@@ -414,7 +414,7 @@ sediment,Anhui,Ciprofloxacin,1.16,ng/g,2016,132
 sediment,Anhui,Clarithromycin,1.2049999999999998,ng/g,2016,132
 sediment,Anhui,Danofloxacin,0.05,ng/g,2016,132
 sediment,Anhui,Enrofloxacin,6.1499999999999995,ng/g,2016,132
-sediment,Anhui,Erythromycin,0.1,ng/g,2019,58
+sediment,Anhui,Erythromycin,0.1,ng/g,2018,58
 sediment,Anhui,Erythromycin-H2O,0.885,ng/g,2016,132
 sediment,Anhui,Lincomycin,0.45,ng/g,2016,132
 sediment,Anhui,Marbofloxacin,0.01,ng/g,2016,132
@@ -431,7 +431,7 @@ sediment,Anhui,Sulfamethoxazole,0.255,ng/g,2018,35
 sediment,Anhui,Sulfamonomethoxine,0.27,ng/g,2016,132
 sediment,Anhui,Sulfapyridine,0.08,ng/g,2016,132
 sediment,Anhui,Sulfathiazole,0.02,ng/g,2016,132
-sediment,Anhui,Tetracycline,0.85,ng/g,2019,58
+sediment,Anhui,Tetracycline,0.85,ng/g,2018,58
 sediment,Anhui,Trimethoprim,0.1,ng/g,2016,132
 sediment,Anhui,Tylosin,0.14,ng/g,2016,132
 sediment,Beijing,Chlortetracycline,10.2,ng/g,2017,78
@@ -499,14 +499,14 @@ sediment,Guangdong,Amoxicillin,3.08,ng/g,2016,141
 sediment,Guangdong,Ampicillin,3.13,ng/g,2016,141
 sediment,Guangdong,Azithromycin,0.3,ng/g,2009,106
 sediment,Guangdong,Cefotaxime,8.15,ng/g,2016,141
-sediment,Guangdong,Cephalexin,12.6,ng/g,2015,123
+sediment,Guangdong,Cephalexin,7.375,ng/g,2015,123
 sediment,Guangdong,Chloramphenicol,8.575,ng/g,2016,141
 sediment,Guangdong,Chlortetracycline,3.45,ng/g,2013,164
-sediment,Guangdong,Ciprofloxacin,34.2,ng/g,2015,123
+sediment,Guangdong,Ciprofloxacin,34.69642857142858,ng/g,2015,123
 sediment,Guangdong,Clarithromycin,2.98,ng/g,2009,106
 sediment,Guangdong,Dehydroerythromycin,19.2,ng/g,2016,141
 sediment,Guangdong,Doxycycline,7.270000000000001,ng/g,2015,123
-sediment,Guangdong,Enrofloxacin,1.7825000000000002,ng/g,2015,117
+sediment,Guangdong,Enrofloxacin,4.853571428571429,ng/g,2015,124
 sediment,Guangdong,Erythromycin,82.65,ng/g,2016,141
 sediment,Guangdong,Erythromycin-H2O,2.74,ng/g,2009,106
 sediment,Guangdong,Florfenicol,10.95,ng/g,2017,69
@@ -514,19 +514,19 @@ sediment,Guangdong,Flumequine,10.765,ng/g,2016,141
 sediment,Guangdong,Isochlortetracycline,1.125,ng/g,2016,141
 sediment,Guangdong,Lincomycin,2.98,ng/g,2015,117
 sediment,Guangdong,Lomefloxacin,27.9,ng/g,2017,68
-sediment,Guangdong,Norfloxacin,30.55,ng/g,2015,117
-sediment,Guangdong,Ofloxacin,47,ng/g,2015,117
+sediment,Guangdong,Norfloxacin,33.6,ng/g,2015,123
+sediment,Guangdong,Ofloxacin,47.65,ng/g,2015,123
 sediment,Guangdong,Oxytetracycline,42.1,ng/g,2015,123
 sediment,Guangdong,Penicillin G,4.84,ng/g,2015,123
 sediment,Guangdong,Penicillin V,16.3,ng/g,2015,123
-sediment,Guangdong,Roxithromycin,84.8,ng/g,2009,106
+sediment,Guangdong,Roxithromycin,115.2,ng/g,2009,106
 sediment,Guangdong,Spectinomycin,141,ng/g,2016,141
 sediment,Guangdong,Streptomycin,68.9,ng/g,2016,141
 sediment,Guangdong,Sulfacetamide,26.9,ng/g dw,2015,N43
 sediment,Guangdong,Sulfadiazine,18.75,ng/g,2015,123
 sediment,Guangdong,Sulfadimethoxine,0.09000000000000001,ng/g,NA,31
 sediment,Guangdong,Sulfadimethoxypyrimidine,0.3883333333333333,ng/g,2009,106
-sediment,Guangdong,Sulfadimidine,48.75,ng/g,2016,141
+sediment,Guangdong,Sulfadimidine,49.400000000000006,ng/g,2016,141
 sediment,Guangdong,Sulfamerazine,13.775,ng/g,2016,141
 sediment,Guangdong,Sulfamethoxazole,37.2,ng/g,2015,124
 sediment,Guangdong,Sulfamethoxydiazine,1.2175,ng/g,NA,169
@@ -534,7 +534,7 @@ sediment,Guangdong,Sulfamonomethoxine,7.784999999999999,ng/g,2015,123
 sediment,Guangdong,Sulfapyridine,25.85,ng/g,2015,117
 sediment,Guangdong,Sulfaquinoxaline,1.4355555555555555,ng/g,2015,123
 sediment,Guangdong,Sulfathiazole,217.084,ng/g,2016,141
-sediment,Guangdong,Tetracycline,18.9,ng/g,2015,123
+sediment,Guangdong,Tetracycline,19.4,ng/g,2015,123
 sediment,Guangdong,Thiamphenicol,44.7,ng/g,2016,141
 sediment,Guangdong,Trimethoprim,46.4,ng/g,2009,106
 sediment,Guangdong,Tylosin,0.605,ng/g,2015,123
@@ -634,37 +634,37 @@ sediment,Hainan,Sulfathiazole,0.025,ng/g,2013,164
 sediment,Hainan,Tetracycline,11.575,ng/g,2015,124
 sediment,Hainan,Trimethoprim,0.16,ng/g dw,2018,N39
 sediment,Hebei,Apo-Oxytetracycline,15500,ng/g dw,2004,223
-sediment,Hebei,Azithromycin,4.44,ng/g,2017,111
-sediment,Hebei,Chlortetracycline,4.29,ng/g,2017,111
+sediment,Hebei,Azithromycin,4.385,ng/g,2017,139
+sediment,Hebei,Chlortetracycline,4.29,ng/g,2013,120
 sediment,Hebei,Ciprofloxacin,2.885,ng/g,2013,120
-sediment,Hebei,Doxycycline,3.02,ng/g,2017,111
+sediment,Hebei,Doxycycline,3.8714814814814824,ng/g,2013,120
 sediment,Hebei,Enrofloxacin,11.979999999999999,ng/g,2013,120
 sediment,Hebei,Epioxytetracycline,13160,ng/g dw,2004,223
 sediment,Hebei,Erythromycin,0.59,ng/g,2008,182
-sediment,Hebei,Erythromycin-H2O,5.36,ng/g,2017,111
+sediment,Hebei,Erythromycin-H2O,5.36,ng/g,2009,134
 sediment,Hebei,Fleroxacin,3.51,ng/g,2008,182
 sediment,Hebei,Flumequine,72.04,ng/g,2018,67
-sediment,Hebei,Lincomycin,2.06,ng/g,2017,111
+sediment,Hebei,Lincomycin,1.907962962962963,ng/g,2017,139
 sediment,Hebei,Lomefloxacin,0.98,ng/g,2008,182
 sediment,Hebei,Marbofloxacin,3.46,ng/g,2018,67
 sediment,Hebei,Norfloxacin,73.87,ng/g,2013,120
-sediment,Hebei,Ofloxacin,4.27,ng/g,2017,111
+sediment,Hebei,Ofloxacin,5.934999999999999,ng/g,2013,120
 sediment,Hebei,Oxolinic Acid,2.175,ng/g,2018,67
-sediment,Hebei,Oxytetracycline,15.66,ng/g,2017,111
+sediment,Hebei,Oxytetracycline,53.230000000000004,ng/g,2013,120
 sediment,Hebei,Pipemidic Acid,5.06,ng/g,2018,67
 sediment,Hebei,Roxithromycin,64.9,ng/g,2013,120
-sediment,Hebei,Sulfadiazine,2.03,ng/g,2017,111
+sediment,Hebei,Sulfadiazine,2.1449999999999996,ng/g,2015,124
 sediment,Hebei,Sulfadimethoxine,0.16999999999999998,ng/g,2017,120
-sediment,Hebei,Sulfadimidine,2.26,ng/g,2017,111
+sediment,Hebei,Sulfadimidine,2.0188888888888887,ng/g,2009,134
 sediment,Hebei,Sulfafurazole,0.71,ng/g,2008,182
 sediment,Hebei,Sulfamerazine,0.5750000000000001,ng/g,2008,182
-sediment,Hebei,Sulfamethoxazole,6.533703703703703,ng/g,2017,111
+sediment,Hebei,Sulfamethoxazole,4.451851851851852,ng/g,2017,120
 sediment,Hebei,Sulfamonomethoxine,15.055,ng/g,2017,120
 sediment,Hebei,Sulfapyridine,0.16,ng/g,2008,182
 sediment,Hebei,Sulfathiazole,0.64,ng/g,2009,134
-sediment,Hebei,Tetracycline,4.785,ng/g,2017,111
-sediment,Hebei,Trimethoprim,3.38,ng/g,2017,111
-sediment,Hebei,Tylosin,3.825,ng/g,2017,111
+sediment,Hebei,Tetracycline,5.29,ng/g,2013,120
+sediment,Hebei,Trimethoprim,2.98,ng/g,2017,139
+sediment,Hebei,Tylosin,2.56,ng/g,2017,139
 sediment,Heilongjiang,Sulfadiazine,0.5775,ng/g,NA,99
 sediment,Heilongjiang,Sulfadimidine,0.4125,ng/g,NA,99
 sediment,Henan,Azithromycin,8.16,ng/g,2025,N44
@@ -689,29 +689,29 @@ sediment,Hubei,Chlortetracycline,5.05,ng/g,2014,109
 sediment,Hubei,Ciprofloxacin,1.1,ng/g,2014,109
 sediment,Hubei,Clarithromycin,0.49,ng/g,2014,109
 sediment,Hubei,Dehydroerythromycin,2.195,ng/g,2016,142
-sediment,Hubei,Doxycycline,3.05,ng/g,2014,109
+sediment,Hubei,Doxycycline,3.5,ng/g,2014,109
 sediment,Hubei,Enrofloxacin,1.3,ng/g,2014,109
 sediment,Hubei,Erythromycin,0.405,ng/g,2014,109
 sediment,Hubei,Florfenicol,0.01,ng/g,2020,NEW_HUBEI_CHEN_2023
 sediment,Hubei,Lincomycin,0.21,ng/g,2016,142
 sediment,Hubei,Lomefloxacin,8.4,ng/g,2014,109
 sediment,Hubei,Norfloxacin,2.15,ng/g,2014,109
-sediment,Hubei,Ofloxacin,1.5499999999999998,ng/g,2014,128
+sediment,Hubei,Ofloxacin,1.9,ng/g,2014,128
 sediment,Hubei,Oxytetracycline,6.05,ng/g,2014,109
 sediment,Hubei,Penicillin G,2.185,ng/g,2016,142
 sediment,Hubei,Penicillin V,0.245,ng/g,2016,142
 sediment,Hubei,Roxithromycin,1.045,ng/g,2014,109
-sediment,Hubei,Sulfadiazine,0.44000000000000006,ng/g,2014,109
-sediment,Hubei,Sulfadimidine,0.19,ng/g,2014,128
+sediment,Hubei,Sulfadiazine,0.54,ng/g,2014,109
+sediment,Hubei,Sulfadimidine,0.2,ng/g,2014,128
 sediment,Hubei,Sulfamerazine,1.6,ng/g,2014,109
 sediment,Hubei,Sulfameter,2.7,ng/g,2014,128
-sediment,Hubei,Sulfamethoxazole,0.2925,ng/g,2014,109
-sediment,Hubei,Sulfamonomethoxine,0.08,ng/g,2016,142
+sediment,Hubei,Sulfamethoxazole,0.33,ng/g,2014,109
+sediment,Hubei,Sulfamonomethoxine,0.065,ng/g,2016,142
 sediment,Hubei,Sulfaquinoxaline,0.005,ng/g,2016,142
 sediment,Hubei,Sulfathiazole,467.1,ng/g,2015,149
-sediment,Hubei,Tetracycline,1.97,ng/g,2014,128
+sediment,Hubei,Tetracycline,1.835,ng/g,2014,128
 sediment,Hubei,Thiamphenicol,0.02,ng/g,2020,NEW_HUBEI_CHEN_2023
-sediment,Hubei,Trimethoprim,4.135,ng/g,2014,128
+sediment,Hubei,Trimethoprim,3.8,ng/g,2014,128
 sediment,Hubei,Tylosin,0.26,ng/g,2016,142
 sediment,Hunan,Azithromycin,1.1550000000000002,ng/g,2016,132
 sediment,Hunan,Chlortetracycline,15.87,ng/g,2016,132
@@ -747,13 +747,13 @@ sediment,Jiangsu,Azithromycin,0.10222500000000001,ng/g,2016,132
 sediment,Jiangsu,Cefazolin,3.0199999999999996,ng/g,2012,95
 sediment,Jiangsu,Ceftriaxone,1.56,ng/g,2012,95
 sediment,Jiangsu,Cephalexin,4.915,ng/g,2017,45
-sediment,Jiangsu,Chlortetracycline,1.645,ng/g,2016,132
+sediment,Jiangsu,Chlortetracycline,1.6,ng/g,2016,132
 sediment,Jiangsu,Ciprofloxacin,5.14,ng/g,2015,124
 sediment,Jiangsu,Clarithromycin,0.0591,ng/g,2016,132
 sediment,Jiangsu,Clindamycin,0.0299,ng/g,2016,29
 sediment,Jiangsu,Danofloxacin,0.4,ng/g,2016,132
 sediment,Jiangsu,Demeclocycline,0.438375,ng/g,2016,29
-sediment,Jiangsu,Difloxacin,2.99,ng/g,2014,98
+sediment,Jiangsu,Difloxacin,2.99,ng/g,2013,98
 sediment,Jiangsu,Doxycycline,1.775,ng/g,2017,148
 sediment,Jiangsu,Enoxacin,0.1191375,ng/g,2016,29
 sediment,Jiangsu,Enrofloxacin,3.72,ng/g,2015,124
@@ -771,8 +771,8 @@ sediment,Jiangsu,Methacycline,0.520575,ng/g,2016,29
 sediment,Jiangsu,Norfloxacin,5.33,ng/g,2016,132
 sediment,Jiangsu,Ofloxacin,2.59,ng/g,2016,132
 sediment,Jiangsu,Oleandomycin,11.4465,ng/g,2017,148
-sediment,Jiangsu,Oxytetracycline,4.74,ng/g,2015,124
-sediment,Jiangsu,Pefloxacin,0.845,ng/g,2014,98
+sediment,Jiangsu,Oxytetracycline,2.93,ng/g,2015,124
+sediment,Jiangsu,Pefloxacin,0.845,ng/g,2013,98
 sediment,Jiangsu,Penicillin V,5.21,ng/g,2017,45
 sediment,Jiangsu,Roxithromycin,0.8425,ng/g,2016,132
 sediment,Jiangsu,Sarafloxacin,0.65745,ng/g,2016,29
@@ -783,20 +783,20 @@ sediment,Jiangsu,Sulfachloropyridazine,0.08,ng/g,2016,132
 sediment,Jiangsu,Sulfadiazine,0.21,ng/g,2015,124
 sediment,Jiangsu,Sulfadimethoxine,6.9,ng/g,2010,214
 sediment,Jiangsu,Sulfadimethoxypyrimidine,0.082175,ng/g,2016,29
-sediment,Jiangsu,Sulfadimidine,0.235,ng/g,2016,132
+sediment,Jiangsu,Sulfadimidine,0.21,ng/g,2016,132
 sediment,Jiangsu,Sulfadimoxine,0.0164625,ng/g,2016,29
 sediment,Jiangsu,Sulfadoxine,0.05,ng/g,2016,132
 sediment,Jiangsu,Sulfafurazole,5.535,ng/g,2016,132
 sediment,Jiangsu,Sulfamerazine,0.083,ng/g,2017,148
 sediment,Jiangsu,Sulfamethizole,0.0379,ng/g,2016,29
-sediment,Jiangsu,Sulfamethoxazole,0.45825,ng/g,2015,124
+sediment,Jiangsu,Sulfamethoxazole,0.3065,ng/g,2015,124
 sediment,Jiangsu,Sulfamethoxydiazine,0.17025,ng/g,2016,29
 sediment,Jiangsu,Sulfamethoxypyridazine,0.39997499999999986,ng/g,2016,29
 sediment,Jiangsu,Sulfamonomethoxine,0.10425,ng/g,2016,132
 sediment,Jiangsu,Sulfaphenazole,0.038025,ng/g,2016,29
 sediment,Jiangsu,Sulfapyridine,0.015,ng/g,2016,132
 sediment,Jiangsu,Sulfaquinoxaline,0.04,ng/g,2017,148
-sediment,Jiangsu,Sulfathiazole,0.91,ng/g,2016,132
+sediment,Jiangsu,Sulfathiazole,0.47,ng/g,2016,132
 sediment,Jiangsu,Tetracycline,2.7975,ng/g,2015,124
 sediment,Jiangsu,Tilmicosin,1.6475,ng/g,2017,148
 sediment,Jiangsu,Trimethoprim,0.14500000000000002,ng/g,2016,132
@@ -907,23 +907,23 @@ sediment,Shaanxi,Trimethoprim,2.8499999999999996,ng/g,2014,128
 sediment,Shandong,Azithromycin,0.1,ng/g dw,NA,CAND_XIAOQING_2022
 sediment,Shandong,Chloramphenicol,2.8683829787234045,ng/g,2015,125
 sediment,Shandong,Chlortetracycline,0.51,ng/g,2013,120
-sediment,Shandong,Ciprofloxacin,1.4049999999999998,ng/g,2015,102
+sediment,Shandong,Ciprofloxacin,0.97,ng/g,2015,102
 sediment,Shandong,Clarithromycin,0.28,ng/g,2018,52
 sediment,Shandong,Doxycycline,0.63,ng/g,2013,120
 sediment,Shandong,Enoxacin,1150.065,ng/g,NA,130
-sediment,Shandong,Enrofloxacin,1,ng/g,2015,102
+sediment,Shandong,Enrofloxacin,0.92,ng/g,2015,102
 sediment,Shandong,Erythromycin-H2O,2.11,ng/g,2017,75
 sediment,Shandong,Flumequine,0.06,ng/g,2015,102
 sediment,Shandong,Levofloxacin,13.699042553191488,ng/g,2015,125
 sediment,Shandong,Lomefloxacin,0.14,ng/g,2015,102
 sediment,Shandong,Moxifloxacin,1800,ng/g,NA,130
 sediment,Shandong,Nalidixic Acid,1400,ng/g,NA,130
-sediment,Shandong,Norfloxacin,1.318,ng/g,2013,120
-sediment,Shandong,Ofloxacin,1.525,ng/g,2015,102
+sediment,Shandong,Norfloxacin,0.8399999999999999,ng/g,2013,120
+sediment,Shandong,Ofloxacin,1.1644999999999999,ng/g,2015,102
 sediment,Shandong,Oxolinic Acid,0.16499999999999998,ng/g,2015,102
 sediment,Shandong,Oxytetracycline,3.555,ng/g,2013,120
 sediment,Shandong,Pipemidic Acid,2.64,ng/g,2015,102
-sediment,Shandong,Roxithromycin,1.125,ng/g,2013,120
+sediment,Shandong,Roxithromycin,1.045,ng/g,2013,120
 sediment,Shandong,Roxithromycin-H2O,1.28,ng/g,2017,75
 sediment,Shandong,Sarafloxacin,0.26,ng/g,2015,102
 sediment,Shandong,Sulfabenzamide,0.175,ng/g,2018,65
@@ -939,7 +939,7 @@ sediment,Shandong,Sulfaphenazole,0.10500000000000001,ng/g,2018,65
 sediment,Shandong,Sulfapyridine,0.06749999999999999,ng/g,2015,125
 sediment,Shandong,Sulfaquinoxaline,0.04,ng/g,2013,164
 sediment,Shandong,Sulfathiazole,0.0225,ng/g,2013,164
-sediment,Shandong,Tetracycline,3.4555,ng/g,2013,120
+sediment,Shandong,Tetracycline,2.42,ng/g,2013,120
 sediment,Shandong,Trimethoprim,0.146,ng/g,2018,52
 sediment,Shanghai,Amoxicillin,0.23,ng/g,2017,45
 sediment,Shanghai,Cephalexin,3.7,ng/g,2017,45
@@ -969,7 +969,7 @@ sediment,Shanghai,Sulfaquinoxaline,0.34025,ng/g,2015,116
 sediment,Shanghai,Sulfathiazole,0.13,ng/g,2015,116
 sediment,Shanghai,Tetracycline,3.075,ng/g,2015,116
 sediment,Shanghai,Thiamphenicol,0.2,ng/g,2012,204
-sediment,Shanghai,Trimethoprim,0.692,ng/g,2019,58
+sediment,Shanghai,Trimethoprim,0.692,ng/g,2018,58
 sediment,Shanghai,Tylosin,0.62,ng/g,2017,45
 sediment,Shanghai,Vancomycin,0.44,ng/g,2017,45
 sediment,Tianjin,Acetylspiramycin,232.26315789473685,ng/g,2008,167
@@ -980,10 +980,10 @@ sediment,Tianjin,Doxycycline,9.340000000000002,ng/g,2013,120
 sediment,Tianjin,Enrofloxacin,19.85,ng/g,2013,120
 sediment,Tianjin,Erythromycin,1.5,ng/g,2015,162
 sediment,Tianjin,Erythromycin-H2O,19.14,ng/g,2009,134
-sediment,Tianjin,Fleroxacin,5.3,ng/g,2010,183
+sediment,Tianjin,Fleroxacin,5.3,ng/g,2008,183
 sediment,Tianjin,Gentamicin,126.42105263157896,ng/g,2008,167
 sediment,Tianjin,Josamycin,0.07500000000000001,ng/g,2010,183
-sediment,Tianjin,Lomefloxacin,82.29999999999998,ng/g,2010,183
+sediment,Tianjin,Lomefloxacin,82.29999999999998,ng/g,2008,183
 sediment,Tianjin,Minocycline,194.7894736842105,ng/g,2008,167
 sediment,Tianjin,Norfloxacin,273.5,ng/g,2013,120
 sediment,Tianjin,Ofloxacin,90.8,ng/g,2013,120
@@ -1007,6 +1007,8 @@ sediment,Tianjin,Sulfaquinoxaline,0.04,ng/g,2013,164
 sediment,Tianjin,Sulfathiazole,0.515,ng/g,2009,134
 sediment,Tianjin,Tetracycline,22.1725,ng/g,2013,120
 sediment,Tianjin,Trimethoprim,116.47368421052632,ng/g,2008,167
+sediment,Tibet,Roxithromycin,56.38,ng/g,2020,NEW_TIBET_HOU_2021
+sediment,Tibet,Sulfachloropyridazine,10.46,ng/g,2020,NEW_TIBET_HOU_2021
 sediment,Xinjiang,Chlortetracycline,10.95,ng/g,2012,180
 sediment,Xinjiang,Ciprofloxacin,117.28,ng/g,2012,180
 sediment,Xinjiang,Doxycycline,4.98,ng/g,2012,180
@@ -1055,7 +1057,7 @@ sediment,Zhejiang,Sulfathiazole,0.03,ng/g,2013,164
 sediment,Zhejiang,Tetracycline,2.08,ng/g,2009,110
 sediment,Zhejiang,Thiamphenicol,0.1,ng/g,NA,14
 sediment,Zhejiang,Tosufloxacin,2.79,ng/g,2018,57
-sediment,Zhejiang,Trimethoprim,0.045,ng/g,2019,58
+sediment,Zhejiang,Trimethoprim,0.045,ng/g,2018,58
 soil,Beijing,Chloramphenicol,2.5900000000000003,ng/g,NA,62
 soil,Beijing,Chlortetracycline,111,ng/g,2009,203
 soil,Beijing,Ciprofloxacin,16.22,ng/g,2010,179
@@ -1107,7 +1109,7 @@ soil,Fujian,Tetracycline,58.1,ng/g,2011,192
 soil,Guangdong,Azithromycin,0.004,ng/g,2009,106
 soil,Guangdong,Cephalexin,5.26,ng/g,2015,50
 soil,Guangdong,Chloramphenicol,8.35,ng/g,2013,209
-soil,Guangdong,Chlortetracycline,8.92,ng/g,NA,11
+soil,Guangdong,Chlortetracycline,7.025,ng/g,NA,11
 soil,Guangdong,Ciprofloxacin,15.4,ng/g,2015,105
 soil,Guangdong,Doxycycline,2.95,ng/g,NA,18
 soil,Guangdong,Enrofloxacin,13.765,ng/g,2015,105
@@ -1118,12 +1120,12 @@ soil,Guangdong,Lincomycin,0.2,ng/g,2015,50
 soil,Guangdong,Lomefloxacin,0.8,ng/g,NA,186
 soil,Guangdong,Norfloxacin,24.95,ng/g,2015,105
 soil,Guangdong,Ofloxacin,27.2,ng/g,2015,105
-soil,Guangdong,Oxytetracycline,6.18,ng/g,NA,11
+soil,Guangdong,Oxytetracycline,5.77,ng/g,NA,11
 soil,Guangdong,Penicillin G,1.23,ng/g,2015,50
 soil,Guangdong,Penicillin V,4.34,ng/g,2015,50
 soil,Guangdong,Roxithromycin,0.08,ng/g,2009,106
 soil,Guangdong,Sulfadiazine,3.2249999999999996,ng/g,2009,106
-soil,Guangdong,Sulfadimethoxine,4.9,ng/g,NA,133
+soil,Guangdong,Sulfadimethoxine,3.6750000000000003,ng/g,NA,133
 soil,Guangdong,Sulfadimethoxypyrimidine,3.18,ng/g,2009,106
 soil,Guangdong,Sulfadimidine,3.8,ng/g,NA,11
 soil,Guangdong,Sulfamerazine,13.4,ng/g,NA,119
@@ -1134,7 +1136,7 @@ soil,Guangdong,Sulfamonomethoxine,2.355,ng/g,2015,50
 soil,Guangdong,Sulfapyridine,2.6,ng/g,NA,119
 soil,Guangdong,Sulfaquinoxaline,0.63,ng/g,2015,50
 soil,Guangdong,Sulfathiazole,20.4,ng/g,NA,119
-soil,Guangdong,Tetracycline,15.8,ng/g,NA,11
+soil,Guangdong,Tetracycline,14.4,ng/g,NA,11
 soil,Guangdong,Trimethoprim,0.48,ng/g,2009,106
 soil,Guangdong,Tylosin,1.0725,ng/g,2015,50
 soil,Guangdong,Vancomycin,0.77,ng/g,2015,50
@@ -1172,46 +1174,46 @@ soil,Hainan,Sulfamethoxydiazine,0.73,ng/g,NA,83
 soil,Hainan,Sulfamonomethoxine,0.73,ng/g,NA,83
 soil,Hainan,Tetracycline,83.79999999999998,ng/g,NA,83
 soil,Hainan,Tylosin,0.4,ng/g,NA,83
-soil,Hebei,Azithromycin,11.34,ng/g,2016,131
-soil,Hebei,Chlortetracycline,21.46,ng/g,2016,131
-soil,Hebei,Ciprofloxacin,5.97,ng/g,2016,131
-soil,Hebei,Danofloxacin,0.22,ng/g,2016,131
-soil,Hebei,Doxycycline,12.5,ng/g,2016,131
-soil,Hebei,Enrofloxacin,6.54,ng/g,2016,131
-soil,Hebei,Florfenicol,0.06,ng/g,2016,131
-soil,Hebei,Oxytetracycline,37.1,ng/g,2008,13
-soil,Hebei,Sarafloxacin,0.06,ng/g,2016,131
-soil,Hebei,Sulfadiazine,0.01,ng/g,2016,131
-soil,Hebei,Sulfadimidine,0.11,ng/g,2016,131
-soil,Hebei,Sulfamethoxazole,0.56,ng/g,2016,131
-soil,Hebei,Sulfamonomethoxine,0.71,ng/g,2016,131
-soil,Hebei,Sulfaquinoxaline,1.22,ng/g,2016,131
-soil,Hebei,Tetracycline,11.69,ng/g,2008,13
-soil,Hebei,Tilmicosin,0.42,ng/g,2016,131
+soil,Hebei,Azithromycin,11.34,ng/g,2016,147
+soil,Hebei,Chlortetracycline,21.46,ng/g,2016,147
+soil,Hebei,Ciprofloxacin,5.97,ng/g,2016,147
+soil,Hebei,Danofloxacin,0.22,ng/g,2016,147
+soil,Hebei,Doxycycline,12.5,ng/g,2016,147
+soil,Hebei,Enrofloxacin,6.54,ng/g,2016,147
+soil,Hebei,Florfenicol,0.06,ng/g,2016,147
+soil,Hebei,Oxytetracycline,20.985,ng/g,2008,13
+soil,Hebei,Sarafloxacin,0.06,ng/g,2016,147
+soil,Hebei,Sulfadiazine,0.01,ng/g,2016,147
+soil,Hebei,Sulfadimidine,0.11,ng/g,2016,147
+soil,Hebei,Sulfamethoxazole,0.56,ng/g,2016,147
+soil,Hebei,Sulfamonomethoxine,0.71,ng/g,2016,147
+soil,Hebei,Sulfaquinoxaline,1.22,ng/g,2016,147
+soil,Hebei,Tetracycline,7.22,ng/g,2008,13
+soil,Hebei,Tilmicosin,0.42,ng/g,2016,147
 soil,Hebei,Trimethoprim,0.3225,ng/g,2008,13
-soil,Hebei,Tylosin,0.48,ng/g,2016,131
+soil,Hebei,Tylosin,0.48,ng/g,2016,147
 soil,Heilongjiang,Chlortetracycline,32.56,ng/g,2015,137
 soil,Heilongjiang,Doxycycline,87.53,ng/g,2015,137
 soil,Heilongjiang,Oxytetracycline,18.27,ng/g,2015,137
 soil,Heilongjiang,Tetracycline,43.38,ng/g,2015,137
-soil,Henan,Azithromycin,11.34,ng/g,2016,131
-soil,Henan,Chlortetracycline,21.46,ng/g,2016,131
-soil,Henan,Ciprofloxacin,5.97,ng/g,2016,131
-soil,Henan,Danofloxacin,0.22,ng/g,2016,131
-soil,Henan,Doxycycline,12.5,ng/g,2016,131
-soil,Henan,Enrofloxacin,6.54,ng/g,2016,131
-soil,Henan,Florfenicol,0.06,ng/g,2016,131
-soil,Henan,Oxytetracycline,37.1,ng/g,2016,131
-soil,Henan,Sarafloxacin,0.06,ng/g,2016,131
-soil,Henan,Sulfadiazine,0.01,ng/g,2016,131
-soil,Henan,Sulfadimidine,0.11,ng/g,2016,131
+soil,Henan,Azithromycin,11.34,ng/g,2016,147
+soil,Henan,Chlortetracycline,16.095,ng/g,2016,147
+soil,Henan,Ciprofloxacin,5.97,ng/g,2016,147
+soil,Henan,Danofloxacin,0.22,ng/g,2016,147
+soil,Henan,Doxycycline,9.375,ng/g,2016,147
+soil,Henan,Enrofloxacin,162.26999999999998,ng/g,2016,147
+soil,Henan,Florfenicol,0.06,ng/g,2016,147
+soil,Henan,Oxytetracycline,27.825000000000003,ng/g,2016,147
+soil,Henan,Sarafloxacin,0.06,ng/g,2016,147
+soil,Henan,Sulfadiazine,27.090000000000003,ng/g,2016,147
+soil,Henan,Sulfadimidine,2.825,ng/g,2016,147
 soil,Henan,Sulfaguanidine,399,ng/g,NA,83
-soil,Henan,Sulfamethoxazole,0.56,ng/g,2016,131
-soil,Henan,Sulfamonomethoxine,0.71,ng/g,2016,131
-soil,Henan,Sulfaquinoxaline,1.22,ng/g,2016,131
-soil,Henan,Tetracycline,11.69,ng/g,2016,131
-soil,Henan,Tilmicosin,0.42,ng/g,2016,131
-soil,Henan,Tylosin,0.48,ng/g,2016,131
+soil,Henan,Sulfamethoxazole,0.42000000000000004,ng/g,2016,147
+soil,Henan,Sulfamonomethoxine,0.71,ng/g,2016,147
+soil,Henan,Sulfaquinoxaline,1.22,ng/g,2016,147
+soil,Henan,Tetracycline,8.7675,ng/g,2016,147
+soil,Henan,Tilmicosin,0.42,ng/g,2016,147
+soil,Henan,Tylosin,1585.24,ng/g,2016,147
 soil,Hubei,Azithromycin,0.8,ng/g,2014,109
 soil,Hubei,Chlortetracycline,16.035,ng/g,2014,109
 soil,Hubei,Ciprofloxacin,22.8,ng/g,2014,109
@@ -1230,30 +1232,30 @@ soil,Hubei,Sulfameter,38.98,ng/g,2015,149
 soil,Hubei,Sulfamethoxazole,2.7,ng/g,2014,109
 soil,Hubei,Tetracycline,25.87,ng/g,2015,149
 soil,Hubei,Trimethoprim,15.33,ng/g,2015,149
-soil,Jiangsu,Azithromycin,11.34,ng/g,2016,131
-soil,Jiangsu,Chlortetracycline,21.46,ng/g,2009,100
+soil,Jiangsu,Azithromycin,11.34,ng/g,2016,147
+soil,Jiangsu,Chlortetracycline,12.88,ng/g,2009,100
 soil,Jiangsu,Ciprofloxacin,5.97,ng/g,2009,100
-soil,Jiangsu,Danofloxacin,0.22,ng/g,2016,131
-soil,Jiangsu,Doxycycline,7,ng/g,2009,100
+soil,Jiangsu,Danofloxacin,0.22,ng/g,2016,147
+soil,Jiangsu,Doxycycline,6,ng/g,2009,100
 soil,Jiangsu,Enrofloxacin,10.7,ng/g,2014,108
-soil,Jiangsu,Florfenicol,0.06,ng/g,2009,100
+soil,Jiangsu,Florfenicol,2.0300000000000002,ng/g,2009,100
 soil,Jiangsu,Norfloxacin,4.9,ng/g,2014,108
 soil,Jiangsu,Ofloxacin,9.5,ng/g,2014,108
-soil,Jiangsu,Oxytetracycline,34.87,ng/g,2009,100
+soil,Jiangsu,Oxytetracycline,31.65,ng/g,2009,100
 soil,Jiangsu,Roxithromycin,0.45,ng/g,2012,86
-soil,Jiangsu,Sarafloxacin,0.06,ng/g,2016,131
+soil,Jiangsu,Sarafloxacin,0.06,ng/g,2016,147
 soil,Jiangsu,Sulfachloropyridazine,3.4,ng/g,2012,86
 soil,Jiangsu,Sulfadiazine,0.31499999999999995,ng/g,2014,108
 soil,Jiangsu,Sulfadimethoxine,0.75,ng/g,2014,108
 soil,Jiangsu,Sulfadimidine,0.95,ng/g,2009,100
 soil,Jiangsu,Sulfamerazine,0.095,ng/g,2014,108
 soil,Jiangsu,Sulfamethizole,0.55,ng/g,2014,108
-soil,Jiangsu,Sulfamethoxazole,0.56,ng/g,2009,100
-soil,Jiangsu,Sulfamonomethoxine,1,ng/g,2016,131
-soil,Jiangsu,Sulfaquinoxaline,1.22,ng/g,2016,131
-soil,Jiangsu,Tetracycline,11.69,ng/g,2009,100
-soil,Jiangsu,Tilmicosin,0.42,ng/g,2016,131
-soil,Jiangsu,Tylosin,0.48,ng/g,2016,131
+soil,Jiangsu,Sulfamethoxazole,0.5800000000000001,ng/g,2009,100
+soil,Jiangsu,Sulfamonomethoxine,1.1,ng/g,2016,147
+soil,Jiangsu,Sulfaquinoxaline,1.22,ng/g,2016,147
+soil,Jiangsu,Tetracycline,8.545,ng/g,2009,100
+soil,Jiangsu,Tilmicosin,0.42,ng/g,2016,147
+soil,Jiangsu,Tylosin,0.36,ng/g,2016,147
 soil,Jiangxi,Apo-Oxytetracycline,5.28,ng/g,NA,104
 soil,Jiangxi,Chlortetracycline,2.83,ng/g,NA,104
 soil,Jiangxi,Doxycycline,1.86,ng/g,NA,104
@@ -1293,6 +1295,12 @@ soil,Liaoning,Sulfamonomethoxine,1.7058823529411762,ng/g,2013,178
 soil,Liaoning,Tetracycline,23.22941176470588,ng/g,2013,178
 soil,Liaoning,Trimethoprim,15.241176470588233,ng/g,2013,178
 soil,Liaoning,Tylosin,8.147058823529413,ng/g,2013,178
+soil,Ningxia,Ciprofloxacin,33.2,ng/g,NA,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Enrofloxacin,172.2,ng/g,NA,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Neomycin,17.6,ng/g,NA,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Ofloxacin,83.5,ng/g,NA,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Oxytetracycline,57.2,ng/g,NA,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Pefloxacin,16.55,ng/g,NA,NEW_NINGXIA_SHEN_2022
 soil,Shandong,Azithromycin,4.6,ng/g,2019,71
 soil,Shandong,Chloramphenicol,1.9500000000000002,ng/g,2015,125
 soil,Shandong,Chlortetracycline,71.24,ng/g,2010,189
@@ -1302,7 +1310,7 @@ soil,Shandong,Enrofloxacin,18.6,ng/g,2015,125
 soil,Shandong,Erythromycin-H2O,0.003,ng/g,2010,189
 soil,Shandong,Florfenicol,0.22649999999999998,ng/g,2015,125
 soil,Shandong,Levofloxacin,1.057,ng/g,2015,125
-soil,Shandong,Norfloxacin,55.7,ng/g,2015,125
+soil,Shandong,Norfloxacin,41.835,ng/g,2015,125
 soil,Shandong,Ofloxacin,24.189999999999998,ng/g,2010,189
 soil,Shandong,Oxytetracycline,107.15,ng/g,2010,189
 soil,Shandong,Roxithromycin,0.29,ng/g,2010,189
@@ -1361,23 +1369,23 @@ soil,Shanxi,Sulfamethoxypyridazine,0.434,ng/g,NA,33
 soil,Shanxi,Sulfamonomethoxine,0.01,ng/g,2017,81
 soil,Shanxi,Sulfapyridine,0.4779999999999999,ng/g,NA,33
 soil,Shanxi,Tetracycline,1.767,ng/g,NA,33
-soil,Sichuan,Azithromycin,11.34,ng/g,2016,131
-soil,Sichuan,Chlortetracycline,21.46,ng/g,2016,131
-soil,Sichuan,Ciprofloxacin,5.97,ng/g,2016,131
-soil,Sichuan,Danofloxacin,0.22,ng/g,2016,131
-soil,Sichuan,Doxycycline,12.5,ng/g,2016,131
-soil,Sichuan,Enrofloxacin,6.54,ng/g,2016,131
-soil,Sichuan,Florfenicol,0.06,ng/g,2016,131
-soil,Sichuan,Oxytetracycline,37.1,ng/g,2016,131
-soil,Sichuan,Sarafloxacin,0.06,ng/g,2016,131
-soil,Sichuan,Sulfadiazine,0.01,ng/g,2016,131
-soil,Sichuan,Sulfadimidine,0.11,ng/g,2016,131
-soil,Sichuan,Sulfamethoxazole,0.56,ng/g,2016,131
-soil,Sichuan,Sulfamonomethoxine,0.71,ng/g,2016,131
-soil,Sichuan,Sulfaquinoxaline,1.22,ng/g,2016,131
-soil,Sichuan,Tetracycline,11.69,ng/g,2016,131
-soil,Sichuan,Tilmicosin,0.42,ng/g,2016,131
-soil,Sichuan,Tylosin,0.48,ng/g,2016,131
+soil,Sichuan,Azithromycin,11.34,ng/g,2016,147
+soil,Sichuan,Chlortetracycline,21.46,ng/g,2016,147
+soil,Sichuan,Ciprofloxacin,5.97,ng/g,2016,147
+soil,Sichuan,Danofloxacin,0.22,ng/g,2016,147
+soil,Sichuan,Doxycycline,12.5,ng/g,2016,147
+soil,Sichuan,Enrofloxacin,6.54,ng/g,2016,147
+soil,Sichuan,Florfenicol,0.06,ng/g,2016,147
+soil,Sichuan,Oxytetracycline,37.1,ng/g,2016,147
+soil,Sichuan,Sarafloxacin,0.06,ng/g,2016,147
+soil,Sichuan,Sulfadiazine,0.01,ng/g,2016,147
+soil,Sichuan,Sulfadimidine,0.11,ng/g,2016,147
+soil,Sichuan,Sulfamethoxazole,0.56,ng/g,2016,147
+soil,Sichuan,Sulfamonomethoxine,0.71,ng/g,2016,147
+soil,Sichuan,Sulfaquinoxaline,1.22,ng/g,2016,147
+soil,Sichuan,Tetracycline,11.69,ng/g,2016,147
+soil,Sichuan,Tilmicosin,0.42,ng/g,2016,147
+soil,Sichuan,Tylosin,0.48,ng/g,2016,147
 soil,Tianjin,Chloramphenicol,0.6000000000000001,ng/g,2007,6
 soil,Tianjin,Chlortetracycline,41.5,ng/g,NA,165
 soil,Tianjin,Ciprofloxacin,13.600000000000001,ng/g,NA,165
@@ -1403,6 +1411,8 @@ soil,Tianjin,Sulfapyridine,1.25,ng/g,NA,165
 soil,Tianjin,Tetracycline,21.589705882352938,ng/g,NA,165
 soil,Tianjin,Trimethoprim,15.241176470588233,ng/g,2013,178
 soil,Tianjin,Tylosin,8.147058823529413,ng/g,2013,178
+soil,Tibet,Norfloxacin,38.48,ng/g,2020,NEW_TIBET_HOU_2021
+soil,Tibet,Roxithromycin,41.04,ng/g,2020,NEW_TIBET_HOU_2021
 soil,Yunnan,Chlortetracycline,5.153333333333332,ng/g,NA,80
 soil,Yunnan,Ciprofloxacin,3.4,ng/g,2012,86
 soil,Yunnan,Doxycycline,9.150000000000002,ng/g,NA,80
@@ -1559,6 +1569,9 @@ surface water,Jilin,Sulfadiazine,0.9,ng/L,2015,NEW_JILIN_DONG_2016
 surface water,Jilin,Sulfamerazine,4.4,ng/L,2015,NEW_JILIN_DONG_2016
 surface water,Jilin,Sulfamethoxazole,20.1,ng/L,2015,NEW_JILIN_DONG_2016
 surface water,Jilin,Tetracycline,12.2,ng/L,2015,NEW_JILIN_DONG_2016
+surface water,Ningxia,Ciprofloxacin,7.28,ng/L,2023,NEW_NINGXIA_LIU_2026
+surface water,Ningxia,Enrofloxacin,7.35,ng/L,2023,NEW_NINGXIA_LIU_2026
+surface water,Ningxia,Tylosin,12.9,ng/L,2023,NEW_NINGXIA_LIU_2026
 surface water,Qinghai,Azithromycin,173.81,ng/L,2022,CAND_QINGHAI_2023
 surface water,Qinghai,Chlortetracycline,5.4,ng/L,2022,CAND_QINGHAI_2023
 surface water,Qinghai,Ciprofloxacin,16,ng/L,2022,CAND_QINGHAI_2023

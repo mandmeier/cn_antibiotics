@@ -1437,3 +1437,25 @@ canal surface water,Henan,"Major canals with Yellow River-diverted water, Kaifen
 animal feed,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Oxytetracycline,19.38,143.98,mg/kg,CAND_YUNNAN_ERHAI_2020
 manure,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Doxycycline,,370.34,mg/kg,CAND_YUNNAN_ERHAI_2020
 livestock wastewater,Yunnan,"Pig family farms, Erhai Lake basin",2020,,Penicillin G,,3145.18,mg/L,CAND_YUNNAN_ERHAI_2020
+surface water,Ningxia,Ningxia section of the Yellow River,2023,July 2023-March 2024 combined,Tylosin,12.90,,ng/L,NEW_NINGXIA_LIU_2026
+surface water,Ningxia,Ningxia section of the Yellow River,2023,July 2023-March 2024 combined,Enrofloxacin,7.35,,ng/L,NEW_NINGXIA_LIU_2026
+surface water,Ningxia,Ningxia section of the Yellow River,2023,July 2023-March 2024 combined,Ciprofloxacin,7.28,,ng/L,NEW_NINGXIA_LIU_2026
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Erythromycin,,629,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Tetracycline,,266,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Sulfamethoxazole,,58,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Trimethoprim,,533,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Sulfacetamide,,320,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Sulfanitran,,461,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Enrofloxacin,,2.83,ng/L,NEW_TIBET_ZHI_2023
+surface water,Tibet,Lower reach of the Lhasa River,2021,wet+dry seasons combined,Chlortetracycline,,3.20,ng/L,NEW_TIBET_ZHI_2023
+soil,Ningxia,"Poultry farm surrounding soil, 20 m from farm (D1)",,,Neomycin,17.60,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,"Poultry farm surrounding soil, 20 m from farm (D1)",,,Pefloxacin,6.50,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Soil with poultry manure application (AP),,,Oxytetracycline,57.20,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Soil with poultry manure application (AP),,,Enrofloxacin,172.20,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Soil with poultry manure application (AP),,,Ciprofloxacin,33.20,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Soil with poultry manure application (AP),,,Ofloxacin,83.50,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Ningxia,Soil with poultry manure application (AP),,,Pefloxacin,26.60,,ug/kg,NEW_NINGXIA_SHEN_2022
+soil,Tibet,"Shenzha Town soil (urban sewage receiving area, SS14)",2020,August 2020,Roxithromycin,41.04,,ng/g,NEW_TIBET_HOU_2021
+soil,Tibet,"Shenzha Town soil (urban sewage receiving area, SS14)",2020,August 2020,Norfloxacin,38.48,,ng/g,NEW_TIBET_HOU_2021
+sediment,Tibet,"Shenzha Town sediment (urban sewage receiving site, SWS2)",2020,August 2020,Roxithromycin,56.38,,ng/g,NEW_TIBET_HOU_2021
+sediment,Tibet,"Shenzha Town sediment (pastoral site, SWS8)",2020,August 2020,Sulfachloropyridazine,10.46,,ng/g,NEW_TIBET_HOU_2021

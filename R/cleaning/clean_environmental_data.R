@@ -23,6 +23,39 @@ province_map <- c(
   "shaanxi (xian)" = "Shaanxi"
 )
 
+# Higher rank = newer / preferred source when identical measurements appear in multiple references.
+# Supplemental references (N*, NEW_*, CAND_*) outrank Zhang pub_id values.
+reference_source_rank <- function(reference_number) {
+  ref <- as.character(reference_number)
+  vapply(ref, function(r) {
+    year <- suppressWarnings(as.numeric(str_extract(r, "(19|20)[0-9]{2}(?!\\d)")))
+    if (is.na(year)) {
+      years <- str_extract_all(r, "(19|20)[0-9]{2}")[[1]]
+      if (length(years) > 0) {
+        year <- suppressWarnings(as.numeric(tail(years, 1)))
+      }
+    }
+    if (is.na(year)) {
+      year <- 0
+    }
+
+    if (str_starts(r, "NEW_")) {
+      return(4e8 + year * 1e3)
+    }
+    if (str_starts(r, "CAND_")) {
+      return(3e8 + year * 1e3)
+    }
+    if (str_detect(r, "^N[0-9]+$")) {
+      return(2e8 + as.numeric(str_remove(r, "^N")))
+    }
+    num <- suppressWarnings(as.numeric(r))
+    if (!is.na(num)) {
+      return(1e8 + num)
+    }
+    0
+  }, numeric(1))
+}
+
 parse_sample_year <- function(year) {
   year_chr <- as.character(year)
   year_chr <- str_squish(year_chr)
@@ -521,6 +554,27 @@ environmental_clean <- combined_data %>%
   # -> only using unique measurements within a location and a year.
   select(-season) %>%
   unique()
+
+n_before_measurement_dedup <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
+  mutate(.source_rank = reference_source_rank(reference_number)) %>%
+  group_by(
+    sample_type,
+    matrix,
+    province,
+    sample_year,
+    antibiotic,
+    mean_concentration,
+    max_concentration
+  ) %>%
+  slice_max(.source_rank, n = 1, with_ties = FALSE) %>%
+  ungroup() %>%
+  select(-.source_rank)
+
+message(
+  "Removed ", n_before_measurement_dedup - nrow(environmental_clean),
+  " duplicate measurement(s) (kept latest source)"
+)
 
 if (any(is.na(environmental_clean$concentration_unit))) {
   bad_units <- unique(environmental_clean$concentration_unit[

@@ -173,7 +173,7 @@ province_groups <- province_groups %>%
   select(-k2_groups, -k3_groups, -k4_groups) %>%
   left_join(cluster_df)
 
-# write_csv(province_groups, "data/cleaned/province_groups.csv")
+write_csv(province_groups, "data/cleaned/province_groups.csv")
 
 
 
@@ -292,7 +292,7 @@ p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
   geom_text_repel(aes(label = province),
                   size = 3,
                   max.overlaps = 20) +
-  scale_colour_manual(values = c("#537490", "#88e788", "#F78793")) +
+  scale_colour_manual(values = c("#88e788", "#F78793", "#537490")) +
   labs(
     #title = "PC1 vs PC2",
     x = pc1_lab,
@@ -319,9 +319,9 @@ source("R/utils/plot_on_china_map.R")
 
 
 my_cols <- c(
-  "1" = "#537490",
-  "2" = "#88e788",
-  "3" = "#F78793"
+  "1" = "#88e788",
+  "2" = "#F78793",
+  "3" = "#537490"
 )
 
 
