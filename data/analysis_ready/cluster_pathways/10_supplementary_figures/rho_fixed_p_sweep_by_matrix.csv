@@ -1,0 +1,36 @@
+matrix,max_env_amr_p,n_surviving,n_pool
+sediment,0.25,2,13
+sediment,0.2,1,13
+sediment,0.15,0,13
+sediment,0.1,0,13
+sediment,0.05,0,13
+sediment,0.01,0,13
+sediment,0.001,0,13
+surface water,0.25,6,12
+surface water,0.2,5,12
+surface water,0.15,3,12
+surface water,0.1,3,12
+surface water,0.05,2,12
+surface water,0.01,0,12
+surface water,0.001,0,12
+soil,0.25,5,10
+soil,0.2,2,10
+soil,0.15,2,10
+soil,0.1,1,10
+soil,0.05,1,10
+soil,0.01,0,10
+soil,0.001,0,10
+sludge,0.25,3,8
+sludge,0.2,3,8
+sludge,0.15,2,8
+sludge,0.1,1,8
+sludge,0.05,0,8
+sludge,0.01,0,8
+sludge,0.001,0,8
+wastewater effluent,0.25,1,5
+wastewater effluent,0.2,0,5
+wastewater effluent,0.15,0,5
+wastewater effluent,0.1,0,5
+wastewater effluent,0.05,0,5
+wastewater effluent,0.01,0,5
+wastewater effluent,0.001,0,5

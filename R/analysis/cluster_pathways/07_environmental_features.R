@@ -77,12 +77,9 @@ build_env_features <- function(groups, scenario) {
     inner_join(groups %>% select("province", "cluster_id", "cluster_name"), by = "province")
 }
 
-for (scenario in c("sample_year_ge_2012", "all_years")) {
-  features <- build_env_features(groups, scenario)
-  cp_write_csv(
-    features,
-    file.path(out_dir, paste0("environmental_matrix_class_features_", scenario, ".csv"))
-  )
-}
+features <- build_env_features(groups, CP_PATHWAY_SCENARIO)
+cp_write_csv(features, cp_env_features_path(CP_PATHWAY_SCENARIO))
 
-message("Wrote environmental features to ", out_dir)
+message(
+  "Wrote environmental features (", CP_PATHWAY_SCENARIO, " only) to ", out_dir
+)

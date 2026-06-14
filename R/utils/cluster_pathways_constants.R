@@ -33,17 +33,6 @@ CP_DRIVER_COMPOSITES <- c(
   "EconomicScaleIndex"
 )
 
-CP_CORE_MANUSCRIPT_DRIVERS <- c(
-  "WastewaterHealthIndex",
-  "LivestockAquacultureIndex",
-  "sewage_disposal_capacity_2024",
-  "sewage_pipe_length_2024",
-  "hospitals_count_2024",
-  "hospital_beds_2024",
-  "urban_env_infra_investment_2024",
-  "urban_share_2024"
-)
-
 CP_INTERPRETABLE_PATHWAY_DRIVERS <- c(
   "hospitals_count_2024",
   "hospital_beds_2024",
@@ -64,17 +53,30 @@ CP_INTERPRETABLE_PATHWAY_DRIVERS <- c(
   CP_DRIVER_COMPOSITES
 )
 
-CP_PATHWAY_CLASS_RANK <- c(
-  "Manuscript-worthy" = 1L,
-  "Strong lead" = 2L,
-  "Faint lead" = 3L,
-  "Contradictory" = 4L,
-  "Too sparse" = 5L
-)
+# Pathway filter thresholds (analysis-ready shortlist).
+CP_MIN_PROVINCES <- 12L
+CP_MIN_LOO_SIGN_STABILITY <- 0.95
 
 CP_ENV_MATRICES <- c(
   "soil", "sediment", "sludge", "surface water",
   "wastewater influent", "wastewater effluent"
+)
+
+CP_EXCLUDED_PATHWAY_FILTER_MATRICES <- c("wastewater influent", "wastewater effluent")
+CP_FIGURE3_MATRICES <- c("surface water", "soil", "sludge", "sediment")
+CP_PATHWAY_FILTER_MATRICES <- CP_FIGURE3_MATRICES
+CP_EXCLUDED_PATHWAY_ENV_CLASSES <- c("other", "multiple classes")
+CP_SIMPLE_FIG3_ROWS_PER_MATRIX <- 3L
+
+CP_PATHWAY_SCENARIO <- "all_years"
+
+CP_MATRIX_LABELS <- c(
+  "soil" = "Soil",
+  "sludge" = "Sludge",
+  "surface water" = "Surface water",
+  "sediment" = "Sediment",
+  "wastewater influent" = "Wastewater influent",
+  "wastewater effluent" = "Wastewater effluent"
 )
 
 # Yearbook metric code -> interpretable driver alias (2024 values).
@@ -131,6 +133,20 @@ cp_read_csv <- function(path) {
 
 cp_write_csv <- function(data, path) {
   readr::write_csv(data, path)
+}
+
+cp_env_features_path <- function(scenario = CP_PATHWAY_SCENARIO) {
+  file.path(
+    cp_step_dir("07_environmental_features"),
+    paste0("environmental_matrix_class_features_", scenario, ".csv")
+  )
+}
+
+cp_filter_scenario <- function(df, scenario = CP_PATHWAY_SCENARIO) {
+  if (is.null(df) || !nrow(df) || !("scenario" %in% names(df))) {
+    return(df)
+  }
+  df[df$scenario == scenario, , drop = FALSE]
 }
 
 load_province_groups <- function() {

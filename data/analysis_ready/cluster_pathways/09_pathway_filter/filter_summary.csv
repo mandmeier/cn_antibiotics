@@ -1,0 +1,37 @@
+matrix,stage,n_surviving
+sediment,all_candidates,756
+sediment,exclude_other_multiple_classes,672
+sediment,figure_matrices_only,672
+sediment,class_concordant_only,15
+sediment,min_provinces,15
+sediment,top_n_per_matrix,15
+sludge,all_candidates,420
+sludge,exclude_other_multiple_classes,420
+sludge,figure_matrices_only,420
+sludge,class_concordant_only,15
+sludge,min_provinces,15
+sludge,top_n_per_matrix,15
+soil,all_candidates,504
+soil,exclude_other_multiple_classes,504
+soil,figure_matrices_only,504
+soil,class_concordant_only,15
+soil,min_provinces,15
+soil,top_n_per_matrix,15
+surface water,all_candidates,420
+surface water,exclude_other_multiple_classes,420
+surface water,figure_matrices_only,420
+surface water,class_concordant_only,15
+surface water,min_provinces,15
+surface water,top_n_per_matrix,15
+wastewater effluent,all_candidates,252
+wastewater effluent,exclude_other_multiple_classes,252
+wastewater effluent,figure_matrices_only,0
+wastewater effluent,class_concordant_only,0
+wastewater effluent,min_provinces,0
+wastewater effluent,top_n_per_matrix,0
+wastewater influent,all_candidates,252
+wastewater influent,exclude_other_multiple_classes,252
+wastewater influent,figure_matrices_only,0
+wastewater influent,class_concordant_only,0
+wastewater influent,min_provinces,0
+wastewater influent,top_n_per_matrix,0
