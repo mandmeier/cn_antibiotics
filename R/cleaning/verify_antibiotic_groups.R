@@ -1,4 +1,4 @@
-# Verify group_of_antibiotic assignment in environmental_cleaned.csv.
+# Verify antibiotic_class assignment in environmental_cleaned.csv.
 
 source("R/utils/antibiotic_classes.R")
 
@@ -6,7 +6,7 @@ env_path <- "data/cleaned/environmental_cleaned.csv"
 environmental <- readr::read_csv(env_path, show_col_types = FALSE)
 
 abx_groups <- environmental %>%
-  dplyr::distinct(antibiotic, group_of_antibiotic)
+  dplyr::distinct(antibiotic, antibiotic_class)
 
 multi_group <- abx_groups %>%
   dplyr::group_by(antibiotic) %>%
@@ -20,17 +20,17 @@ if (nrow(multi_group) > 0) {
 }
 
 bad_levels <- setdiff(
-  unique(environmental$group_of_antibiotic),
+  unique(environmental$antibiotic_class),
   ANTIBIOTIC_GROUP_LEVELS
 )
 if (length(bad_levels) > 0) {
   stop(
-    "Invalid group_of_antibiotic values: ",
+    "Invalid antibiotic_class values: ",
     paste(sort(bad_levels), collapse = ", ")
   )
 }
 
-if (any(grepl("multiple classes", environmental$group_of_antibiotic, ignore.case = TRUE))) {
+if (any(grepl("multiple classes", environmental$antibiotic_class, ignore.case = TRUE))) {
   stop("Found Multiple classes group labels.")
 }
 
@@ -46,5 +46,5 @@ if (nrow(agg_rows) > 0) {
 message(
   "Antibiotic group verification passed (",
   nrow(abx_groups), " antibiotics, ",
-  length(unique(environmental$group_of_antibiotic)), " groups)."
+  length(unique(environmental$antibiotic_class)), " groups)."
 )

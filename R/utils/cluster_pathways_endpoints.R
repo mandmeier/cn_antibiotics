@@ -1,15 +1,14 @@
 # AMR endpoint and environmental antibiotic-class mapping helpers.
 
+source("R/utils/antibiotic_classes.R")
+
+endpoint_lookup_class <- function(antibiotic) {
+  abx <- as.character(antibiotic)
+  env_class_norm(assign_antibiotic_group(abx))
+}
+
 endpoint_class <- function(antibiotic) {
-  a <- tolower(as.character(antibiotic))
-  if (grepl("ciprofloxacin|levofloxacin", a)) return("fluoroquinolones")
-  if (grepl("erythromycin|azithromycin|clarithromycin", a)) return("macrolides")
-  if (grepl("sulfamethoxazole|sulfonamide", a)) return("sulfonamides")
-  if (grepl("tetracycline|tigecycline", a)) return("tetracyclines")
-  if (grepl("ceph|cef", a)) return("cephalosporins")
-  if (grepl("imipenem|meropenem|ertapenem", a)) return("carbapenems")
-  if (grepl("gentamicin|amikacin|tobramycin", a)) return("aminoglycosides")
-  "other"
+  endpoint_lookup_class(antibiotic)
 }
 
 env_class_norm <- function(value) {
@@ -20,17 +19,21 @@ env_class_norm <- function(value) {
       "qns" = "fluoroquinolones",
       "sulfonamide" = "sulfonamides",
       "macrolide" = "macrolides",
-      "tetracycline" = "tetracyclines"
+      "tetracycline" = "tetracyclines",
+      "fluoroquinolones" = "fluoroquinolones",
+      "sulfonamides" = "sulfonamides",
+      "tetracyclines" = "tetracyclines",
+      "macrolides" = "macrolides",
+      "phenicols" = "phenicols",
+      "lincosamides" = "lincosamides",
+      "beta-lactams" = "beta-lactams",
+      "diaminopyrimidines" = "diaminopyrimidines"
     )
     if (x %in% names(aliases)) unname(aliases[[x]]) else x
   }, character(1), USE.NAMES = FALSE)
 }
 
 endpoint_matches_env_class <- function(endpoint, env_class) {
-  antibiotic <- if (grepl(" \\| ", endpoint)) {
-    strsplit(endpoint, " \\| ")[[1]][2]
-  } else {
-    endpoint
-  }
-  endpoint_class(antibiotic) == env_class_norm(env_class)
+  antibiotic <- sub("^.* \\| ", "", endpoint)
+  endpoint_lookup_class(antibiotic) == env_class_norm(env_class)
 }

@@ -31,7 +31,7 @@ amr <- res %>%
   summarise(
     bacteria_species = .data$bacteria_species[1],
     amr_antibiotic = .data$antibiotic[1],
-    amr_class = endpoint_class(.data$antibiotic[1]),
+    amr_class = endpoint_lookup_class(.data$antibiotic[1]),
     amr_mean_2019_2024 = stats::weighted.mean(.data$resistant_percent, .data$total_n_strains),
     amr_2019_2024_change = {
       v2019 <- .data$resistant_percent[.data$year == 2019]

@@ -54,7 +54,7 @@ CP_INTERPRETABLE_PATHWAY_DRIVERS <- c(
 )
 
 # Pathway filter thresholds (analysis-ready shortlist).
-CP_MIN_PROVINCES <- 12L
+CP_MIN_PROVINCES <- 10L
 CP_MIN_LOO_SIGN_STABILITY <- 0.95
 
 CP_ENV_MATRICES <- c(

@@ -5,20 +5,22 @@ Figure 3 simple screening logic (aligned with `build_figure3_simple_screening_bl
 - Primary scenario: `all_years`
 - Matrices: `surface water`, `soil`, `sludge`, `sediment`
 - Exclude `other`, `multiple classes`
-- Class-concordant pairs only
-- `n_provinces >= 12`
+- Class-concordant pairs via unified lookup (`assign_antibiotic_group` / `antibiotic_group_lookup.csv`)
+- Quinolones merged into `fluoroquinolones` for env-class aggregation
+- `Trimethoprim/Sulfamethoxazole` retained in AMR resistance data
+- `n_provinces >= 10`
 - Rank by `n_provinces`, then `|env_amr_rho|`, then `|partial_env_amr_rho|`, then LOO label
 - Top `3` per matrix **(disabled; full pool exported)**
 
-- All candidates: **2604**
-- Class-concordant (after env/matrix gates): **60**
-- Filter pool (+ 12+ provinces): **60**
-- Filtered pathways: **60**
+- All candidates: **2697**
+- Class-concordant (after env/matrix gates): **125**
+- Filter pool (+ 10+ provinces): **83**
+- Filtered pathways: **83**
 
 ## Survivors per matrix
 
-- sediment: **15**
-- sludge: **15**
-- soil: **15**
-- surface water: **15**
+- sediment: **23**
+- sludge: **19**
+- soil: **22**
+- surface water: **19**
 

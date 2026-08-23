@@ -149,7 +149,55 @@ clusters3 <- kmeans3_pca$cluster
 kmeans4_pca <- kmeans(pc_scores, centers = 4, nstart = 25)
 clusters4 <- kmeans4_pca$cluster
 
+align_cluster_labels <- function(new_labels, old_labels, provinces) {
+  old_labels <- as.integer(old_labels)
+  new_labels <- as.integer(new_labels)
+  old_ids <- sort(unique(old_labels))
+  new_ids <- sort(unique(new_labels))
+  if (!length(old_ids) || !length(new_ids)) {
+    return(new_labels)
+  }
+  overlap <- outer(
+    old_ids,
+    new_ids,
+    Vectorize(function(old_id, new_id) {
+      sum(old_labels == old_id & new_labels == new_id)
+    })
+  )
+  rownames(overlap) <- old_ids
+  colnames(overlap) <- new_ids
+  map <- stats::setNames(rep(NA_integer_, length(new_ids)), new_ids)
+  for (old_id in old_ids) {
+    col_idx <- which.max(overlap[as.character(old_id), , drop = TRUE])
+    new_id <- new_ids[col_idx]
+    if (is.na(map[as.character(new_id)])) {
+      map[as.character(new_id)] <- old_id
+    }
+  }
+  unmapped_new <- new_ids[is.na(map[as.character(new_ids)])]
+  unmapped_old <- setdiff(old_ids, unname(map[!is.na(map)]))
+  if (length(unmapped_new) && length(unmapped_old)) {
+    for (i in seq_along(unmapped_new)) {
+      map[as.character(unmapped_new[[i]])] <- unmapped_old[[i]]
+    }
+  }
+  unname(map[as.character(new_labels)])
+}
 
+province_groups_prev <- read_csv("data/cleaned/province_groups.csv")
+prev_lookup <- province_groups_prev %>%
+  dplyr::select(province, dplyr::any_of(c("k2_groups", "k3_groups", "k4_groups")))
+
+if (all(c("k2_groups", "k3_groups", "k4_groups") %in% names(prev_lookup))) {
+  aligned <- data.frame(
+    province = rownames(pc_scores),
+    stringsAsFactors = FALSE
+  ) %>%
+    dplyr::left_join(prev_lookup, by = "province")
+  clusters2 <- align_cluster_labels(clusters2, aligned$k2_groups, aligned$province)
+  clusters3 <- align_cluster_labels(clusters3, aligned$k3_groups, aligned$province)
+  clusters4 <- align_cluster_labels(clusters4, aligned$k4_groups, aligned$province)
+}
 
 cluster_df <- data.frame(
   province = rownames(pc_scores),

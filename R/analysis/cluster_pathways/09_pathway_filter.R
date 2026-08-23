@@ -31,7 +31,9 @@ filter_md <- c(
     "- Primary scenario: `", CP_PATHWAY_SCENARIO, "`",
     "\n- Matrices: `", paste(CP_FIGURE3_MATRICES, collapse = "`, `"), "`",
     "\n- Exclude `", paste(CP_EXCLUDED_PATHWAY_ENV_CLASSES, collapse = "`, `"), "`",
-    "\n- Class-concordant pairs only",
+    "\n- Class-concordant pairs via unified lookup (`assign_antibiotic_group` / `antibiotic_group_lookup.csv`)",
+    "\n- Quinolones merged into `fluoroquinolones` for env-class aggregation",
+    "\n- `Trimethoprim/Sulfamethoxazole` retained in AMR resistance data",
     "\n- `n_provinces >= ", CP_MIN_PROVINCES, "`",
     "\n- Rank by `n_provinces`, then `|env_amr_rho|`, then `|partial_env_amr_rho|`, then LOO label",
     "\n- Top `", CP_SIMPLE_FIG3_ROWS_PER_MATRIX, "` per matrix **(disabled; full pool exported)**"

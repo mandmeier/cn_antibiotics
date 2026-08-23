@@ -286,7 +286,14 @@ apply_pathway_filters <- function(pathways) {
   # Final shortlist: top N per matrix (disabled — show full filter pool in figure).
   # pool %>%
   #   select_top_pathways_per_matrix()
-  rank_pathways_simple_figure3(pool)
+  filtered <- rank_pathways_simple_figure3(pool) %>%
+    dplyr::mutate(
+      pathway_id = paste(.data$env_class, .data$endpoint, sep = " | ")
+    )
+  matrix_counts <- filtered %>%
+    dplyr::count(.data$pathway_id, name = "n_matrices_present")
+  filtered %>%
+    dplyr::left_join(matrix_counts, by = "pathway_id")
 }
 
 build_filter_summary <- function(pathways) {

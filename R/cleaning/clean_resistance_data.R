@@ -16,8 +16,13 @@ CARSS_PROVINCES <- c(
   "Tianjin", "Tibet", "Xinjiang", "Yunnan", "Zhejiang"
 )
 
+CP_ALLOWED_COMBO_ANTIBIOTICS <- c("Trimethoprim/Sulfamethoxazole")
+
 is_multiple_or_combo_antibiotic <- function(antibiotic) {
   if (is.na(antibiotic) || !nzchar(antibiotic)) {
+    return(FALSE)
+  }
+  if (antibiotic %in% CP_ALLOWED_COMBO_ANTIBIOTICS) {
     return(FALSE)
   }
   grepl("/", antibiotic, fixed = TRUE) ||
