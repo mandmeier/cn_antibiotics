@@ -1,0 +1,3 @@
+model,oob_or_cv_accuracy,loo_accuracy,n_features,n_provinces
+random_forest,0.7388457389153331,0.7741935483870968,56,31
+elastic_net_multinomial,0.7419354838709677,NA,56,31

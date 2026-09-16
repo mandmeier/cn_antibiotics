@@ -16,7 +16,15 @@ env_abx_per_province <- environmental %>%
   filter(province != "Jiangsu/Zhejiang") %>%
   filter(!grepl("Nation",  province)) %>%
 
-  select(sample_type, province, location, antibiotic, mean_concentration, concentration_unit, sample_year, season, full_reference_name, reference_number) %>%
+  select(
+    sample_type,
+    province,
+    antibiotic,
+    mean_concentration,
+    concentration_unit,
+    sample_year,
+    reference_number
+  ) %>%
   unique() %>%
   group_by(sample_type, province, antibiotic) %>%
 

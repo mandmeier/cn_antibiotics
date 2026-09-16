@@ -1,0 +1,8 @@
+generated: 2026-06-03 00:51:29.32449
+rows_audited: 5325
+rows_flagged: 27
+
+flag_counts:
+  alt_unit_more_plausible: 27
+  high_converted: 1
+

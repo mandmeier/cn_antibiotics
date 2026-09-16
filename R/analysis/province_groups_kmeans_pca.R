@@ -74,6 +74,67 @@ pca <- prcomp(df_wide_mat, center = FALSE, scale. = FALSE)
 pc_scores <- pca$x[,1:4]
 set.seed(42)
 
+#### Choose k: elbow and silhouette on PCA scores (first 4 PCs)
+# Compare k = 1, 2, ... up to k_max; inspect the knee in total within-cluster SS.
+k_max <- min(10, nrow(pc_scores) - 1)
+k_values <- seq_len(k_max)
+
+kmeans_elbow <- lapply(k_values, function(k) {
+  km <- kmeans(pc_scores, centers = k, nstart = 25)
+  data.frame(
+    k = k,
+    tot_withinss = km$tot.withinss,
+    betweenss = km$betweenss,
+    totss = km$totss
+  )
+})
+kmeans_elbow <- dplyr::bind_rows(kmeans_elbow)
+
+kmeans_silhouette <- lapply(k_values[k_values >= 2], function(k) {
+  km <- kmeans(pc_scores, centers = k, nstart = 25)
+  sil <- cluster::silhouette(km$cluster, dist(pc_scores))
+  data.frame(k = k, avg_silhouette = mean(sil[, 3]))
+})
+kmeans_elbow <- dplyr::left_join(
+  kmeans_elbow,
+  dplyr::bind_rows(kmeans_silhouette),
+  by = "k"
+)
+
+library(ggplot2)
+
+p_elbow <- ggplot(kmeans_elbow, aes(k, tot_withinss)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 2.5) +
+  scale_x_continuous(breaks = k_values) +
+  labs(
+    title = "K-means elbow (PCA scores, first 4 PCs)",
+    subtitle = "Look for the knee: diminishing drop in within-cluster SS as k increases",
+    x = "Number of clusters (k)",
+    y = "Total within-cluster sum of squares"
+  ) +
+  theme_minimal(base_size = 12)
+
+p_silhouette <- ggplot(
+  kmeans_elbow %>% dplyr::filter(!is.na(avg_silhouette)),
+  aes(k, avg_silhouette)
+) +
+  geom_line(linewidth = 0.8, colour = "steelblue") +
+  geom_point(size = 2.5, colour = "steelblue") +
+  scale_x_continuous(breaks = k_values) +
+  labs(
+    title = "Mean silhouette width by k",
+    subtitle = "Higher is better separated clusters (k >= 2 only)",
+    x = "Number of clusters (k)",
+    y = "Average silhouette width"
+  ) +
+  theme_minimal(base_size = 12)
+
+print(p_elbow)
+print(p_silhouette)
+
+kmeans_elbow
+
 # K-means clustering
 
 
@@ -88,7 +149,55 @@ clusters3 <- kmeans3_pca$cluster
 kmeans4_pca <- kmeans(pc_scores, centers = 4, nstart = 25)
 clusters4 <- kmeans4_pca$cluster
 
+align_cluster_labels <- function(new_labels, old_labels, provinces) {
+  old_labels <- as.integer(old_labels)
+  new_labels <- as.integer(new_labels)
+  old_ids <- sort(unique(old_labels))
+  new_ids <- sort(unique(new_labels))
+  if (!length(old_ids) || !length(new_ids)) {
+    return(new_labels)
+  }
+  overlap <- outer(
+    old_ids,
+    new_ids,
+    Vectorize(function(old_id, new_id) {
+      sum(old_labels == old_id & new_labels == new_id)
+    })
+  )
+  rownames(overlap) <- old_ids
+  colnames(overlap) <- new_ids
+  map <- stats::setNames(rep(NA_integer_, length(new_ids)), new_ids)
+  for (old_id in old_ids) {
+    col_idx <- which.max(overlap[as.character(old_id), , drop = TRUE])
+    new_id <- new_ids[col_idx]
+    if (is.na(map[as.character(new_id)])) {
+      map[as.character(new_id)] <- old_id
+    }
+  }
+  unmapped_new <- new_ids[is.na(map[as.character(new_ids)])]
+  unmapped_old <- setdiff(old_ids, unname(map[!is.na(map)]))
+  if (length(unmapped_new) && length(unmapped_old)) {
+    for (i in seq_along(unmapped_new)) {
+      map[as.character(unmapped_new[[i]])] <- unmapped_old[[i]]
+    }
+  }
+  unname(map[as.character(new_labels)])
+}
 
+province_groups_prev <- read_csv("data/cleaned/province_groups.csv")
+prev_lookup <- province_groups_prev %>%
+  dplyr::select(province, dplyr::any_of(c("k2_groups", "k3_groups", "k4_groups")))
+
+if (all(c("k2_groups", "k3_groups", "k4_groups") %in% names(prev_lookup))) {
+  aligned <- data.frame(
+    province = rownames(pc_scores),
+    stringsAsFactors = FALSE
+  ) %>%
+    dplyr::left_join(prev_lookup, by = "province")
+  clusters2 <- align_cluster_labels(clusters2, aligned$k2_groups, aligned$province)
+  clusters3 <- align_cluster_labels(clusters3, aligned$k3_groups, aligned$province)
+  clusters4 <- align_cluster_labels(clusters4, aligned$k4_groups, aligned$province)
+}
 
 cluster_df <- data.frame(
   province = rownames(pc_scores),
@@ -112,7 +221,7 @@ province_groups <- province_groups %>%
   select(-k2_groups, -k3_groups, -k4_groups) %>%
   left_join(cluster_df)
 
-# write_csv(province_groups, "data/cleaned/province_groups.csv")
+write_csv(province_groups, "data/cleaned/province_groups.csv")
 
 
 
@@ -231,7 +340,7 @@ p1 <- ggplot(plot_df, aes(PC1, PC2, color = cluster)) +
   geom_text_repel(aes(label = province),
                   size = 3,
                   max.overlaps = 20) +
-  scale_colour_manual(values = c("#537490", "#88e788", "#F78793")) +
+  scale_colour_manual(values = c("#88e788", "#F78793", "#537490")) +
   labs(
     #title = "PC1 vs PC2",
     x = pc1_lab,
@@ -258,9 +367,9 @@ source("R/utils/plot_on_china_map.R")
 
 
 my_cols <- c(
-  "1" = "#537490",
-  "2" = "#88e788",
-  "3" = "#F78793"
+  "1" = "#88e788",
+  "2" = "#F78793",
+  "3" = "#537490"
 )
 
 

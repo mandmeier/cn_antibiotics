@@ -2,18 +2,288 @@
 # Cross-dataset joins with resistance use ~15 shared drug names; resistance combos stay separate.
 
 source("R/utils/environmental_units.R")
+source("R/utils/antibiotic_classes.R")
+source("R/utils/environmental_conversion_flags.R")
 
-environmental <- read_csv("data/raw/environmental_data/environmental_data_combined.csv")
+# 31 provincial-level units in CARSS (excludes National aggregate).
+CARSS_PROVINCES <- c(
+  "Anhui", "Beijing", "Chongqing", "Fujian", "Gansu", "Guangdong", "Guangxi",
+  "Guizhou", "Hainan", "Hebei", "Heilongjiang", "Henan", "Hubei", "Hunan",
+  "Inner Mongolia", "Jiangsu", "Jiangxi", "Jilin", "Liaoning", "Ningxia",
+  "Qinghai", "Shaanxi", "Shandong", "Shanghai", "Shanxi", "Sichuan",
+  "Tianjin", "Tibet", "Xinjiang", "Yunnan", "Zhejiang"
+)
 
-n_antibiotics_before <- n_distinct(environmental$antibiotic)
+province_map <- c(
+  setNames(CARSS_PROVINCES, str_to_lower(CARSS_PROVINCES)),
+  "xizang" = "Tibet",
+  "tibet autonomous region" = "Tibet",
+  "xizang autonomous region" = "Tibet",
+  "shaanxi (xi'an)" = "Shaanxi",
+  "shaanxi (xian)" = "Shaanxi"
+)
 
-environmental_clean <- environmental %>%
+# Higher rank = newer / preferred source when identical measurements appear in multiple references.
+# Supplemental references (N*, NEW_*, CAND_*) outrank Zhang pub_id values.
+reference_source_rank <- function(reference_number) {
+  ref <- as.character(reference_number)
+  vapply(ref, function(r) {
+    year <- suppressWarnings(as.numeric(str_extract(r, "(19|20)[0-9]{2}(?!\\d)")))
+    if (is.na(year)) {
+      years <- str_extract_all(r, "(19|20)[0-9]{2}")[[1]]
+      if (length(years) > 0) {
+        year <- suppressWarnings(as.numeric(tail(years, 1)))
+      }
+    }
+    if (is.na(year)) {
+      year <- 0
+    }
+
+    if (str_starts(r, "NEW_")) {
+      return(4e8 + year * 1e3)
+    }
+    if (str_starts(r, "CAND_")) {
+      return(3e8 + year * 1e3)
+    }
+    if (str_detect(r, "^N[0-9]+$")) {
+      return(2e8 + as.numeric(str_remove(r, "^N")))
+    }
+    num <- suppressWarnings(as.numeric(r))
+    if (!is.na(num)) {
+      return(1e8 + num)
+    }
+    0
+  }, numeric(1))
+}
+
+parse_sample_year <- function(year) {
+  year_chr <- as.character(year)
+  year_chr <- str_squish(year_chr)
+  year_chr <- str_replace_all(year_chr, "[\u2013\u2014–—]", "-")
+  year_chr <- if_else(
+    is.na(year_chr) | year_chr %in% c("", "NA", "na"),
+    NA_character_,
+    year_chr
+  )
+
+  years_list <- str_extract_all(year_chr, "\\d{4}")
+  vapply(years_list, function(years_chr) {
+    years <- as.numeric(years_chr)
+    years <- years[!is.na(years)]
+    if (length(years) == 0) {
+      return(NA_real_)
+    }
+    if (length(years) == 1) {
+      return(years[[1]])
+    }
+    start <- years[[1]]
+    end <- years[[length(years)]]
+    # Midpoint of inclusive range; if tied, take the lower year.
+    floor((start + end) / 2)
+  }, numeric(1))
+}
+
+# import Zhang data, wrangle into standard format
+zhang <- read_excel("data/raw/environmental_data/Zhang_2022.xls", sheet = "Records")
+
+zhang_formatted <- zhang %>%
+  # add location variable
+  mutate(loc = paste(loc_l1, loc_l2, loc_l3, loc_l4, loc_Ref)) %>%
+  group_by(sem_type, loc, ABX_subcat, sam_Y, sam_M, ABX_conc_max, ABX_conc_mean, pub_id) %>%
+  # remove duplicate measurements
+  select(
+    sample_type = sem_type,
+    province = loc_l1,
+    location = loc,
+    sample_year = sam_Y,
+    season = sam_M,
+    antibiotic = ABX_subcat,
+    mean_concentration = ABX_conc_mean,
+    max_concentration = ABX_conc_max,
+    reference_number = pub_id
+  ) %>%
+  unique() %>%
+  ungroup() %>%
+  # add units
+  mutate(concentration_unit = "ng/g", .after = max_concentration) %>%
+  # type formatting
+  mutate(sample_year = as.character(sample_year)) %>%
+  mutate(season = as.character(season)) %>%
+  mutate(reference_number = as.character(reference_number)) %>%
+  # convert to numeric measurements
+  mutate(mean_concentration = as.numeric(mean_concentration)) %>%
+  mutate(max_concentration = as.numeric(max_concentration)) %>%
+  # Zhang unit corrections (default placeholder is ng/g):
+  # pub_id 223 (Li et al. 2008): sludge/sediment values are paper mg/kg (dw) × 1000.
+  # pub_id 113 (Zhao et al. 2017): soil values are paper µg/kg (dw); 1 µg/kg = 1 ng/g.
+  mutate(
+    concentration_unit = case_when(
+      reference_number == "223" ~ "mg/kg dw",
+      reference_number == "113" ~ "µg/kg dw",
+      TRUE ~ concentration_unit
+    ),
+    mean_concentration = if_else(
+      reference_number == "223",
+      mean_concentration / 1000,
+      mean_concentration
+    ),
+    max_concentration = if_else(
+      reference_number == "223",
+      max_concentration / 1000,
+      max_concentration
+    )
+  )
+
+# import supplemental environmental antibiotics data
+supplemental <- read_csv(
+  "data/raw/environmental_data/China_Environmental_Supplemental.csv",
+  show_col_types = FALSE
+) %>%
+  mutate(
+    sample_year = as.character(sample_year),
+    season = as.character(season),
+    reference_number = as.character(reference_number),
+    mean_concentration = as.numeric(mean_concentration),
+    max_concentration = as.numeric(max_concentration)
+  )
+
+combined_data <- zhang_formatted %>%
+  bind_rows(supplemental) %>%
+  filter(!is.na(mean_concentration) | !is.na(max_concentration)) %>%
+  filter(!is.na(antibiotic), str_squish(antibiotic) != "")
+
+n_antibiotics_before <- n_distinct(combined_data$antibiotic)
+
+environmental_clean <- combined_data %>%
+
+  #### Harmonize sample_type
+  mutate(
+    sample_type = iconv(sample_type, from = "", to = "UTF-8", sub = ""),
+    sample_type = str_squish(sample_type),
+    sample_type = str_to_lower(sample_type),
+    sample_type = str_replace_all(sample_type, "_", " "),
+    sample_type = str_replace_all(sample_type, "\\s+", " ")
+  ) %>%
+  mutate(
+    sample_type = case_when(
+      # --- soil ---
+      sample_type %in% c("agricultural soil", "farm soil", "farmland soil") ~ "agricultural soil",
+      sample_type %in% c("soil", "surface soil", "animal feed", "manure") ~ "soil",
+
+      # --- sediment ---
+      sample_type %in% c("sediments") ~ "sediment",
+      sample_type %in% c("soil/sediment combined", "soil / sediment combined") ~ "sediment",
+      sample_type %in% c("sediment", "surface sediment") ~ "sediment",
+      sample_type %in% c("river sediment", "sediment (river)", "riverbed sediment") ~ "river sediment",
+      sample_type %in% c("lake sediment", "sediment (lake)") ~ "lake sediment",
+      sample_type %in% c("coastal/river sediment", "coastal sediment", "estuary sediment") ~ "coastal/river sediment",
+      sample_type %in% c(
+        "surface water sediment",
+        "sediment (surface water)",
+        "surface-water sediment",
+        "surfacewater sediment"
+      ) ~ "surface water sediment",
+      sample_type %in% c("aquaculture pond sediment", "aquaculture sediment") ~ "aquaculture pond sediment",
+      sample_type %in% c("mariculture sediment") ~ "mariculture sediment",
+      sample_type %in% c(
+        "river water (suspended matter fraction)",
+        "suspended matter (river water)",
+        "suspended matter fraction (river water)"
+      ) ~ "river water (suspended matter fraction)",
+      sample_type %in% c(
+        "suspended particulate matter (river)",
+        "suspended particulate matter",
+        "spm (river)"
+      ) ~ "suspended particulate matter (river)",
+
+      # --- surface water ---
+      sample_type %in% c("surface water", "surfacewater", "canal surface water") ~ "surface water",
+      sample_type %in% c("river water", "river") ~ "river water",
+      sample_type %in% c("coastal water", "coastal seawater", "seawater", "sea water") ~ "coastal water",
+      sample_type %in% c("inland lake water", "lake water") ~ "inland lake water",
+      sample_type %in% c("aquaculture pond water", "aquaculture water", "pond water") ~ "aquaculture pond water",
+      sample_type %in% c("mariculture water") ~ "mariculture water",
+      sample_type %in% c("groundwater", "ground water") ~ "groundwater",
+
+      # --- sludge ---
+      sample_type %in% c("municipal sludge", "sewage sludge") ~ "municipal sludge",
+      sample_type %in% c("industrial sludge") ~ "industrial sludge",
+      sample_type %in% c("msw incineration sludge") ~ "MSW incineration sludge",
+      sample_type %in% c("fermentation residue") ~ "fermentation residue",
+
+      # --- wastewater influent ---
+      sample_type %in% c(
+        "municipal wastewater influent",
+        "urban wastewater (influent)",
+        "wastewater influent",
+        "wwtp influent",
+        "influent"
+      ) ~ "wastewater influent",
+      sample_type %in% c("municipal wastewater (urban sewer)") ~ "municipal wastewater (urban sewer)",
+      sample_type %in% c("msw incineration leachate") ~ "MSW incineration leachate",
+
+      # --- wastewater effluent ---
+      sample_type %in% c(
+        "municipal wastewater effluent",
+        "urban wastewater (effluent)",
+        "wastewater effluent",
+        "wwtp effluent",
+        "effluent"
+      ) ~ "municipal wastewater effluent",
+      sample_type %in% c("msw incineration leachate (nf treated)") ~ "MSW incineration leachate (NF treated)",
+      sample_type %in% c(
+        "msw incineration leachate (treated effluent)",
+        "msw incineration leachate (treatment effluent)"
+      ) ~ "MSW incineration leachate (treated effluent)",
+      sample_type %in% c("livestock wastewater") ~ "livestock wastewater",
+      sample_type %in% c("hospital wastewater") ~ "hospital wastewater",
+      sample_type %in% c("pharmaceutical wastewater") ~ "pharmaceutical wastewater",
+      sample_type %in% c("aquaculture wastewater") ~ "aquaculture wastewater",
+
+      TRUE ~ sample_type
+    )
+  ) %>%
+
+  #### Harmonize province
+  mutate(
+    province = iconv(province, from = "", to = "UTF-8", sub = ""),
+    province = str_squish(province),
+    province_key = str_to_lower(province),
+    province_key = str_replace_all(province_key, "[\u2018\u2019`']", "'"),
+    province = case_when(
+      is.na(province_key) | province_key == "" ~ NA_character_,
+      str_detect(
+        province_key,
+        "multiple|nationwide|n/a|/|basin|delta|corridor|coastal provinces"
+      ) ~ NA_character_,
+      province_key %in% c("hong kong", "macau", "taiwan") ~ NA_character_,
+      province_key %in% names(province_map) ~ unname(province_map[province_key]),
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  select(-province_key) %>%
+  filter(!is.na(province)) %>%
+
+  #### Harmonize sample_year
+  mutate(sample_year = parse_sample_year(sample_year)) %>%
+
+  #### Harmonize antibiotic
   # Removed because it is not clear if Zhi Su used Penicillin G or Penicillin V.
   # These are chemically distinct.
-  filter(!(source_dataset == "Su_2025_Table2_PDF_text" & antibiotic == "Penicillin (PEN)")) %>%
+  {
+    df <- .
+    if ("source_dataset" %in% names(df)) {
+      df <- df %>%
+        filter(
+          !(source_dataset == "Su_2025_Table2_PDF_text" & antibiotic == "Penicillin (PEN)")
+        )
+    }
+    df
+  } %>%
   mutate(
     antibiotic = iconv(antibiotic, from = "", to = "UTF-8", sub = ""),
     antibiotic = str_squish(antibiotic),
+    antibiotic_raw = antibiotic,
 
     antibiotic = case_when(
       antibiotic %in% c("NOR (summer)", "NOR (winter)", "NOR") ~ "Norfloxacin",
@@ -25,7 +295,7 @@ environmental_clean <- environmental %>%
 
     antibiotic = str_remove(
       antibiotic,
-      regex(" (?i)(hydrochloride|hyclate|mesylate|tosylate|phosphate|sodium salt)$")
+      regex(" (?i)(hydrochloride|hyclate|mesylate|tosylate|phosphate|sodium salt|sodium)$")
     ),
 
     antibiotic = case_when(
@@ -69,6 +339,8 @@ environmental_clean <- environmental %>%
       # --- Cephalosporins / penicillins ---
       "Cefalexin" = "Cephalexin",
       "Cephalexin" = "Cephalexin",
+      "Cefotaxime Sodium" = "Cefotaxime",
+      "Penicillin" = "Penicillin G",
       "Sarmoxicillin" = "Amoxicillin",
 
       # --- Phenicols ---
@@ -94,6 +366,7 @@ environmental_clean <- environmental %>%
 
       # --- Pipemidic acid ---
       "Pipemidic acid" = "Pipemidic Acid",
+      "Pipemidicacid" = "Pipemidic Acid",
 
       # --- Macrolides ---
       "SPiramycin" = "Spiramycin",
@@ -121,6 +394,9 @@ environmental_clean <- environmental %>%
       "sulfapyridine" = "Sulfapyridine",
       "Sulfaquirioxaline" = "Sulfaquinoxaline",
       "Sulphadimethoxine" = "Sulfadimethoxine",
+      "Sulfachloropyridine" = "Sulfachloropyridazine",
+      "Sulfaquinoline" = "Sulfaquinoxaline",
+      "Sulphathiazole" = "Sulfathiazole",
       "Sulphisoxazole" = "Sulfafurazole",
       "Sulfisoxazole" = "Sulfafurazole",
       "Sulfamethazole" = "Sulfamethizole",
@@ -132,38 +408,16 @@ environmental_clean <- environmental %>%
       # --- Tetracyclines ---
       "TetracyclineY" = "Tetracycline",
       "Metacycline" = "Methacycline",
+      "Trimethoprimg" = "Trimethoprim",
 
-      # --- Aggregates (collapse Sum/Total to base class name) ---
-      "Total antibiotics" = "Total Antibiotics",
-      "Total quinolones" = "Total Quinolones",
-      "All antibiotics (median)" = "All Antibiotics",
-      "Mixed antibiotics" = "Multiple Antibiotics",
-      "Mixed Antibiotics" = "Multiple Antibiotics",
-      "Multiple antibiotics (aggregate)" = "Multiple Antibiotics",
-      "Fluoroquinolones (sum)" = "Fluoroquinolones",
-      "Fluoroquinolones (total)" = "Fluoroquinolones",
-      "Macrolides (sum)" = "Macrolides",
-      "Macrolides (total)" = "Macrolides",
-      "Macrolides (sum, dominant class in sediment)" = "Macrolides",
-      "Lincosamides (sum)" = "Lincosamides",
-      "Sulfonamides (sum)" = "Sulfonamides",
-      "Sulfonamides + aminophenyl sulfone compounds (cumulative)" = "Sulfonamides",
+      # --- Tetracycline class totals (proxy as Tetracycline) ---
       "Tetracyclines (sum)" = "Tetracycline",
       "Tetracyclines (total)" = "Tetracycline",
       "Tetracyclines (dominant class)" = "Tetracycline",
       "Tetracyclines" = "Tetracycline",
-      "Total antibiotics (sum)" = "Total Antibiotics",
-      "Total antibiotics (QNs+SAs)" = "Total Antibiotics",
-      "Total antibiotics (sum, macrolides dominant)" = "Total Antibiotics",
-      "Total antibiotics (sum, tetracyclines dominant)" = "Total Antibiotics",
-      "Total Chloramphenicols (CAs)" = "Total Chloramphenicols",
-      "Total fishery drugs (antibiotics + pesticides)" = "Total Fishery Drugs",
-      "Total Macrolides (MLs)" = "Macrolides",
-      "Total Quinolones (QNs)" = "Total Quinolones",
-      "Total quinolones (sum)" = "Total Quinolones",
-      "Total Sulfonamides (SAs)" = "Sulfonamides",
       "Total Tetracyclines (TCs)" = "Tetracycline",
       "Total Tetracyclines" = "Tetracycline",
+      "Total tetracyclines (class sum)" = "Tetracycline",
 
       .default = antibiotic
     ),
@@ -174,6 +428,8 @@ environmental_clean <- environmental %>%
     antibiotic = str_replace(antibiotic, " \\(Dominant Class\\)$", ""),
     antibiotic = str_replace(antibiotic, " \\(Dominant Class in Sediment\\)$", ""),
     antibiotic = str_replace(antibiotic, " \\(Median\\)$", ""),
+    antibiotic = str_replace(antibiotic, regex(" \\(class summary\\)$", ignore_case = TRUE), ""),
+    antibiotic = str_replace(antibiotic, regex(" \\(class sum\\)$", ignore_case = TRUE), ""),
 
     # Remove trailing abbreviated codes in parentheses (e.g. CIP, TCs, ETM-H2O)
     antibiotic = str_remove(antibiotic, " \\([A-Z][A-Z0-9+-]{1,15}\\)$"),
@@ -186,14 +442,35 @@ environmental_clean <- environmental %>%
       .default = antibiotic
     )
   ) %>%
-  mutate(
-    antibiotic = if_else(
-      source_dataset == "Wu_2025.csv" & antibiotic == "Penicillin",
-      "Penicillin G",
-      antibiotic
+  {
+    df <- .
+    if ("source_dataset" %in% names(df)) {
+      df <- df %>%
+        mutate(
+          antibiotic = if_else(
+            source_dataset == "Wu_2025.csv" & antibiotic == "Penicillin",
+            "Penicillin G",
+            antibiotic
+          )
+        )
+    }
+    df
+  } %>%
+  {
+    df <- .
+    n_before_agg <- nrow(df)
+    df <- df %>%
+      filter(
+        !vapply(antibiotic, is_aggregate_antibiotic, logical(1)),
+        !vapply(antibiotic, is_tetracycline_class_total, logical(1))
+      )
+    message(
+      "Removed ", n_before_agg - nrow(df),
+      " aggregate / composite measurement(s)"
     )
-  ) %>%
-  # remove non-antibiotics or antibiotics group measurements
+    df
+  } %>%
+  select(-antibiotic_raw) %>%
   filter(!antibiotic %in% c(
     "Atenolol",
     "Metoprolol",
@@ -203,12 +480,27 @@ environmental_clean <- environmental %>%
     "Monensin",
     "Narasin",
     "Nicarbazin",
-    "All Antibiotics",
-    "Chloramphenicol derivatives"
+    "Chloramphenicol derivatives",
+    "Cyromazine",
+    "Thiabendazole",
+    "multiple classes",
+    "sulfonamides"
   )) %>%
   # Removed solid waste: different antibiotics concentration pattern from other
   # matrices and only n = 2 samples.
   filter(sample_type != "solid waste") %>%
+  mutate(
+    antibiotic = case_when(
+      antibiotic == "Penicillin" ~ "Penicillin G",
+      antibiotic == "Tetracyclines" ~ "Tetracycline",
+      TRUE ~ antibiotic
+    ),
+    antibiotic_class = assign_antibiotic_group(antibiotic),
+    .after = antibiotic
+  ) %>%
+  select(-any_of("group_of_antibiotic")) %>%
+
+  #### Harmonize concentration_unit
   mutate(
     matrix = assign_environmental_matrix(sample_type, reference_number),
     .after = sample_type
@@ -216,31 +508,73 @@ environmental_clean <- environmental %>%
   # unclear how to convert measurments measured in liquid sample to solid sludge,
   # removed 7 measurements from sources N69, N92, N451
   filter(
-    !(matrix == "sludge" & concentration_unit %in% c("mg/L", "µg/L"))
+    !(
+      matrix == "sludge" &
+        normalize_unit_string(concentration_unit) %in% c("mg/l", "µg/l")
+    )
   ) %>%
   # unclear how to convert measurments measured in solid sample to liquid surface water,
   # removed 5 measurements from sources N453 and N459
   filter(
-    !(matrix == "surface water" & concentration_unit %in% c("mg/kg", "ng/kg"))
+    !(
+      matrix == "surface water" &
+        normalize_unit_string(concentration_unit) %in% c("mg/kg", "ng/kg")
+    )
   ) %>%
   # unclear how to convert measurments measured in solid sample to liquid surface water,
   # removed 21 measurements from sources N154, N453, N455, and N457
   filter(
     !(
       matrix == "surface water" &
-        grepl("^ng/g", str_to_lower(str_replace_all(concentration_unit, "μ", "µ")))
+        grepl("^ng/g", normalize_unit_string(concentration_unit))
     )
   ) %>%
-  # normalize units
   mutate(
     .unit_norm = normalize_unit_string(concentration_unit),
     .is_dw = unit_is_dry_weight(.unit_norm),
-    .unit_factor = unit_conversion_factor(concentration_unit),
-    mean_concentration = mean_concentration * .unit_factor,
-    max_concentration = max_concentration * .unit_factor,
-    concentration_unit = target_concentration_unit(matrix, .is_dw)
+    previous_unit = concentration_unit,
+    recalculated_factor = unit_conversion_factor(concentration_unit),
+    mean_concentration = mean_concentration * recalculated_factor,
+    max_concentration = max_concentration * recalculated_factor,
+    concentration_unit = target_concentration_unit(matrix, .is_dw),
+  # Keep source unit when scale factor is 1 but labels differ (e.g. µg/kg dw → ng/g dw).
+    previous_unit = if_else(
+      recalculated_factor == 1 &
+        normalize_unit_string(previous_unit) !=
+          normalize_unit_string(concentration_unit),
+      previous_unit,
+      if_else(recalculated_factor == 1, NA_character_, previous_unit)
+    )
   ) %>%
-  select(-.unit_norm, -.is_dw, -.unit_factor)
+  select(-.unit_norm, -.is_dw) %>%
+  relocate(recalculated_factor, .after = concentration_unit) %>%
+  relocate(previous_unit, .after = recalculated_factor) %>%
+
+  # remove season because this causes some duplicates (exact same value listed twice for the same year but different seasons).
+  # -> only using unique measurements within a location and a year.
+  select(-season) %>%
+  unique()
+
+n_before_measurement_dedup <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
+  mutate(.source_rank = reference_source_rank(reference_number)) %>%
+  group_by(
+    sample_type,
+    matrix,
+    province,
+    sample_year,
+    antibiotic,
+    mean_concentration,
+    max_concentration
+  ) %>%
+  slice_max(.source_rank, n = 1, with_ties = FALSE) %>%
+  ungroup() %>%
+  select(-.source_rank)
+
+message(
+  "Removed ", n_before_measurement_dedup - nrow(environmental_clean),
+  " duplicate measurement(s) (kept latest source)"
+)
 
 if (any(is.na(environmental_clean$concentration_unit))) {
   bad_units <- unique(environmental_clean$concentration_unit[
@@ -256,11 +590,92 @@ n_antibiotics_after <- n_distinct(environmental_clean$antibiotic)
 message(
   "Antibiotics: ", n_antibiotics_before, " -> ", n_antibiotics_after
 )
-if (any(is.na(environmental_clean$matrix))) {
-  warning(
-    "Unmapped sample_type: ",
-    paste(unique(environmental_clean$sample_type[is.na(environmental_clean$matrix)]), collapse = ", ")
+if (any(is.na(environmental_clean$recalculated_factor))) {
+  stop(
+    "Unparseable concentration_unit on ",
+    sum(is.na(environmental_clean$recalculated_factor)),
+    " row(s)"
   )
 }
 
-write_csv(environmental_clean, "data/cleaned/environmental_cleaned.csv")
+# Unit-conversion audit (uses validation columns before they are dropped).
+validation_dir <- "data/cleaned/validation"
+dir.create(validation_dir, recursive = TRUE, showWarnings = FALSE)
+
+conversion_audit <- flag_environmental_concentrations(
+  environmental_clean,
+  from_cleaned = TRUE
+)
+
+suspicious_output_cols <- c(
+  "reference_number",
+  "province",
+  "location",
+  "sample_type",
+  "matrix",
+  "sample_year",
+  "antibiotic",
+  "antibiotic_class",
+  "unit_raw",
+  "mean_raw",
+  "max_raw",
+  "conversion_factor",
+  "unit_converted",
+  "mean_converted",
+  "max_converted",
+  "recalculated_factor",
+  "previous_unit",
+  "flag_codes",
+  "flag_reasons",
+  "suggested_unit_note"
+)
+
+suspicious <- conversion_audit$suspicious %>%
+  dplyr::select(dplyr::any_of(suspicious_output_cols))
+
+readr::write_csv(
+  suspicious,
+  file.path(validation_dir, "suspicious_conversions.csv")
+)
+readr::write_csv(
+  conversion_audit$audited,
+  file.path(validation_dir, "unit_conversion_audit.csv")
+)
+
+audit_summary_lines <- c(
+  paste0("generated: ", Sys.time()),
+  paste0("rows_audited: ", nrow(conversion_audit$audited)),
+  paste0("rows_flagged: ", nrow(suspicious)),
+  ""
+)
+if (nrow(suspicious) > 0) {
+  flag_tbl <- sort(
+    table(unlist(strsplit(suspicious$flag_codes, ";"))),
+    decreasing = TRUE
+  )
+  audit_summary_lines <- c(
+    audit_summary_lines,
+    "flag_counts:",
+    paste0("  ", names(flag_tbl), ": ", flag_tbl),
+    ""
+  )
+}
+writeLines(
+  audit_summary_lines,
+  file.path(validation_dir, "unit_conversion_audit_summary.txt")
+)
+
+message(
+  "Unit conversion audit: ", nrow(suspicious), " flagged of ",
+  nrow(conversion_audit$audited), " rows with mean concentration ",
+  "(see ", validation_dir, "/)"
+)
+
+environmental_clean <- environmental_clean %>%
+  dplyr::select(
+    -location,
+    -recalculated_factor,
+    -previous_unit
+  )
+
+readr::write_csv(environmental_clean, "data/cleaned/environmental_cleaned.csv")

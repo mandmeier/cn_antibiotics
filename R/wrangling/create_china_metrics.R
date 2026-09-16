@@ -8,8 +8,6 @@ env_abx <- read_csv("data/analysis_ready/env_abx_per_province.csv")
 
 province_groups <- read_csv("data/cleaned/province_groups.csv")
 
-#antibiotic_groups <- read_csv("sandbox/manual_R/data/cleaned/antibiotic_groups.csv")
-
 
 
 
