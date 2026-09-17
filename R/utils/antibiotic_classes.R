@@ -137,7 +137,7 @@ infer_antibiotic_group <- function(antibiotic) {
 
 assign_antibiotic_group <- function(
   antibiotic,
-  lookup_path = "data/reference/antibiotic_group_lookup.csv"
+  lookup_path = "data/raw/reference/antibiotic_group_lookup.csv"
 ) {
   lookup <- readr::read_csv(lookup_path, show_col_types = FALSE)
   out <- dplyr::tibble(antibiotic = antibiotic) %>%
