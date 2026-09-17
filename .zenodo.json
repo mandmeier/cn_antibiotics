@@ -1,0 +1,38 @@
+{
+  "title": "cn_antibiotics: harmonized environmental antibiotics, CARSS resistance, and China yearbook covariates",
+  "description": "R pipeline that turns literature-derived environmental antibiotic concentrations, CARSS clinical resistance data, and China Statistical Yearbook variables into harmonized, analysis-ready tables for province-level One Health reuse. This GitHub–Zenodo archive cites the software; curated data tables are deposited separately under CC BY 4.0 (see README Data Availability).",
+  "upload_type": "software",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Andmeier, Mike",
+      "affiliation": ""
+    },
+    {
+      "name": "kali",
+      "affiliation": ""
+    }
+  ],
+  "keywords": [
+    "antibiotics",
+    "antimicrobial resistance",
+    "China",
+    "environmental monitoring",
+    "One Health",
+    "CARSS",
+    "R"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mandmeier/cn_antibiotics",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.DATA_DOI",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ]
+}

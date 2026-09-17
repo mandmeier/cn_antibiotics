@@ -27,6 +27,8 @@ Rscript R/01_clean_environmental_data.R
 | `data/intermediate/` | Cleaned / harmonized tables produced by cleaning scripts |
 | `data/output/` | Analysis-ready tables, province clusters, and figures |
 | `R/01`–`R/09` (+ `R/04b`) | Pipeline scripts in run order |
+| `R/10_stage_deposit.R` | Stage Zenodo data zip under `deposit/` |
+| `deposit/` | Deposit readme + regenerable `zenodo_v1/` staging and zip |
 | `R/utils/` | Shared helpers (units, antibiotic classes, yearbook metrics, maps) |
 | `R/qa/` | Optional verification scripts (not required to reproduce outputs) |
 
@@ -56,9 +58,10 @@ Rscript R/06_province_groups_kmeans_pca.R # → data/output/province_groups.csv 
 Rscript R/07_build_codebook.R             # → data/output/codebook.csv
 Rscript R/08_build_join_key.R             # → data/output/join_key.md + join_key_antibiotic_classes.csv
 Rscript R/09_curate_yearbook_core.R       # → yearbook_core.csv + manifest + yearbook_full.csv
+Rscript R/10_stage_deposit.R              # → deposit/zenodo_v1/ + cn_antibiotics_data_v1.0.0.zip
 ```
 
-Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06. Step 08 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 09 requires step 03 only.
+Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06. Step 08 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 09 requires step 03 only. Step 10 requires the curated intermediate and output tables listed in `R/10_stage_deposit.R`.
 
 ### Main outputs
 
@@ -93,3 +96,19 @@ Rscript R/qa/verify_antibiotic_names.R
 Rscript R/qa/verify_antibiotic_groups.R
 Rscript R/qa/build_antibiotic_group_lookup.R
 ```
+
+## Data availability
+
+Curated tables for Zenodo are staged by `R/10_stage_deposit.R` into `deposit/cn_antibiotics_data_v1.0.0.zip` (see [`deposit/README_deposit.md`](deposit/README_deposit.md)). Manual upload and GitHub→Zenodo steps: [`DEPOSIT_MANUAL.md`](DEPOSIT_MANUAL.md).
+
+| Resource | License | Identifier (replace after minting) |
+|---|---|---|
+| Curated data (Zenodo record) | CC BY 4.0 | `https://doi.org/10.5281/zenodo.DATA_DOI` |
+| R code / pipeline (GitHub → Zenodo archive) | MIT | `https://doi.org/10.5281/zenodo.SOFTWARE_DOI` |
+| GitHub repository | MIT | `https://github.com/mandmeier/cn_antibiotics` |
+
+**Round 1:** share a restricted Zenodo reviewer link for the data zip and private GitHub access for the code. **At acceptance:** make the data record and GitHub repository public and replace `DATA_DOI` / `SOFTWARE_DOI` in this README, `CITATION.cff`, `.zenodo.json`, and the manuscript.
+
+Paste-ready Data Availability blurb:
+
+> The curated datasets are available on Zenodo under CC BY 4.0 (https://doi.org/10.5281/zenodo.DATA_DOI). The R pipeline is archived on Zenodo from the tagged GitHub release v1.0.0 (https://doi.org/10.5281/zenodo.SOFTWARE_DOI; source https://github.com/mandmeier/cn_antibiotics).

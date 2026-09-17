@@ -8,3 +8,7 @@ data/raw/yearbook_data/yearbook_analysis_images/
 .DS_Store
 **/.DS_Store
 .cursor/**/*.mdc
+
+# Regenerable Zenodo staging (keep deposit/README_deposit.md tracked)
+deposit/zenodo_v1/
+deposit/*.zip
