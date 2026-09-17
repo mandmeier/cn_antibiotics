@@ -20,10 +20,12 @@ Rscript R/10_stage_deposit.R
 
 ## Software DOI (GitHub → Zenodo)
 
-After GitHub integration is on and `v1.0.0` exists as a GitHub Release:
+1. Enable Zenodo → GitHub for `mandmeier/cn_antibiotics` (repo usually must be **public** for the webhook).
+2. Publish/use GitHub Release **v1.0.1** (or later) so Zenodo ingests a draft after the hook is on.
+3. Open the Zenodo draft and **Publish** it; copy the software DOI.
+4. Replace `SOFTWARE_DOI` in `CITATION.cff`, `README.md`, and the manuscript (or ask the agent).
 
-1. Open the Zenodo draft created from the release and **Publish** it.
-2. Copy the software DOI and replace `SOFTWARE_DOI` in `CITATION.cff`, `README.md`, and the manuscript (or ask the agent).
+Release **v1.0.0** was created before the webhook; **v1.0.1** is the release intended to trigger Zenodo archiving.
 
 ## At acceptance
 

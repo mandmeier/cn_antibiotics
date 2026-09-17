@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software or the curated datasets, please cite both the software and the data deposit."
 title: "cn_antibiotics: harmonized environmental antibiotics, CARSS resistance, and China yearbook covariates"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-09-17"
 type: software
 authors:
