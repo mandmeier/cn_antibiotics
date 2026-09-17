@@ -5,11 +5,12 @@ version: "1.0.0"
 date-released: "2026-09-17"
 type: software
 authors:
-  - family-names: Andmeier
-    given-names: Mike
+  - family-names: Salimova
+    given-names: Alisa
+    affiliation: "Tsinghua University"
+  - family-names: Meier
+    given-names: Michael A.
     email: mandmeier24@gmail.com
-  - name: kali
-    email: mydjumanji@gmail.com
 repository-code: "https://github.com/mandmeier/cn_antibiotics"
 license: MIT
 abstract: >-
@@ -28,5 +29,5 @@ identifiers:
     value: "10.5281/zenodo.SOFTWARE_DOI"
     description: "Software DOI (Zenodo archive of this GitHub release); replace SOFTWARE_DOI after minting"
   - type: doi
-    value: "10.5281/zenodo.DATA_DOI"
-    description: "Data deposit DOI (Zenodo curated tables); replace DATA_DOI after minting"
+    value: "10.5281/zenodo.22807175"
+    description: "Data deposit DOI (Zenodo curated tables, version 1.0.0; restricted files until acceptance)"

@@ -99,16 +99,16 @@ Rscript R/qa/build_antibiotic_group_lookup.R
 
 ## Data availability
 
-Curated tables for Zenodo are staged by `R/10_stage_deposit.R` into `deposit/cn_antibiotics_data_v1.0.0.zip` (see [`deposit/README_deposit.md`](deposit/README_deposit.md)). Manual upload and GitHub→Zenodo steps: [`DEPOSIT_MANUAL.md`](DEPOSIT_MANUAL.md).
+Curated tables for Zenodo are staged by `R/10_stage_deposit.R` into `deposit/cn_antibiotics_data_v1.0.0.zip` (see [`deposit/README_deposit.md`](deposit/README_deposit.md)). Remaining GitHub→Zenodo software steps: [`DEPOSIT_MANUAL.md`](DEPOSIT_MANUAL.md).
 
-| Resource | License | Identifier (replace after minting) |
+| Resource | License | Identifier |
 |---|---|---|
-| Curated data (Zenodo record) | CC BY 4.0 | `https://doi.org/10.5281/zenodo.DATA_DOI` |
-| R code / pipeline (GitHub → Zenodo archive) | MIT | `https://doi.org/10.5281/zenodo.SOFTWARE_DOI` |
-| GitHub repository | MIT | `https://github.com/mandmeier/cn_antibiotics` |
+| Curated data (Zenodo record) | CC BY 4.0 | https://doi.org/10.5281/zenodo.22807175 |
+| R code / pipeline (GitHub → Zenodo archive) | MIT | `https://doi.org/10.5281/zenodo.SOFTWARE_DOI` (pending release) |
+| GitHub repository | MIT | https://github.com/mandmeier/cn_antibiotics |
 
-**Round 1:** share a restricted Zenodo reviewer link for the data zip and private GitHub access for the code. **At acceptance:** make the data record and GitHub repository public and replace `DATA_DOI` / `SOFTWARE_DOI` in this README, `CITATION.cff`, `.zenodo.json`, and the manuscript.
+**Round 1:** data record is published with **restricted files** — grant reviewer access on Zenodo; keep GitHub private and share collaborator access as needed. **At acceptance:** open the Zenodo files (or confirm journal policy), make the GitHub repository public, and replace `SOFTWARE_DOI` once the release is archived.
 
 Paste-ready Data Availability blurb:
 
-> The curated datasets are available on Zenodo under CC BY 4.0 (https://doi.org/10.5281/zenodo.DATA_DOI). The R pipeline is archived on Zenodo from the tagged GitHub release v1.0.0 (https://doi.org/10.5281/zenodo.SOFTWARE_DOI; source https://github.com/mandmeier/cn_antibiotics).
+> The curated datasets are available on Zenodo under CC BY 4.0 (https://doi.org/10.5281/zenodo.22807175; files restricted during review). The R pipeline is archived on Zenodo from the tagged GitHub release v1.0.0 (https://doi.org/10.5281/zenodo.SOFTWARE_DOI; source https://github.com/mandmeier/cn_antibiotics).

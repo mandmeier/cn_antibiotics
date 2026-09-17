@@ -4,9 +4,9 @@ Harmonized environmental antibiotic concentrations (China), CARSS clinical resis
 
 **License:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-**Software / pipeline:** https://github.com/mandmeier/cn_antibiotics (MIT). Replace with the public URL and software DOI after release.
+**Software / pipeline:** https://github.com/mandmeier/cn_antibiotics (MIT). Software DOI pending GitHub→Zenodo release archive.
 
-**Data DOI:** `10.5281/zenodo.DATA_DOI` (replace after Zenodo mints the record).
+**Data DOI:** https://doi.org/10.5281/zenodo.22807175 (version 1.0.0; files restricted until acceptance). Concept DOI for all versions: https://doi.org/10.5281/zenodo.22807174.
 
 ## Recommended starting files
 
@@ -49,4 +49,4 @@ Harmonized environmental antibiotic concentrations (China), CARSS clinical resis
 
 ## Citation
 
-Cite the data deposit DOI and the software DOI (GitHub–Zenodo archive) once minted. Until then, cite the GitHub repository and this deposit version (`v1.0.0`).
+Cite the data deposit (https://doi.org/10.5281/zenodo.22807175) and the software DOI (GitHub–Zenodo archive) once minted. Until the software DOI exists, cite the GitHub repository and data deposit version (`v1.0.0`).

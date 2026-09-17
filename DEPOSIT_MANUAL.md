@@ -1,47 +1,32 @@
-# Manual Zenodo steps (after repo scaffolding)
+# Manual Zenodo steps (status)
 
-Agent-prepared artifacts live in this repository:
+## Done
 
-- `deposit/README_deposit.md` — deposit readme (CC BY 4.0)
-- `R/10_stage_deposit.R` — rebuilds `deposit/zenodo_v1/` and `deposit/cn_antibiotics_data_v1.0.0.zip`
-- `LICENSE` (MIT), `CITATION.cff`, `.zenodo.json` — code / software archive metadata
+- Data deposit published (restricted files): https://doi.org/10.5281/zenodo.22807175  
+  Concept DOI (all versions): https://doi.org/10.5281/zenodo.22807174  
+- Repo scaffolding: `LICENSE` (MIT), `CITATION.cff`, `.zenodo.json`, `deposit/README_deposit.md`, `R/10_stage_deposit.R`
 
-Run before uploading if curated CSVs changed:
+Rebuild the local zip only if curated CSVs change (do **not** replace files on the published Zenodo version — upload a new version instead):
 
 ```bash
 Rscript R/10_stage_deposit.R
 ```
 
-## Round 1 (reviewers)
+## Your remaining steps (round 1)
 
-1. Log in to [Zenodo](https://zenodo.org/) and create a **New upload**.
-2. Upload `deposit/cn_antibiotics_data_v1.0.0.zip`.
-3. Set **Access right** to **Restricted** (or closed with a secret link), license **Creative Commons Attribution 4.0 International**.
-4. Title/description can follow `deposit/README_deposit.md`. Publish the restricted record and copy the **secret/reviewer link** for Scientific Data.
-5. Keep the GitHub repo private; share a collaborator invite or private link with editors/reviewers as needed.
+1. On the [Zenodo data record](https://doi.org/10.5281/zenodo.22807175), grant **file access** to editors/reviewers (approve access requests or add permitted users).
+2. Keep GitHub private; invite reviewers/collaborators as needed.
+3. In Zenodo → GitHub settings, enable integration for `mandmeier/cn_antibiotics` **before** relying on the software DOI webhook.
 
 ## Software DOI (GitHub → Zenodo)
 
-1. In Zenodo, enable **GitHub** integration and flip on the `mandmeier/cn_antibiotics` repository.
-2. After the `v1.0.0` GitHub Release is created, Zenodo will draft a software archive; **publish** it and copy the software DOI.
-3. Replace `SOFTWARE_DOI` / `DATA_DOI` placeholders in `CITATION.cff`, `.zenodo.json`, `README.md`, and `deposit/README_deposit.md` (or ask the agent to fill them).
+After GitHub integration is on and `v1.0.0` exists as a GitHub Release:
 
-### Create the GitHub release (when ready)
-
-From the repository root, after scaffolding is on the branch you want to tag:
-
-```bash
-git checkout main   # or merge feature branch first
-git pull
-git tag -a v1.0.0 -m "v1.0.0 curated data and pipeline for Scientific Data"
-git push origin v1.0.0
-gh release create v1.0.0 --title "v1.0.0" --notes "Curated environmental, CARSS, and yearbook tables plus R pipeline. Data deposit: see Zenodo DATA_DOI (restricted until acceptance)."
-```
-
-Do **not** create this release until Zenodo GitHub integration is enabled if you want the first tag to mint the software DOI automatically.
+1. Open the Zenodo draft created from the release and **Publish** it.
+2. Copy the software DOI and replace `SOFTWARE_DOI` in `CITATION.cff`, `README.md`, and the manuscript (or ask the agent).
 
 ## At acceptance
 
-1. Make the Zenodo **data** record **Open** (public) under CC BY 4.0.
+1. Open the Zenodo **data** files (public download) under CC BY 4.0.
 2. Make the GitHub repository **public**.
-3. Paste final data and software DOIs into the Data Descriptor Data Availability section.
+3. Confirm both DOIs in the Data Descriptor Data Availability section.
