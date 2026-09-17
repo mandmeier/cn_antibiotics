@@ -15,6 +15,8 @@ suppressPackageStartupMessages({
   library(tidyr)
 })
 
+source("R/utils/reproducible_csv.R")
+
 figures_dir <- "data/output/figures"
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
 
@@ -113,7 +115,7 @@ ggsave(
   dpi = 150
 )
 
-write_csv(kmeans_elbow, file.path(figures_dir, "kmeans_k_diagnostics.csv"))
+write_csv_reproducible(kmeans_elbow, file.path(figures_dir, "kmeans_k_diagnostics.csv"))
 
 # Fit k = 2, 3, 4
 clusters2 <- kmeans(pc_scores, centers = 2, nstart = 25)$cluster
@@ -191,8 +193,19 @@ province_metadata <- read_csv(
 province_groups <- province_metadata %>%
   left_join(cluster_df, by = "province")
 
-write_csv(province_groups, output_groups_path)
+write_csv_reproducible(province_groups, output_groups_path)
 message("Wrote ", output_groups_path)
+
+# Attach cluster labels to the metrics table (matches pre-restructure output schema).
+metrics_path <- "data/output/antibiotic_metrics_china.csv"
+antibiotic_metrics_china <- read_csv(metrics_path, show_col_types = FALSE) %>%
+  select(-any_of(c("k2_groups", "k3_groups", "k4_groups"))) %>%
+  left_join(
+    province_groups %>% select(province, k2_groups, k3_groups, k4_groups),
+    by = "province"
+  )
+write_csv_reproducible(antibiotic_metrics_china, metrics_path)
+message("Updated cluster columns in ", metrics_path)
 
 # PCA scatter (k = 3) and China map
 clusters <- clusters3

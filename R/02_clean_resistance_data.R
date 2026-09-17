@@ -6,6 +6,7 @@ suppressPackageStartupMessages({
   library(stringr)
 })
 source("R/utils/antibiotic_classes.R")
+source("R/utils/reproducible_csv.R")
 
 # 31 provincial-level units in CARSS (excludes National aggregate).
 CARSS_PROVINCES <- c(
@@ -55,4 +56,5 @@ message(
   n_removed_combo, " combo/multiple antibiotic)"
 )
 
-write_csv(resistance_clean, "data/intermediate/resistance_clean.csv")
+write_csv_reproducible(resistance_clean, "data/intermediate/resistance_clean.csv")
+

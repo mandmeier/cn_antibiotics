@@ -1,6 +1,6 @@
 # calculate data relative to China mean
 
-
+source("R/utils/reproducible_csv.R")
 
 resistance <- read_csv("data/intermediate/resistance_clean.csv")
 
@@ -68,7 +68,12 @@ antibiotic_metrics_china <- chm_resistance %>%
 
 
 
-write_csv(antibiotic_metrics_china, "data/output/antibiotic_metrics_china.csv")
+write_csv_reproducible(
+  antibiotic_metrics_china,
+  "data/output/antibiotic_metrics_china.csv",
+  # Cluster labels are attached by R/06; do not clobber them on re-run.
+  ignore_cols = c("k2_groups", "k3_groups", "k4_groups")
+)
 
 
 

@@ -3,6 +3,7 @@
 # goal is to get ONE representative measurement per sample_type, antibiotic and province
 # median does not exclude data, and as opposed to using mean or max, we are not susceptible to one-off high measurements from heavily polluted sites
 
+source("R/utils/reproducible_csv.R")
 
 environmental <- read_csv("data/intermediate/environmental_cleaned.csv")
 
@@ -68,4 +69,4 @@ env_abx_per_province <- environmental %>%
   # filter missing antibiotics
   filter(!is.na(antibiotic))
 
-write_csv(env_abx_per_province, "data/output/env_abx_per_province.csv")
+write_csv_reproducible(env_abx_per_province, "data/output/env_abx_per_province.csv")

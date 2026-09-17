@@ -4,6 +4,7 @@
 source("R/utils/environmental_units.R")
 source("R/utils/antibiotic_classes.R")
 source("R/utils/environmental_conversion_flags.R")
+source("R/utils/reproducible_csv.R")
 
 # 31 provincial-level units in CARSS (excludes National aggregate).
 CARSS_PROVINCES <- c(
@@ -633,17 +634,28 @@ suspicious_output_cols <- c(
 suspicious <- conversion_audit$suspicious %>%
   dplyr::select(dplyr::any_of(suspicious_output_cols))
 
-readr::write_csv(
-  suspicious,
-  file.path(validation_dir, "suspicious_conversions.csv")
-)
-readr::write_csv(
-  conversion_audit$audited,
-  file.path(validation_dir, "unit_conversion_audit.csv")
-)
+suspicious_path <- file.path(validation_dir, "suspicious_conversions.csv")
+audit_path <- file.path(validation_dir, "unit_conversion_audit.csv")
+summary_path <- file.path(validation_dir, "unit_conversion_audit_summary.txt")
 
+write_csv_reproducible(suspicious, suspicious_path)
+write_csv_reproducible(conversion_audit$audited, audit_path)
+
+# Keep prior generated timestamp when regenerating so committed summaries stay stable.
+prev_generated <- character()
+if (file.exists(summary_path)) {
+  prev_generated <- grep(
+    "^generated:",
+    readLines(summary_path, warn = FALSE),
+    value = TRUE
+  )
+}
 audit_summary_lines <- c(
-  paste0("generated: ", Sys.time()),
+  if (length(prev_generated) > 0) {
+    prev_generated[[1]]
+  } else {
+    paste0("generated: ", Sys.time())
+  },
   paste0("rows_audited: ", nrow(conversion_audit$audited)),
   paste0("rows_flagged: ", nrow(suspicious)),
   ""
@@ -660,10 +672,12 @@ if (nrow(suspicious) > 0) {
     ""
   )
 }
-writeLines(
-  audit_summary_lines,
-  file.path(validation_dir, "unit_conversion_audit_summary.txt")
-)
+if (
+  !file.exists(summary_path) ||
+    !identical(audit_summary_lines, readLines(summary_path, warn = FALSE))
+) {
+  writeLines(audit_summary_lines, summary_path)
+}
 
 message(
   "Unit conversion audit: ", nrow(suspicious), " flagged of ",
@@ -678,4 +692,7 @@ environmental_clean <- environmental_clean %>%
     -previous_unit
   )
 
-readr::write_csv(environmental_clean, "data/intermediate/environmental_cleaned.csv")
+write_csv_reproducible(
+  environmental_clean,
+  "data/intermediate/environmental_cleaned.csv"
+)

@@ -5,6 +5,7 @@ suppressPackageStartupMessages({
   library(stringr)
 })
 source("R/utils/environmental_units.R")
+source("R/utils/reproducible_csv.R")
 
 PLAUSIBLE_MIN <- 0.01
 PLAUSIBLE_MAX <- 1e6
@@ -113,7 +114,10 @@ evaluate_conversion_flags <- function(
     flags <- c(flags, "extreme_converted")
     reasons <- c(
       reasons,
-      paste0("Converted concentration exceeds ", EXTREME_CONVERTED, " ng/g or ng/L")
+      paste0(
+        "Converted concentration exceeds ", format_sci(EXTREME_CONVERTED),
+        " ng/g or ng/L"
+      )
     )
   }
 
@@ -126,7 +130,10 @@ evaluate_conversion_flags <- function(
     flags <- c(flags, "high_converted")
     reasons <- c(
       reasons,
-      paste0("Converted concentration exceeds ", high_thresh, " (review band)")
+      paste0(
+        "Converted concentration exceeds ", format_sci(high_thresh),
+        " (review band)"
+      )
     )
   }
 
