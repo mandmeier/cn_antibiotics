@@ -53,9 +53,10 @@ Rscript R/04_env_abx_per_province.R       # → data/output/env_abx_per_province
 Rscript R/04b_env_abx_per_site.R          # → data/output/env_abx_per_site.csv
 Rscript R/05_create_china_metrics.R       # → data/output/antibiotic_metrics_china.csv
 Rscript R/06_province_groups_kmeans_pca.R # → data/output/province_groups.csv + figures/
+Rscript R/07_build_codebook.R             # → data/output/codebook.csv
 ```
 
-Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain.
+Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06.
 
 ### Main outputs
 
@@ -69,6 +70,7 @@ Steps 01–03 are independent of each other and can be run in any order. Steps 0
 | `data/output/env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
 | `data/output/antibiotic_metrics_china.csv` | Combined env + resistance metrics vs China mean |
 | `data/output/province_groups.csv` | Province metadata plus `k2_groups` / `k3_groups` / `k4_groups` |
+| `data/output/codebook.csv` | Variable dictionary: one row per yearbook metric (764; long-format) and one row per column on other curated tables |
 | `data/output/figures/` | Elbow/silhouette diagnostics, PCA + China map |
 
 Use the province medians for province-level joins (e.g. CARSS). Use the site table for spatial or seasonal reuse. `season` is Zhang month (`1`–`12`) or sparse supplemental text; `location` strings are heterogeneous literature labels, not a formal site ID.
