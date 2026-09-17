@@ -1,0 +1,25 @@
+metric,theme,definition,unit
+E08_14_Common_Industrial_Solid_Wastes_Generated,environment,Common Industrial Solid Wastes Generated (China Statistical Yearbook table E08_14),10000_tons
+E08_14_Hazardous_Wastes_Generated,environment,Hazardous Wastes Generated (China Statistical Yearbook table E08_14),10000_tons
+E08_33_Investment_in_Urban_Environmental_Infrastructure,environment,Investment in Urban Environmental Infrastructure (China Statistical Yearbook table E08_33),10000_yuan
+E25_13_Rate_of_Domestic_Garbage_Harmless_Treatment,environment,Rate of Domestic Garbage Harmless Treatment (China Statistical Yearbook table E25_13),percent
+E03_09_Gross_Regional_Product,gdp,Gross Regional Product (China Statistical Yearbook table E03_09),100_million_yuan
+E03_09_Per_Capita_Gross_Regional_Product,gdp,Per Capita Gross Regional Product (China Statistical Yearbook table E03_09),yuan
+E07_06_Expenditure_for_Health_Care,hospitals,Expenditure for Health Care (China Statistical Yearbook table E07_06),100_million_yuan
+E22_01_Hospitals,hospitals,Hospitals (China Statistical Yearbook table E22_01),counts
+E22_02_Health_Technical_Personnel,hospitals,Health Technical Personnel (China Statistical Yearbook table E22_02),person
+E22_02_Licensed_Physicians,hospitals,Licensed Physicians (China Statistical Yearbook table E22_02),person
+E22_07_Beds_Total,hospitals,Beds Total (China Statistical Yearbook table E22_07),bed
+E12_03_Gross_Output_Value_Animal_Husbandry,livestock,Gross Output Value Animal Husbandry (China Statistical Yearbook table E12_03),100_million_yuan
+E12_13_Cattle_and_Buffaloes,livestock,Cattle and Buffaloes (China Statistical Yearbook table E12_13),10000_heads
+E12_13_Hogs_year_end,livestock,Hogs year end (China Statistical Yearbook table E12_13),10000_heads
+E12_13_Sheep_and_Goats_year_end,livestock,Sheep and Goats year end (China Statistical Yearbook table E12_13),10000_heads
+E12_13_Slaughtered_Hogs,livestock,Slaughtered Hogs (China Statistical Yearbook table E12_13),10000_heads
+E12_14_Output_of_Meat,livestock,Output of Meat (China Statistical Yearbook table E12_14),10000_tons
+E12_14_Poultry_Eggs,livestock,Poultry Eggs (China Statistical Yearbook table E12_14),10000_tons
+E02_07_Total_Population_year_end,urbanization,Total Population year end (China Statistical Yearbook table E02_07),10000_persons
+E02_07_Urban_Population_Proportion,urbanization,Urban Population Proportion (China Statistical Yearbook table E02_07),percent
+E25_05_Total_Annual_Volume_of_Tap_Water_Supply,wastewater,Total Annual Volume of Tap Water Supply (China Statistical Yearbook table E25_05),10000_cu_m
+E25_08_Daily_Disposal_Capacity_of_City_Sewage,wastewater,Daily Disposal Capacity of City Sewage (China Statistical Yearbook table E25_08),10000_cu_m
+E25_13_Centralized_Treatment_at_Sewage_Treatment_Plants,wastewater,Centralized Treatment at Sewage Treatment Plants (China Statistical Yearbook table E25_13),percent
+E25_13_Waste_Water_Treatment_Rate,wastewater,Waste Water Treatment Rate (China Statistical Yearbook table E25_13),percent

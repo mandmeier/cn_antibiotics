@@ -26,7 +26,7 @@ Rscript R/01_clean_environmental_data.R
 | `data/raw/` | inputs |
 | `data/intermediate/` | Cleaned / harmonized tables produced by cleaning scripts |
 | `data/output/` | Analysis-ready tables, province clusters, and figures |
-| `R/01`–`R/08` (+ `R/04b`) | Pipeline scripts in run order |
+| `R/01`–`R/09` (+ `R/04b`) | Pipeline scripts in run order |
 | `R/utils/` | Shared helpers (units, antibiotic classes, yearbook metrics, maps) |
 | `R/qa/` | Optional verification scripts (not required to reproduce outputs) |
 
@@ -55,9 +55,10 @@ Rscript R/05_create_china_metrics.R       # → data/output/antibiotic_metrics_c
 Rscript R/06_province_groups_kmeans_pca.R # → data/output/province_groups.csv + figures/
 Rscript R/07_build_codebook.R             # → data/output/codebook.csv
 Rscript R/08_build_join_key.R             # → data/output/join_key.md + join_key_antibiotic_classes.csv
+Rscript R/09_curate_yearbook_core.R       # → yearbook_core.csv + manifest + yearbook_full.csv
 ```
 
-Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06. Step 08 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup.
+Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06. Step 08 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 09 requires step 03 only.
 
 ### Main outputs
 
@@ -66,7 +67,10 @@ Steps 01–03 are independent of each other and can be run in any order. Steps 0
 | `data/intermediate/environmental_cleaned.csv` | Harmonized env concentrations, matrices, classes (province-oriented collapse) |
 | `data/intermediate/environmental_by_site.csv` | Same harmonization with `location`, `season`, `lon`, `lat` retained |
 | `data/intermediate/resistance_clean.csv` | Cleaned CARSS (31 provinces; combo drugs dropped except TMP-SMX) |
-| `data/intermediate/yearbook_clean.csv` | Harmonized yearbook metric names and units |
+| `data/intermediate/yearbook_clean.csv` | Harmonized yearbook metric names and units (pipeline source; all 764) |
+| `data/output/yearbook_core.csv` | **Recommended** yearbook join file: 24 One Health covariates (livestock, wastewater, hospitals, GDP, urbanization, environment) |
+| `data/output/yearbook_core_manifest.csv` | Core metric list with theme tags and definitions |
+| `data/output/yearbook_full.csv` | Appendix copy of all 764 cleaned yearbook metrics (deposit-facing) |
 | `data/output/env_abx_per_province.csv` | Median concentration per sample type × province × antibiotic |
 | `data/output/env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
 | `data/output/antibiotic_metrics_china.csv` | Combined env + resistance metrics vs China mean |
@@ -80,7 +84,7 @@ Use the province medians for province-level joins (e.g. CARSS). Use the site tab
 
 Clustering uses `set.seed(42)` and `kmeans(..., nstart = 25)` so labels are reproducible. If `data/output/province_groups.csv` already exists, step 06 aligns new cluster IDs to the previous numbering when possible.
 
-Yearbook cleaning is part of the curated data products. k-means uses only environmental and resistance metrics.
+Yearbook cleaning is part of the curated data products. Prefer `yearbook_core.csv` for province-level covariate joins; use `yearbook_full.csv` (or `yearbook_clean.csv`) when you need the full 764-metric appendix. k-means uses only environmental and resistance metrics.
 
 ## Optional QA
 
