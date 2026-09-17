@@ -25,9 +25,9 @@ Rscript R/01_clean_environmental_data.R
 |------|------|
 | `data/raw/` | inputs |
 | `data/intermediate/` | Cleaned / harmonized tables produced by cleaning scripts |
-| `data/output/` | Analysis-ready tables, province clusters, and figures |
-| `R/01`–`R/09` (+ `R/04b`) | Pipeline scripts in run order |
-| `R/10_stage_deposit.R` | Stage Zenodo data zip under `deposit/` |
+| `data/output/` | Analysis-ready tables |
+| `R/01`–`R/07` (+ `R/04b`) | Pipeline scripts in run order |
+| `R/08_stage_deposit.R` | Stage Zenodo data zip under `deposit/` |
 | `deposit/` | Deposit readme + regenerable `zenodo_v1/` staging and zip |
 | `R/utils/` | Shared helpers (units, antibiotic classes, yearbook metrics, maps) |
 | `R/qa/` | Optional verification scripts (not required to reproduce outputs) |
@@ -42,7 +42,7 @@ Upstream licensing and attribution: [`SOURCES_AND_LICENSES.md`](SOURCES_AND_LICE
 - `data/raw/resistance_data/carss_drug_resistance_full.csv` — CARSS-derived resistance panel (https://www.carss.cn/)
 - `data/raw/yearbook_data/yearbook_data_combined.csv` — NBS China Statistical Yearbook metrics (https://www.stats.gov.cn/)
 - `data/raw/reference/antibiotic_group_lookup.csv` — antibiotic → pharmacological class
-- `data/raw/reference/province_metadata.csv` — NBS province metadata (no cluster labels)
+- `data/raw/reference/province_metadata.csv` — NBS province metadata
 - `data/raw/cn_shp/cn.*` — China province shapefile (SimpleMaps / Pareto, CC BY 4.0; attribute https://simplemaps.com)
 
 ## Reproduce the pipeline
@@ -55,15 +55,13 @@ Rscript R/02_clean_resistance_data.R      # → data/intermediate/resistance_cle
 Rscript R/03_clean_yearbook_data.R        # → data/intermediate/yearbook_clean.csv
 Rscript R/04_env_abx_per_province.R       # → data/output/env_abx_per_province.csv
 Rscript R/04b_env_abx_per_site.R          # → data/output/env_abx_per_site.csv
-Rscript R/05_create_china_metrics.R       # → data/output/antibiotic_metrics_china.csv
-Rscript R/06_province_groups_kmeans_pca.R # → data/output/province_groups.csv + figures/
-Rscript R/07_build_codebook.R             # → data/output/codebook.csv
-Rscript R/08_build_join_key.R             # → data/output/join_key.md + join_key_antibiotic_classes.csv
-Rscript R/09_curate_yearbook_core.R       # → yearbook_core.csv + manifest + yearbook_full.csv
-Rscript R/10_stage_deposit.R              # → deposit/zenodo_v1/ + cn_antibiotics_data_v1.0.0.zip
+Rscript R/05_build_codebook.R             # → data/output/codebook.csv
+Rscript R/06_build_join_key.R             # → data/output/join_key.md + join_key_antibiotic_classes.csv
+Rscript R/07_curate_yearbook_core.R       # → yearbook_core.csv + manifest + yearbook_full.csv
+Rscript R/08_stage_deposit.R              # → deposit/zenodo_v1/ + cn_antibiotics_data_v1.0.0.zip
 ```
 
-Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01; 04b does not feed steps 05–06. Steps 04–06 must follow as above for the province analysis chain. Step 07 requires all curated intermediate and output tables from steps 01–06. Step 08 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 09 requires step 03 only. Step 10 requires the curated intermediate and output tables listed in `R/10_stage_deposit.R`.
+Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01. Step 05 requires curated intermediate and output tables from steps 01–04b. Step 06 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 07 requires step 03 only. Step 08 requires the curated intermediate and output tables listed in `R/08_stage_deposit.R`.
 
 ### Main outputs
 
@@ -78,18 +76,13 @@ Steps 01–03 are independent of each other and can be run in any order. Steps 0
 | `data/output/yearbook_full.csv` | Appendix copy of all 764 cleaned yearbook metrics (deposit-facing) |
 | `data/output/env_abx_per_province.csv` | Median concentration per sample type × province × antibiotic |
 | `data/output/env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
-| `data/output/antibiotic_metrics_china.csv` | Combined env + resistance metrics vs China mean |
-| `data/output/province_groups.csv` | Province metadata plus `k2_groups` / `k3_groups` / `k4_groups` |
 | `data/output/codebook.csv` | Variable dictionary: one row per yearbook metric (764; long-format) and one row per column on other curated tables |
 | `data/output/join_key.md` | One-page join key: 31 provinces, 15 env∩CARSS compounds, matrix ↔ unit rules, antibiotic-class lookup |
 | `data/output/join_key_antibiotic_classes.csv` | Antibiotic → pharmacological class (machine-readable companion to the join key) |
-| `data/output/figures/` | Elbow/silhouette diagnostics, PCA + China map |
 
 Use the province medians for province-level joins (e.g. CARSS). Use the site table for spatial or seasonal reuse. `season` is Zhang month (`1`–`12`) or sparse supplemental text; `location` strings are heterogeneous literature labels, not a formal site ID.
 
-Clustering uses `set.seed(42)` and `kmeans(..., nstart = 25)` so labels are reproducible. If `data/output/province_groups.csv` already exists, step 06 aligns new cluster IDs to the previous numbering when possible.
-
-Yearbook cleaning is part of the curated data products. Prefer `yearbook_core.csv` for province-level covariate joins; use `yearbook_full.csv` (or `yearbook_clean.csv`) when you need the full 764-metric appendix. k-means uses only environmental and resistance metrics.
+Yearbook cleaning is part of the curated data products. Prefer `yearbook_core.csv` for province-level covariate joins; use `yearbook_full.csv` (or `yearbook_clean.csv`) when you need the full 764-metric appendix.
 
 ## Optional QA
 
@@ -101,7 +94,7 @@ Rscript R/qa/build_antibiotic_group_lookup.R
 
 ## Data availability
 
-Curated tables for Zenodo are staged by `R/10_stage_deposit.R` into `deposit/cn_antibiotics_data_v1.0.0.zip` (see [`deposit/README_deposit.md`](deposit/README_deposit.md)). Upstream attribution and redistribution rules: [`SOURCES_AND_LICENSES.md`](SOURCES_AND_LICENSES.md). Acceptance checklist: [`DEPOSIT_MANUAL.md`](DEPOSIT_MANUAL.md).
+Curated tables for Zenodo are staged by `R/08_stage_deposit.R` into `deposit/cn_antibiotics_data_v1.0.0.zip` (see [`deposit/README_deposit.md`](deposit/README_deposit.md)). Upstream attribution and redistribution rules: [`SOURCES_AND_LICENSES.md`](SOURCES_AND_LICENSES.md). Acceptance checklist: [`DEPOSIT_MANUAL.md`](DEPOSIT_MANUAL.md).
 
 | Resource | License | Identifier |
 |---|---|---|

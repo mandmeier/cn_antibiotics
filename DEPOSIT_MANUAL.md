@@ -5,12 +5,12 @@
 - Data deposit published (restricted files): https://doi.org/10.5281/zenodo.22807175  
   Concept DOI (all versions): https://doi.org/10.5281/zenodo.22807174  
 - Software archive (GitHub release v1.0.1): https://doi.org/10.5281/zenodo.22807986  
-- Repo scaffolding + source licensing docs: `LICENSE`, `CITATION.cff`, `.zenodo.json`, `SOURCES_AND_LICENSES.md`, `deposit/README_deposit.md`, `R/10_stage_deposit.R`
+- Repo scaffolding + source licensing docs: `LICENSE`, `CITATION.cff`, `.zenodo.json`, `SOURCES_AND_LICENSES.md`, `deposit/README_deposit.md`, `R/08_stage_deposit.R`
 
 Rebuild the local zip after licensing doc updates (then upload a **new Zenodo version** if you want the zip on Zenodo to match; metadata-only edits do not require a new file version):
 
 ```bash
-Rscript R/10_stage_deposit.R
+Rscript R/08_stage_deposit.R
 ```
 
 ## Sync licensing text to the published Zenodo data record (do this)

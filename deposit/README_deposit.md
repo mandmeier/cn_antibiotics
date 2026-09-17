@@ -27,8 +27,6 @@ Harmonized environmental antibiotic concentrations (China), CARSS clinical resis
 | `resistance_clean.csv` | Cleaned CARSS resistance panel (31 provinces) |
 | `env_abx_per_province.csv` | Median concentration per sample type × province × antibiotic |
 | `env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
-| `antibiotic_metrics_china.csv` | Combined env + resistance metrics vs China mean |
-| `province_groups.csv` | Province metadata plus k-means group labels |
 | `yearbook_core.csv` | 24 One Health yearbook covariates (recommended join file) |
 | `yearbook_core_manifest.csv` | Core metric list with theme tags and definitions |
 | `yearbook_full.csv` | All 764 cleaned yearbook metrics (appendix) |
@@ -75,4 +73,4 @@ This Zenodo package contains **derived / curated tables only**. We do **not** re
 4. **CARSS** and **NBS** as appropriate for resistance and yearbook-derived covariates  
 5. **SimpleMaps** (https://simplemaps.com) if you use the GitHub shapefile or maps built from it  
 
-Reproduce curated tables from the GitHub pipeline (`R/01`–`R/09`) after `renv::restore()`, with upstream inputs obtained as above.
+Reproduce curated tables from the GitHub pipeline (`R/01`–`R/08`) after `renv::restore()`, with upstream inputs obtained as above.

@@ -31,6 +31,7 @@ env_abx_per_site <- environmental %>%
     lon,
     lat,
     antibiotic,
+    antibiotic_class,
     mean_concentration,
     concentration_unit,
     sample_year,
@@ -38,7 +39,7 @@ env_abx_per_site <- environmental %>%
   ) %>%
   unique() %>%
   # Missing season is its own level (do not mix undated with seasonal rows).
-  group_by(sample_type, location, season, antibiotic) %>%
+  group_by(sample_type, location, season, antibiotic, antibiotic_class) %>%
 
   # get median reported concentration for all specimens at this site/season
   # need to treat zero values in a defensible way. Likely not true zeroes, but below limit of detection.
@@ -74,7 +75,7 @@ env_abx_per_site <- environmental %>%
   slice_min(reference_number, n = 1, with_ties = FALSE) %>%
   arrange(sample_type, province, location, season, antibiotic) %>%
   select(-n) %>%
-  relocate(median_concentration, .after = "antibiotic") %>%
+  relocate(median_concentration, .after = "antibiotic_class") %>%
   ungroup() %>%
   select(-lod_est) %>%
   # filter missing antibiotics

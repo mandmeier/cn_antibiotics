@@ -5,7 +5,6 @@ options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 options(scipen = 999)
 
 suppressPackageStartupMessages({
-  library(cluster)
   library(conflicted)
   library(dplyr)
   library(factoextra)

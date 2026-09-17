@@ -1,6 +1,6 @@
 # Stage Zenodo data deposit package (v1.0.0)
 # Copies curated tables into deposit/zenodo_v1/ and writes FILES.md + zip.
-# Run from repository root: Rscript R/10_stage_deposit.R
+# Run from repository root: Rscript R/08_stage_deposit.R
 
 suppressPackageStartupMessages({
   library(fs)
@@ -17,8 +17,6 @@ FILES <- c(
   "data/intermediate/resistance_clean.csv",
   "data/output/env_abx_per_province.csv",
   "data/output/env_abx_per_site.csv",
-  "data/output/antibiotic_metrics_china.csv",
-  "data/output/province_groups.csv",
   "data/output/yearbook_core.csv",
   "data/output/yearbook_core_manifest.csv",
   "data/output/yearbook_full.csv",

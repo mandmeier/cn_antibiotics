@@ -21,13 +21,14 @@ env_abx_per_province <- environmental %>%
     sample_type,
     province,
     antibiotic,
+    antibiotic_class,
     mean_concentration,
     concentration_unit,
     sample_year,
     reference_number
   ) %>%
   unique() %>%
-  group_by(sample_type, province, antibiotic) %>%
+  group_by(sample_type, province, antibiotic, antibiotic_class) %>%
 
   # get median reported concentration for all specimens taken in the province
   # need to treat zero values in a defensible way. Likely not true zeroes, but below limit of detection.
@@ -63,7 +64,7 @@ env_abx_per_province <- environmental %>%
   slice_min(reference_number, n = 1, with_ties = FALSE) %>%
   arrange(sample_type, province, antibiotic) %>%
   select(-n) %>%
-  relocate(median_concentration, .after = "antibiotic") %>%
+  relocate(median_concentration, .after = "antibiotic_class") %>%
   ungroup() %>%
   select(-lod_est) %>%
   # filter missing antibiotics

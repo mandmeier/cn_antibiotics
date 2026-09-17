@@ -56,8 +56,7 @@ dataframe_equivalent <- function(new_df, old_df, tol = 1e-9, ignore_cols = NULL)
 
 # Write CSV, but leave an existing file untouched when content is equivalent so
 # float serialization stays byte-stable across re-runs.
-# ignore_cols: columns present in an existing file that this writer does not own
-# (e.g. cluster labels added by a later script).
+# ignore_cols: columns present in an existing file that this writer does not own.
 write_csv_reproducible <- function(df, path, ..., ignore_cols = NULL) {
   if (file.exists(path)) {
     old_df <- tryCatch(
