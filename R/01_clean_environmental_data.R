@@ -84,18 +84,162 @@ parse_sample_year <- function(year) {
   }, numeric(1))
 }
 
+# Join Zhang admin levels / loc_Ref without turning missing parts into "NA".
+paste_location_parts <- function(...) {
+  parts_list <- list(...)
+  n <- length(parts_list[[1]])
+  vapply(seq_len(n), function(i) {
+    parts <- vapply(parts_list, function(col) {
+      val <- col[[i]]
+      if (is.na(val)) {
+        return(NA_character_)
+      }
+      val <- str_squish(as.character(val))
+      if (val == "" || toupper(val) == "NA") {
+        return(NA_character_)
+      }
+      val
+    }, character(1))
+    parts <- parts[!is.na(parts)]
+    if (length(parts) == 0) {
+      NA_character_
+    } else {
+      paste(parts, collapse = " ")
+    }
+  }, character(1))
+}
+
+# Harmonize location labels before site aggregation:
+# - strip paste "NA" artifacts
+# - collapse doubled province/municipality prefix (e.g. "Beijing Beijing …")
+# - lowercase generic place words (district, river, …)
+# - squish whitespace
+clean_location_label <- function(location, province = NULL) {
+  loc <- as.character(location)
+  loc <- if_else(
+    is.na(loc) | loc %in% c("", "NA", "na"),
+    NA_character_,
+    loc
+  )
+  loc <- str_replace_all(
+    loc,
+    regex("(?<=^|\\s)NA(?=\\s|$)", ignore_case = TRUE),
+    " "
+  )
+  loc <- str_squish(loc)
+  loc <- if_else(is.na(loc) | loc == "", NA_character_, loc)
+
+  if (!is.null(province)) {
+    prov <- str_squish(as.character(province))
+    loc <- vapply(seq_along(loc), function(i) {
+      x <- loc[[i]]
+      p <- prov[[i]]
+      if (is.na(x) || is.na(p) || p == "") {
+        return(x)
+      }
+      doubled <- regex(
+        paste0("^", str_escape(p), "\\s+", str_escape(p), "(?=\\s|$)"),
+        ignore_case = TRUE
+      )
+      if (str_detect(x, doubled)) {
+        x <- str_replace(
+          x,
+          regex(paste0("^", str_escape(p), "\\s+", str_escape(p)), ignore_case = TRUE),
+          p
+        )
+      }
+      x
+    }, character(1))
+  }
+
+  generic_words <- c(
+    "district", "districts",
+    "river", "rivers",
+    "town", "towns",
+    "reservoir", "reservoirs",
+    "basin", "basins",
+    "island", "islands"
+  )
+  for (word in generic_words) {
+    loc <- str_replace_all(
+      loc,
+      regex(paste0("\\b", word, "\\b"), ignore_case = TRUE),
+      word
+    )
+  }
+
+  loc <- str_squish(loc)
+  if_else(is.na(loc) | loc == "", NA_character_, loc)
+}
+
+# Light season harmonization before site aggregation:
+# - month names (-> optional year) to Zhang-style "1"-"12"
+# - merge obvious synonyms
+# - drop non-season labels
+# Leave multi-season / phenology strings verbatim.
+clean_season_label <- function(season) {
+  s <- as.character(season)
+  s <- if_else(
+    is.na(s) | s %in% c("", "NA", "na"),
+    NA_character_,
+    str_squish(s)
+  )
+
+  s_lower <- str_to_lower(s)
+  s <- if_else(s_lower == "sediment summary", NA_character_, s)
+  s_lower <- str_to_lower(s)
+
+  s <- if_else(
+    s_lower %in% c("summer and autumn", "summer+autumn"),
+    "summer+autumn",
+    s
+  )
+
+  month_map <- c(
+    january = "1",
+    february = "2",
+    march = "3",
+    april = "4",
+    may = "5",
+    june = "6",
+    july = "7",
+    august = "8",
+    september = "9",
+    october = "10",
+    november = "11",
+    december = "12"
+  )
+  month_match <- str_match(
+    str_to_lower(s),
+    paste0(
+      "^(",
+      paste(names(month_map), collapse = "|"),
+      ")(?:\\s+\\d{4})?$"
+    )
+  )[, 2]
+  s <- if_else(
+    !is.na(month_match),
+    unname(month_map[month_match]),
+    s
+  )
+
+  if_else(is.na(s) | s == "", NA_character_, s)
+}
+
 # import Zhang data, wrangle into standard format
 zhang <- read_excel("data/raw/environmental_data/Zhang_2022.xls", sheet = "Records")
 
 zhang_formatted <- zhang %>%
-  # add location variable
-  mutate(loc = paste(loc_l1, loc_l2, loc_l3, loc_l4, loc_Ref)) %>%
+  # add location variable (skip missing loc_l* / loc_Ref so paste does not emit "NA")
+  mutate(loc = paste_location_parts(loc_l1, loc_l2, loc_l3, loc_l4, loc_Ref)) %>%
   group_by(sem_type, loc, ABX_subcat, sam_Y, sam_M, ABX_conc_max, ABX_conc_mean, pub_id) %>%
   # remove duplicate measurements
   select(
     sample_type = sem_type,
     province = loc_l1,
     location = loc,
+    lon = lon,
+    lat = lat,
     sample_year = sam_Y,
     season = sam_M,
     antibiotic = ABX_subcat,
@@ -114,6 +258,7 @@ zhang_formatted <- zhang %>%
   # convert to numeric measurements
   mutate(mean_concentration = as.numeric(mean_concentration)) %>%
   mutate(max_concentration = as.numeric(max_concentration)) %>%
+  mutate(lon = as.numeric(lon), lat = as.numeric(lat)) %>%
   # Zhang unit corrections (default placeholder is ng/g):
   # pub_id 223 (Li et al. 2008): sludge/sediment values are paper mg/kg (dw) × 1000.
   # pub_id 113 (Zhao et al. 2017): soil values are paper µg/kg (dw); 1 µg/kg = 1 ng/g.
@@ -549,10 +694,62 @@ environmental_clean <- combined_data %>%
   ) %>%
   select(-.unit_norm, -.is_dw) %>%
   relocate(recalculated_factor, .after = concentration_unit) %>%
-  relocate(previous_unit, .after = recalculated_factor) %>%
+  relocate(previous_unit, .after = recalculated_factor)
 
-  # remove season because this causes some duplicates (exact same value listed twice for the same year but different seasons).
-  # -> only using unique measurements within a location and a year.
+# Clean location / season labels before any site-level aggregation / dedup.
+environmental_clean <- environmental_clean %>%
+  mutate(
+    location = clean_location_label(location, province),
+    season = clean_season_label(season)
+  )
+
+# Site-level snapshot (location + season + coordinates) before province-oriented
+# collapse. Downstream analysis still uses environmental_cleaned.csv.
+n_before_site_dedup <- nrow(environmental_clean)
+environmental_by_site <- environmental_clean %>%
+  mutate(.source_rank = reference_source_rank(reference_number)) %>%
+  group_by(
+    sample_type,
+    matrix,
+    province,
+    location,
+    season,
+    sample_year,
+    antibiotic,
+    mean_concentration,
+    max_concentration
+  ) %>%
+  slice_max(.source_rank, n = 1, with_ties = FALSE) %>%
+  ungroup() %>%
+  select(-.source_rank, -recalculated_factor, -previous_unit) %>%
+  relocate(location, season, .after = province) %>%
+  relocate(lon, lat, .after = season) %>%
+  arrange(
+    sample_type,
+    province,
+    location,
+    season,
+    sample_year,
+    antibiotic,
+    reference_number
+  )
+
+message(
+  "Site-level rows: ", n_before_site_dedup, " -> ", nrow(environmental_by_site),
+  " (kept latest source per site/season)"
+)
+write_csv_reproducible(
+  environmental_by_site,
+  "data/intermediate/environmental_by_site.csv"
+)
+
+# Coordinates stay only on the site product; province collapse / audit unchanged.
+environmental_clean <- environmental_clean %>%
+  select(-lon, -lat)
+
+# Province-oriented collapse (unchanged): drop season so same-year seasonal
+# duplicates collapse, then keep one source per province measurement key.
+environmental_clean <- environmental_clean %>%
   select(-season) %>%
   unique()
 
