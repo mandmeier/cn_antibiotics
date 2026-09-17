@@ -704,7 +704,7 @@ environmental_clean <- environmental_clean %>%
   )
 
 # Site-level snapshot (location + season + coordinates) before province-oriented
-# collapse. Downstream analysis still uses environmental_cleaned.csv.
+# collapse. Downstream province joins use env_records → env_province.
 n_before_site_dedup <- nrow(environmental_clean)
 environmental_by_site <- environmental_clean %>%
   mutate(.source_rank = reference_source_rank(reference_number)) %>%
@@ -738,9 +738,10 @@ message(
   "Site-level rows: ", n_before_site_dedup, " -> ", nrow(environmental_by_site),
   " (kept latest source per site/season)"
 )
+dir.create("data/output/supporting", showWarnings = FALSE, recursive = TRUE)
 write_csv_reproducible(
   environmental_by_site,
-  "data/intermediate/environmental_by_site.csv"
+  "data/output/supporting/env_site_records.csv"
 )
 
 # Coordinates stay only on the site product; province collapse / audit unchanged.
@@ -889,7 +890,8 @@ environmental_clean <- environmental_clean %>%
     -previous_unit
   )
 
+dir.create("data/output/supporting", showWarnings = FALSE, recursive = TRUE)
 write_csv_reproducible(
   environmental_clean,
-  "data/intermediate/environmental_cleaned.csv"
+  "data/output/supporting/env_records.csv"
 )

@@ -10,24 +10,28 @@ VERSION <- "1.0.0"
 STAGE_DIR <- file.path("deposit", "zenodo_v1")
 ZIP_PATH <- file.path("deposit", sprintf("cn_antibiotics_data_v%s.zip", VERSION))
 
-# Curated products + provenance companion (no third-party raw dumps / shapefile).
-FILES <- c(
-  "data/intermediate/environmental_cleaned.csv",
-  "data/intermediate/environmental_by_site.csv",
-  "data/intermediate/resistance_clean.csv",
-  "data/output/env_abx_per_province.csv",
-  "data/output/env_abx_per_site.csv",
-  "data/output/yearbook_core.csv",
-  "data/output/yearbook_core_manifest.csv",
-  "data/output/yearbook_full.csv",
-  "data/output/codebook.csv",
-  "data/output/join_key.md",
-  "data/output/join_key_antibiotic_classes.csv",
-  "data/raw/environmental_data/Data_Sources.csv"
+# Preserve primary / supporting / meta hierarchy in the deposit.
+PRIMARY_FILES <- c(
+  "data/output/primary/env_province.csv",
+  "data/output/primary/resistance_province.csv",
+  "data/output/primary/yearbook_province.csv"
 )
+SUPPORTING_FILES <- c(
+  "data/output/supporting/env_records.csv",
+  "data/output/supporting/env_site_records.csv",
+  "data/output/supporting/env_site.csv",
+  "data/output/supporting/yearbook_full.csv",
+  "data/output/supporting/yearbook_province_manifest.csv"
+)
+META_FILES <- c(
+  "data/output/meta/codebook.csv",
+  "data/output/meta/join_key.md",
+  "data/output/meta/antibiotic_classes.csv"
+)
+# Provenance companion (copied into meta/ as env_sources.csv).
+ENV_SOURCES_SRC <- "data/raw/environmental_data/Data_Sources.csv"
 
-# yearbook_clean.csv is the pipeline intermediate; yearbook_full.csv is the
-# deposit-facing appendix (same content). Skip intermediate to avoid duplicate.
+FILES <- c(PRIMARY_FILES, SUPPORTING_FILES, META_FILES, ENV_SOURCES_SRC)
 
 missing <- FILES[!file_exists(FILES)]
 if (length(missing) > 0) {
@@ -40,11 +44,20 @@ if (length(missing) > 0) {
 if (dir_exists(STAGE_DIR)) {
   dir_delete(STAGE_DIR)
 }
-dir_create(STAGE_DIR)
+dir_create(file.path(STAGE_DIR, "primary"))
+dir_create(file.path(STAGE_DIR, "supporting"))
+dir_create(file.path(STAGE_DIR, "meta"))
 
-# Flat layout in the deposit for easy browsing on Zenodo.
+rel_dest <- function(src) {
+  if (identical(src, ENV_SOURCES_SRC)) {
+    return(file.path("meta", "env_sources.csv"))
+  }
+  sub("^data/output/", "", src)
+}
+
 for (src in FILES) {
-  dest <- file.path(STAGE_DIR, path_file(src))
+  dest <- file.path(STAGE_DIR, rel_dest(src))
+  dir_create(path_dir(dest))
   file_copy(src, dest, overwrite = TRUE)
 }
 
@@ -54,32 +67,39 @@ if (!file_exists(readme_src)) {
 }
 file_copy(readme_src, file.path(STAGE_DIR, "README_deposit.md"), overwrite = TRUE)
 
-# Manifest with sizes
-info <- file_info(dir_ls(STAGE_DIR, type = "file"))
-info <- info[order(path_file(info$path)), ]
+info <- file_info(dir_ls(STAGE_DIR, type = "file", recurse = TRUE))
+info$rel <- path_rel(info$path, STAGE_DIR)
+info <- info[order(info$rel), ]
+
+size_line <- function(rel, size) {
+  sprintf("| `%s` | %s |", rel, format(size, scientific = FALSE))
+}
+
+section <- function(title, pred) {
+  lines <- c("", paste("##", title), "", "| File | Size (bytes) |", "|---|---:|")
+  hit <- info[pred, , drop = FALSE]
+  for (i in seq_len(nrow(hit))) {
+    lines <- c(lines, size_line(hit$rel[i], hit$size[i]))
+  }
+  lines
+}
+
 manifest_lines <- c(
   sprintf("# Deposit file manifest (v%s)", VERSION),
   "",
   "License: Creative Commons Attribution 4.0 International (CC BY 4.0).",
   "See README_deposit.md for descriptions and recommended joins.",
-  "",
-  "| File | Size (bytes) |",
-  "|---|---:|"
+  section("Primary (province join set)", grepl("^primary/", info$rel)),
+  section("Supporting", grepl("^supporting/", info$rel)),
+  section("Meta", grepl("^meta/", info$rel)),
+  section("Package docs", !grepl("^(primary|supporting|meta)/", info$rel))
 )
-for (i in seq_len(nrow(info))) {
-  manifest_lines <- c(
-    manifest_lines,
-    sprintf("| `%s` | %s |", path_file(info$path[i]), format(info$size[i], scientific = FALSE))
-  )
-}
 writeLines(manifest_lines, file.path(STAGE_DIR, "FILES.md"))
 
-# Zip the staged directory (contents at archive root)
 if (file_exists(ZIP_PATH)) {
   file_delete(ZIP_PATH)
 }
 dir_create(path_dir(ZIP_PATH))
-# zip::zipr puts STAGE_DIR basename as root; use withr-free base utils via system zip
 old_wd <- getwd()
 setwd(STAGE_DIR)
 on.exit(setwd(old_wd), add = TRUE)
@@ -95,5 +115,8 @@ if (!file_exists(ZIP_PATH)) {
   stop("Failed to create zip: ", paste(zip_status, collapse = "\n"))
 }
 
-message("Staged ", length(dir_ls(STAGE_DIR)), " files in ", STAGE_DIR)
+message(
+  "Staged ", length(dir_ls(STAGE_DIR, recurse = TRUE, type = "file")),
+  " files in ", STAGE_DIR
+)
 message("Wrote ", ZIP_PATH, " (", file_info(ZIP_PATH)$size, " bytes)")

@@ -1,8 +1,8 @@
 # Compare antibiotic naming between environmental and resistance cleaned datasets.
 # Combo / multiple-antibiotic CARSS panel entries are dropped in clean_resistance_data.R.
 
-env_path <- "data/intermediate/environmental_cleaned.csv"
-res_path <- "data/intermediate/resistance_clean.csv"
+env_path <- "data/output/supporting/env_records.csv"
+res_path <- "data/output/primary/resistance_province.csv"
 
 environmental <- read_csv(env_path, show_col_types = FALSE)
 resistance <- read_csv(res_path, show_col_types = FALSE)

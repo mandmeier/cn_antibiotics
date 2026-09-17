@@ -2,7 +2,7 @@
 
 source("R/utils/antibiotic_classes.R")
 
-env_path <- "data/intermediate/environmental_cleaned.csv"
+env_path <- "data/output/supporting/env_records.csv"
 lookup_path <- "data/raw/reference/antibiotic_group_lookup.csv"
 
 environmental <- readr::read_csv(env_path, show_col_types = FALSE)

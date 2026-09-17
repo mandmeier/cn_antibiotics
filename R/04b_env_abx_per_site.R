@@ -6,7 +6,7 @@
 source("R/utils/reproducible_csv.R")
 
 environmental <- read_csv(
-  "data/intermediate/environmental_by_site.csv",
+  "data/output/supporting/env_site_records.csv",
   show_col_types = FALSE
 )
 
@@ -82,9 +82,10 @@ env_abx_per_site <- environmental %>%
   filter(!is.na(antibiotic)) %>%
   relocate(province, location, season, lon, lat, .after = sample_type)
 
-write_csv_reproducible(env_abx_per_site, "data/output/env_abx_per_site.csv")
+dir.create("data/output/supporting", showWarnings = FALSE, recursive = TRUE)
+write_csv_reproducible(env_abx_per_site, "data/output/supporting/env_site.csv")
 
 message(
-  "Wrote env_abx_per_site.csv: ", nrow(env_abx_per_site), " rows; ",
+  "Wrote env_site.csv: ", nrow(env_abx_per_site), " rows; ",
   n_distinct(env_abx_per_site$location), " locations"
 )

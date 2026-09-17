@@ -1,8 +1,8 @@
-# Verify antibiotic_class assignment in environmental_cleaned.csv.
+# Verify antibiotic_class assignment in env_records.csv.
 
 source("R/utils/antibiotic_classes.R")
 
-env_path <- "data/intermediate/environmental_cleaned.csv"
+env_path <- "data/output/supporting/env_records.csv"
 environmental <- readr::read_csv(env_path, show_col_types = FALSE)
 
 abx_groups <- environmental %>%

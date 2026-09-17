@@ -8,34 +8,44 @@ Harmonized environmental antibiotic concentrations (China), CARSS clinical resis
 
 **Data DOI:** https://doi.org/10.5281/zenodo.22807175 (version 1.0.0; files restricted until acceptance). Concept DOI for all versions: https://doi.org/10.5281/zenodo.22807174.
 
-## Recommended starting files
+## Layout
 
-| Use case | Start with |
-|---|---|
-| Province joins (env × CARSS × covariates) | `env_abx_per_province.csv`, `resistance_clean.csv`, `yearbook_core.csv` |
-| Site / season reuse | `environmental_by_site.csv` or `env_abx_per_site.csv` |
-| Full yearbook appendix (764 metrics) | `yearbook_full.csv` |
-| Column definitions | `codebook.csv` |
-| Join rules (provinces, shared compounds, units, classes) | `join_key.md` + `join_key_antibiotic_classes.csv` |
+```
+primary/       province join set (start here)
+supporting/    finer-grain or full tables
+meta/          codebook, join key, class lookup, env_sources
+```
 
-## File descriptions
+## Primary (`primary/`)
 
 | File | Description |
 |---|---|
-| `environmental_cleaned.csv` | Harmonized env concentrations (province-oriented collapse) |
-| `environmental_by_site.csv` | Same harmonization with `location`, `season`, `lon`, `lat` retained |
-| `resistance_clean.csv` | Cleaned CARSS resistance panel (31 provinces) |
-| `env_abx_per_province.csv` | Median concentration per sample type × province × antibiotic |
-| `env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
-| `yearbook_core.csv` | 24 One Health yearbook covariates (recommended join file) |
-| `yearbook_core_manifest.csv` | Core metric list with theme tags and definitions |
-| `yearbook_full.csv` | All 764 cleaned yearbook metrics (appendix) |
+| `env_province.csv` | Median concentration per sample type × province × antibiotic |
+| `resistance_province.csv` | Cleaned CARSS resistance panel (31 provinces) |
+| `yearbook_province.csv` | 24 One Health yearbook covariates with `year` (population / urban share 2015–2024; other metrics 2024 vintage) |
+
+| Use case | Start with |
+|---|---|
+| Province joins (env × CARSS × covariates) | `env_province.csv`, `resistance_province.csv`, `yearbook_province.csv` |
+
+## Supporting (`supporting/`)
+
+| File | Description |
+|---|---|
+| `env_records.csv` | Harmonized env concentrations (province-oriented; feeds `env_province`) |
+| `env_site_records.csv` | Same harmonization with `location`, `season`, `lon`, `lat` retained |
+| `env_site.csv` | Median concentration per sample type × location × season × antibiotic |
+| `yearbook_full.csv` | All 764 cleaned yearbook metrics |
+| `yearbook_province_manifest.csv` | Core metric list with theme tags and definitions |
+
+## Meta (`meta/`)
+
+| File | Description |
+|---|---|
 | `codebook.csv` | Variable dictionary for curated tables |
 | `join_key.md` | One-page join key |
-| `join_key_antibiotic_classes.csv` | Antibiotic → pharmacological class |
-| `Data_Sources.csv` | Environmental literature publication ID → citation |
-| `FILES.md` | Manifest with file sizes |
-| `README_deposit.md` | This file |
+| `antibiotic_classes.csv` | Antibiotic → pharmacological class |
+| `env_sources.csv` | Environmental literature publication ID → citation |
 
 ## Sources, licensing, and attribution
 
@@ -45,19 +55,19 @@ This Zenodo package contains **derived / curated tables only**. We do **not** re
 
 - **Upstream dataset (cite this for the compiled measurement rows):** Zhang, Q. et al. A dataset of distribution of antibiotic occurrence in solid environmental matrices in China. *figshare* https://doi.org/10.6084/m9.figshare.19692241.v1 (2022).
 - **Data Descriptor:** Zhang, Q. et al. *Sci Data* **9**, 276 (2022). https://doi.org/10.1038/s41597-022-01384-5
-- **What we did:** Harmonized names/units/matrices, added sparse supplemental literature rows, and built province- and site-level summaries. **We did not generate the Zhang 2022 occurrence measurements**; those rows remain attributed to Zhang et al. and their cited primary studies (`Data_Sources.csv`).
+- **What we did:** Harmonized names/units/matrices, added sparse supplemental literature rows, and built province- and site-level summaries. **We did not generate the Zhang 2022 occurrence measurements**; those rows remain attributed to Zhang et al. and their cited primary studies (`meta/env_sources.csv`).
 - **Not in this deposit:** the original Figshare / `Zhang_2022.xls` file.
 
 ### Clinical resistance (CARSS)
 
 - **Upstream:** China Antimicrobial Resistance Surveillance System (CARSS) provincial antimicrobial susceptibility surveillance products (https://www.carss.cn/).
-- **What we did:** Cleaned and reshaped a CARSS-derived panel into `resistance_clean.csv` for province-level joins.
+- **What we did:** Cleaned and reshaped a CARSS-derived panel into `resistance_province.csv` for province-level joins.
 - **Not in this deposit:** raw CARSS distribution files; obtain current CARSS products from the official CARSS channels under their terms of use.
 
 ### Yearbook covariates (NBS)
 
 - **Upstream:** National Bureau of Statistics of China (NBS) *China Statistical Yearbook* / related statistical tables (https://www.stats.gov.cn/).
-- **What we did:** Harmonized metric names/units and curated `yearbook_core.csv` / `yearbook_full.csv` for reuse.
+- **What we did:** Harmonized metric names/units and curated `yearbook_province.csv` (with `year`) / `yearbook_full.csv` for reuse.
 - **Not in this deposit:** original NBS yearbook workbooks; obtain official tables from NBS.
 
 ### Administrative boundaries (SimpleMaps / Pareto) — GitHub maps only

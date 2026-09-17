@@ -1,6 +1,6 @@
 # Join key
 
-Merge curated tables on English `province` names and standardized `antibiotic` names. Environmental concentrations are only comparable within the matrix ↔ unit system below. Column definitions: [`codebook.csv`](codebook.csv).
+Merge curated tables on English `province` names and standardized `antibiotic` names. `yearbook_province.csv` also carries a `year` column (population and urban share: 2015–2024; other core metrics: 2024 only) for optional alignment with CARSS years. Environmental concentrations are only comparable within the matrix ↔ unit system below. Column definitions: [`codebook.csv`](codebook.csv).
 
 ## 1. Province key (31)
 
@@ -40,7 +40,7 @@ Canonical provincial-level units (CARSS / NBS English names; `Tibet` for Xizang)
 
 ## 2. env ∩ CARSS compounds (15)
 
-Exact name intersection of `environmental_cleaned` and `resistance_clean`. Use these for cross-domain joins; env-only and CARSS-only compounds remain in their domains.
+Exact name intersection of `env_records` and `resistance_province`. Use these for cross-domain joins; env-only and CARSS-only compounds remain in their domains.
 
 | antibiotic | antibiotic_class |
 | --- | --- |
@@ -72,7 +72,7 @@ Target units after conversion in `R/utils/environmental_units.R` (`target_concen
 
 ## 4. Antibiotic-class lookup
 
-133 compounds → 10 pharmacological classes (from `data/raw/reference/antibiotic_group_lookup.csv`). Machine-readable copy: [`join_key_antibiotic_classes.csv`](join_key_antibiotic_classes.csv).
+133 compounds → 10 pharmacological classes (from `data/raw/reference/antibiotic_group_lookup.csv`). Machine-readable copy: [`antibiotic_classes.csv`](antibiotic_classes.csv).
 
 **Beta-lactams.** Amoxicillin; Ampicillin; Aztreonam; Cefadroxil; Cefazolin; Cefepime; Cefotaxime; Cefotetan; Cefoxitin; Ceftazidime; Ceftriaxone; Cefuroxime; Cephalexin; Cloxacillin; Deacetoxycephalosporin; Ertapenem; Imipenem; Mecillinam; Meropenem; Oxacillin; Penicillin G; Penicillin V; Piperacillin
 

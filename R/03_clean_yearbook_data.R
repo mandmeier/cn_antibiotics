@@ -20,4 +20,5 @@ cat("\nunique metrics after cleaning:", n_metrics_after, "\n")
 audit_yearbook_metrics(yearbook_clean, label = "after cleaning")
 validate_yearbook_metrics(yearbook_clean)
 
-write_csv_reproducible(yearbook_clean, "data/intermediate/yearbook_clean.csv")
+dir.create("data/output/supporting", showWarnings = FALSE, recursive = TRUE)
+write_csv_reproducible(yearbook_clean, "data/output/supporting/yearbook_full.csv")

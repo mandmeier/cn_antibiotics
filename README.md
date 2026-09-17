@@ -24,8 +24,10 @@ Rscript R/01_clean_environmental_data.R
 | Path | Role |
 |------|------|
 | `data/raw/` | inputs |
-| `data/intermediate/` | Cleaned / harmonized tables produced by cleaning scripts |
-| `data/output/` | Analysis-ready tables |
+| `data/intermediate/` | Pipeline audits only (`validation/`) |
+| `data/output/primary/` | Province join set (main Sci Data products) |
+| `data/output/supporting/` | Finer-grain or full tables for reuse |
+| `data/output/meta/` | Codebook, join key, class lookup |
 | `R/01`–`R/07` (+ `R/04b`) | Pipeline scripts in run order |
 | `R/08_stage_deposit.R` | Stage Zenodo data zip under `deposit/` |
 | `deposit/` | Deposit readme + regenerable `zenodo_v1/` staging and zip |
@@ -50,39 +52,50 @@ Upstream licensing and attribution: [`SOURCES_AND_LICENSES.md`](SOURCES_AND_LICE
 Run from the repository root, in order:
 
 ```bash
-Rscript R/01_clean_environmental_data.R   # → environmental_cleaned.csv + environmental_by_site.csv (+ validation/)
-Rscript R/02_clean_resistance_data.R      # → data/intermediate/resistance_clean.csv
-Rscript R/03_clean_yearbook_data.R        # → data/intermediate/yearbook_clean.csv
-Rscript R/04_env_abx_per_province.R       # → data/output/env_abx_per_province.csv
-Rscript R/04b_env_abx_per_site.R          # → data/output/env_abx_per_site.csv
-Rscript R/05_build_codebook.R             # → data/output/codebook.csv
-Rscript R/06_build_join_key.R             # → data/output/join_key.md + join_key_antibiotic_classes.csv
-Rscript R/07_curate_yearbook_core.R       # → yearbook_core.csv + manifest + yearbook_full.csv
+Rscript R/01_clean_environmental_data.R   # → supporting/env_records.csv + env_site_records.csv
+Rscript R/02_clean_resistance_data.R      # → primary/resistance_province.csv
+Rscript R/03_clean_yearbook_data.R        # → supporting/yearbook_full.csv
+Rscript R/04_env_abx_per_province.R       # → primary/env_province.csv
+Rscript R/04b_env_abx_per_site.R          # → supporting/env_site.csv
+Rscript R/05_build_codebook.R             # → meta/codebook.csv
+Rscript R/06_build_join_key.R             # → meta/join_key.md + antibiotic_classes.csv
+Rscript R/07_curate_yearbook_core.R       # → primary/yearbook_province.csv + supporting manifest
 Rscript R/08_stage_deposit.R              # → deposit/zenodo_v1/ + cn_antibiotics_data_v1.0.0.zip
 ```
 
-Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01. Step 05 requires curated intermediate and output tables from steps 01–04b. Step 06 needs cleaned env, resistance, and yearbook tables plus the antibiotic class lookup. Step 07 requires step 03 only. Step 08 requires the curated intermediate and output tables listed in `R/08_stage_deposit.R`.
+Steps 01–03 are independent of each other and can be run in any order. Steps 04 and 04b both require step 01. Step 05 requires curated tables from steps 01–04b. Step 06 needs env records, resistance, and yearbook tables plus the antibiotic class lookup. Step 07 requires step 03 only. Step 08 requires the curated tables listed in `R/08_stage_deposit.R`.
 
-### Main outputs
+### Primary outputs (`data/output/primary/`)
+
+Province-level join set — the main Scientific Data products:
 
 | File | Description |
 |------|-------------|
-| `data/intermediate/environmental_cleaned.csv` | Harmonized env concentrations, matrices, classes (province-oriented collapse) |
-| `data/intermediate/environmental_by_site.csv` | Same harmonization with `location`, `season`, `lon`, `lat` retained |
-| `data/intermediate/resistance_clean.csv` | Cleaned CARSS (31 provinces; combo drugs dropped except TMP-SMX) |
-| `data/intermediate/yearbook_clean.csv` | Harmonized yearbook metric names and units (pipeline source; all 764) |
-| `data/output/yearbook_core.csv` | **Recommended** yearbook join file: 24 One Health covariates (livestock, wastewater, hospitals, GDP, urbanization, environment) |
-| `data/output/yearbook_core_manifest.csv` | Core metric list with theme tags and definitions |
-| `data/output/yearbook_full.csv` | Appendix copy of all 764 cleaned yearbook metrics (deposit-facing) |
-| `data/output/env_abx_per_province.csv` | Median concentration per sample type × province × antibiotic |
-| `data/output/env_abx_per_site.csv` | Median concentration per sample type × location × season × antibiotic |
-| `data/output/codebook.csv` | Variable dictionary: one row per yearbook metric (764; long-format) and one row per column on other curated tables |
-| `data/output/join_key.md` | One-page join key: 31 provinces, 15 env∩CARSS compounds, matrix ↔ unit rules, antibiotic-class lookup |
-| `data/output/join_key_antibiotic_classes.csv` | Antibiotic → pharmacological class (machine-readable companion to the join key) |
+| `env_province.csv` | Median concentration per sample type × province × antibiotic |
+| `resistance_province.csv` | Cleaned CARSS (31 provinces; combo drugs dropped except TMP-SMX) |
+| `yearbook_province.csv` | 24 One Health covariates with `year` (livestock, wastewater, hospitals, GDP, urbanization, environment); population and urban share cover 2015–2024, other metrics are the 2024 vintage |
 
-Use the province medians for province-level joins (e.g. CARSS). Use the site table for spatial or seasonal reuse. `season` is Zhang month (`1`–`12`) or sparse supplemental text; `location` strings are heterogeneous literature labels, not a formal site ID.
+Join on English `province` (and `antibiotic` for env × CARSS; optionally `year` for yearbook × CARSS).
 
-Yearbook cleaning is part of the curated data products. Prefer `yearbook_core.csv` for province-level covariate joins; use `yearbook_full.csv` (or `yearbook_clean.csv`) when you need the full 764-metric appendix.
+### Supporting outputs (`data/output/supporting/`)
+
+| File | Description |
+|------|-------------|
+| `env_records.csv` | Harmonized env concentrations (province-oriented collapse; feeds `env_province`) |
+| `env_site_records.csv` | Same harmonization with `location`, `season`, `lon`, `lat` retained |
+| `env_site.csv` | Median concentration per sample type × location × season × antibiotic |
+| `yearbook_full.csv` | All 764 harmonized yearbook metrics |
+| `yearbook_province_manifest.csv` | Core metric list with theme tags and definitions |
+
+### Meta (`data/output/meta/`)
+
+| File | Description |
+|------|-------------|
+| `codebook.csv` | Variable dictionary for curated tables |
+| `join_key.md` | One-page join key: 31 provinces, shared compounds, matrix ↔ unit rules |
+| `antibiotic_classes.csv` | Antibiotic → pharmacological class |
+
+Use site tables for spatial or seasonal reuse. `season` is Zhang month (`1`–`12`) or sparse supplemental text; `location` strings are heterogeneous literature labels, not a formal site ID.
 
 ## Optional QA
 

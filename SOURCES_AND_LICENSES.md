@@ -6,7 +6,7 @@ This repository and the Zenodo data deposit (https://doi.org/10.5281/zenodo.2280
 |---|---|---|---|---|
 | Zhang et al. 2022 | Literature compilation of environmental antibiotic occurrences | Figshare https://doi.org/10.6084/m9.figshare.19692241.v1 ; paper https://doi.org/10.1038/s41597-022-01384-5 | **No** raw workbook — derived env tables only | Working copy `data/raw/environmental_data/Zhang_2022.xls` for reproducibility; **do not treat as our primary data** |
 | Supplemental env literature | Extra rows beyond Zhang | Citations in `Data_Sources.csv` | Derived rows only | `China_Environmental_Supplemental.csv` |
-| CARSS | Clinical resistance surveillance | https://www.carss.cn/ under CARSS terms | Derived `resistance_clean.csv` only | Working extract under `data/raw/resistance_data/` |
+| CARSS | Clinical resistance surveillance | https://www.carss.cn/ under CARSS terms | Derived `resistance_province.csv` only | Working extract under `data/raw/resistance_data/` |
 | NBS China Statistical Yearbook | Official statistics | https://www.stats.gov.cn/ | Derived yearbook tables only | Working extract under `data/raw/yearbook_data/` |
 | SimpleMaps / Pareto China provinces | Admin boundaries | **CC BY 4.0** — attribute https://simplemaps.com (`data/raw/cn_shp/license_gis.txt`) | **No** shapefile | `data/raw/cn_shp/` |
 | This curation + R code | Harmonized tables + pipeline | Data DOI; software DOI https://doi.org/10.5281/zenodo.22807986 ; MIT for code | Yes (curated CSVs) | Yes |

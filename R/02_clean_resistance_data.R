@@ -56,5 +56,6 @@ message(
   n_removed_combo, " combo/multiple antibiotic)"
 )
 
-write_csv_reproducible(resistance_clean, "data/intermediate/resistance_clean.csv")
+dir.create("data/output/primary", showWarnings = FALSE, recursive = TRUE)
+write_csv_reproducible(resistance_clean, "data/output/primary/resistance_province.csv")
 

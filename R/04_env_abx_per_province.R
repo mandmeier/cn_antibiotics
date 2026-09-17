@@ -5,7 +5,7 @@
 
 source("R/utils/reproducible_csv.R")
 
-environmental <- read_csv("data/intermediate/environmental_cleaned.csv")
+environmental <- read_csv("data/output/supporting/env_records.csv")
 
 env_abx_per_province <- environmental %>%
 
@@ -70,4 +70,5 @@ env_abx_per_province <- environmental %>%
   # filter missing antibiotics
   filter(!is.na(antibiotic))
 
-write_csv_reproducible(env_abx_per_province, "data/output/env_abx_per_province.csv")
+dir.create("data/output/primary", showWarnings = FALSE, recursive = TRUE)
+write_csv_reproducible(env_abx_per_province, "data/output/primary/env_province.csv")

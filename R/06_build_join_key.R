@@ -1,5 +1,5 @@
 # Build a one-page join key for env / CARSS / yearbook interoperability.
-# Outputs: data/output/join_key.md + join_key_antibiotic_classes.csv
+# Outputs: data/output/meta/join_key.md + antibiotic_classes.csv
 
 suppressPackageStartupMessages({
   library(dplyr)
@@ -20,9 +20,9 @@ PROVINCES <- c(
 EXPECTED_SHARED_N <- 15L
 
 PATHS <- list(
-  environmental = "data/intermediate/environmental_cleaned.csv",
-  resistance = "data/intermediate/resistance_clean.csv",
-  yearbook = "data/intermediate/yearbook_clean.csv",
+  environmental = "data/output/supporting/env_records.csv",
+  resistance = "data/output/primary/resistance_province.csv",
+  yearbook = "data/output/supporting/yearbook_full.csv",
   class_lookup = "data/raw/reference/antibiotic_group_lookup.csv"
 )
 
@@ -53,9 +53,9 @@ assert_provinces <- function(provs, label) {
   }
 }
 
-assert_provinces(environmental$province, "environmental_cleaned")
-assert_provinces(resistance$province, "resistance_clean")
-assert_provinces(yearbook$province, "yearbook_clean")
+assert_provinces(environmental$province, "env_records")
+assert_provinces(resistance$province, "resistance_province")
+assert_provinces(yearbook$province, "yearbook_full")
 
 # --- env ∩ CARSS compounds ---------------------------------------------------
 
@@ -93,7 +93,8 @@ shared_tbl <- tibble(
 class_out <- class_lookup %>%
   rename(antibiotic_class = group_of_antibiotic)
 
-class_csv_path <- "data/output/join_key_antibiotic_classes.csv"
+dir.create("data/output/meta", showWarnings = FALSE, recursive = TRUE)
+class_csv_path <- "data/output/meta/antibiotic_classes.csv"
 write_csv_reproducible(class_out, class_csv_path)
 
 # --- Markdown join key -------------------------------------------------------
@@ -141,9 +142,11 @@ lines <- c(
   "",
   paste(
     "Merge curated tables on English `province` names and standardized",
-    "`antibiotic` names. Environmental concentrations are only comparable",
-    "within the matrix ↔ unit system below. Column definitions:",
-    "[`codebook.csv`](codebook.csv)."
+    "`antibiotic` names. `yearbook_province.csv` also carries a `year`",
+    "column (population and urban share: 2015–2024; other core metrics:",
+    "2024 only) for optional alignment with CARSS years. Environmental",
+    "concentrations are only comparable within the matrix ↔ unit system",
+    "below. Column definitions: [`codebook.csv`](codebook.csv)."
   ),
   "",
   "## 1. Province key (31)",
@@ -158,8 +161,8 @@ lines <- c(
   "## 2. env ∩ CARSS compounds (15)",
   "",
   paste(
-    "Exact name intersection of `environmental_cleaned` and",
-    "`resistance_clean`. Use these for cross-domain joins; env-only and",
+    "Exact name intersection of `env_records` and",
+    "`resistance_province`. Use these for cross-domain joins; env-only and",
     "CARSS-only compounds remain in their domains."
   ),
   "",
@@ -185,15 +188,15 @@ lines <- c(
     length(unique(class_out$antibiotic)), " compounds → ",
     length(unique(class_out$antibiotic_class)), " pharmacological classes",
     " (from `data/raw/reference/antibiotic_group_lookup.csv`).",
-    " Machine-readable copy: [`join_key_antibiotic_classes.csv`]",
-    "(join_key_antibiotic_classes.csv)."
+    " Machine-readable copy: [`antibiotic_classes.csv`]",
+    "(antibiotic_classes.csv)."
   ),
   "",
   paste(class_sections, collapse = "\n\n"),
   ""
 )
 
-md_path <- "data/output/join_key.md"
+md_path <- "data/output/meta/join_key.md"
 writeLines(lines, md_path, useBytes = TRUE)
 
 message(
