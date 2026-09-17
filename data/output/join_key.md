@@ -84,13 +84,13 @@ Target units after conversion in `R/utils/environmental_units.R` (`target_concen
 
 **Macrolides.** Acetylspiramycin; Azithromycin; Clarithromycin; Dehydroerythromycin; Erythromycin; Erythromycin A dihydrate; Erythromycin-H2O; Josamycin; Kitasamycin; Leucomycin; Oleandomycin; Roxithromycin; Roxithromycin-H2O; Spiramycin; Tilmicosin; Tylosin
 
-**Other.** Amikacin; Bacitracin; Carbadox; Furazolidone; Gentamicin; Kanamycin; Linezolid; Metronidazole; Neomycin; Nitrofurantoin; Olaquindox; Paromomycin; Polymyxin B; Rifampicin; Spectinomycin; Streptomycin; Teicoplanin; Tobramycin; Vancomycin
+**Other.** Amikacin; Bacitracin; Carbadox; Furazolidone; Gentamicin; Kanamycin; Linezolid; Metronidazole; Neomycin; Nitrofurantoin; Olaquindox; Paromomycin; Polymyxin B; Rifampicin; Spectinomycin; Streptomycin; Teicoplanin; Tobramycin; Trimethoprim/Sulfamethoxazole; Vancomycin
 
 **Phenicols.** Chloramphenicol; Florfenicol; Thiamphenicol
 
 **Quinolones.** Cinoxacin; Nalidixic Acid; Oxolinic Acid; Pipemidic Acid
 
-**Sulfonamides.** Acetylsulfamethazine; Acetylsulfamethoxazole; Sulfabenzamide; Sulfacetamide; Sulfachinoxaline; Sulfachloropyridazine; Sulfadiazine; Sulfadimethoxine; Sulfadimethoxypyrimidine; Sulfadimidine; Sulfadimoxine; Sulfadoxine; Sulfafurazole; Sulfaguanidine; Sulfamerazine; Sulfameter; Sulfamethizole; Sulfamethoxazole; Sulfamethoxydiazine; Sulfamethoxypyridazine; Sulfamonomethoxine; Sulfamoxole; Sulfanilamide; Sulfanitran; Sulfaphenazole; Sulfapyridine; Sulfaquinoxaline; Sulfathiazole; Sulfisomidine; Trimethoprim/Sulfamethoxazole
+**Sulfonamides.** Acetylsulfamethazine; Acetylsulfamethoxazole; Sulfabenzamide; Sulfacetamide; Sulfachinoxaline; Sulfachloropyridazine; Sulfadiazine; Sulfadimethoxine; Sulfadimethoxypyrimidine; Sulfadimidine; Sulfadimoxine; Sulfadoxine; Sulfafurazole; Sulfaguanidine; Sulfamerazine; Sulfameter; Sulfamethizole; Sulfamethoxazole; Sulfamethoxydiazine; Sulfamethoxypyridazine; Sulfamonomethoxine; Sulfamoxole; Sulfanilamide; Sulfanitran; Sulfaphenazole; Sulfapyridine; Sulfaquinoxaline; Sulfathiazole; Sulfisomidine
 
 **Tetracyclines.** 4-Epichlortetracycline; Anhydrochlortetracycline; Apo-Oxytetracycline; Chlortetracycline; Demeclocycline; Doxycycline; Epianhydrotetracycline; Epioxytetracycline; Epitetracycline; Isochlortetracycline; Methacycline; Minocycline; Oxytetracycline; Tetracycline; Tigecycline
 
