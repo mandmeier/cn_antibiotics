@@ -1,0 +1,13 @@
+folder,file,grain,n_rows,n_provinces,purpose
+primary,env_province.csv,province-median (sample type × province × antibiotic),1672,31,Median environmental concentration for province-level joins with CARSS
+primary,resistance_province.csv,province-year (year × province × species × antibiotic),16461,31,Cleaned CARSS clinical resistance panel (31 provinces; 2019–2024)
+primary,yearbook_province.csv,province-year (year × province × metric),1302,31,24 One Health yearbook covariates (pop/urban 2015–2024; others 2024 vintage)
+supporting,env_records.csv,measurement (province-oriented),5409,31,Harmonized env concentrations after QC; feeds env_province
+supporting,env_site_records.csv,measurement (site-oriented),5693,31,"Same harmonization with location, season, lon, lat retained"
+supporting,env_site.csv,site-median (sample type × location × season × antibiotic),4216,31,Site-level medians for spatial or seasonal reuse
+supporting,yearbook_full.csv,province-metric,23684,31,All 764 cleaned yearbook metrics
+supporting,yearbook_province_manifest.csv,metric list,24,,Theme tags and definitions for the 24 core yearbook metrics
+meta,codebook.csv,variable dictionary,825,,Column definitions for curated tables
+meta,join_key.md,join documentation,,,"31 provinces, 15 shared compounds, matrix ↔ unit rules"
+meta,antibiotic_classes.csv,lookup,133,,Antibiotic → pharmacological class (10 classes)
+meta,env_sources.csv,literature provenance,265,,Publication ID → citation for environmental rows

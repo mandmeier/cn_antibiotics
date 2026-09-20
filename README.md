@@ -33,6 +33,8 @@ Rscript R/01_clean_environmental_data.R
 | `deposit/` | Deposit readme + regenerable `zenodo_v1/` staging and zip |
 | `R/utils/` | Shared helpers (units, antibiotic classes, yearbook metrics, maps) |
 | `R/qa/` | Optional verification scripts (not required to reproduce outputs) |
+| `R/figures/` | Manuscript figure panel scripts → `figures/` |
+| `R/tables/` | Manuscript Tables 1–4 scripts → `tables/` |
 
 ### Raw inputs
 

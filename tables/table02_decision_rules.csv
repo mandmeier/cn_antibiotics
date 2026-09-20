@@ -1,0 +1,17 @@
+rule_id,domain,rule,action,script
+E1,Environmental,Province mapping,"Map free-text places to the 31 CARSS/NBS English names (Xizang → Tibet). Drop Hong Kong, Macau, Taiwan, multi-province / nationwide / basin / empty labels.",R/01
+E2,Environmental,Sample type / matrix,"Collapse free-text sample labels into sample types and six matrices (soil, sediment, sludge, surface water, wastewater influent, wastewater effluent). Drop solid waste.",R/01
+E3,Environmental,Antibiotic names and classes,"INN-style curation (synonyms, salts). Drop class totals, mixed 'all antibiotics', and non-antibiotics. Assign pharmacological class from antibiotic_group_lookup (TMP-SMX → Sulfonamides).",R/01
+E4,Environmental,Year midpoint,Parse single years and ranges; for a range take floor((start+end)/2). Missing year stays missing.,R/01
+E5,Environmental,Unit conversion and incompatible pairs,Convert to matrix targets: solids ng/g or ng/g dw; liquids ng/L. Drop incompatible unit–matrix pairs rather than invent a conversion.,R/01
+E6,Environmental,Source-rank deduplication,"When identical measurements appear in multiple references, keep the highest source-rank (NEW_* > CAND_* > N* > Zhang numeric pub_id). Province grain also collapses season so the same value is not double-counted.",R/01
+E7,Environmental,Province median aggregation,Median by sample type × province × antibiotic → env_province.csv. Prefer median over mean/max because literature points are not a probability sample.,R/04
+E8,Environmental,Zeros as LOD/2,"Within each aggregation group, estimate LOD as the lowest positive mean; replace zero with LOD/2. If a group has no positives, drop it.","R/04, R/04b"
+E9,Environmental,Site grain,"Retain location, season, lon, lat in env_site_records; site medians in env_site.csv use the same LOD/2 + median rules keyed by site/season.","R/01, R/04b"
+R1,Resistance (CARSS),Province filter,Keep the 31 provincial units; drop the national aggregate.,R/02
+R2,Resistance (CARSS),Combo / multiple AST filter,"Drop combination AST categories (slash names, 'compound', aggregates) so the table emphasizes single-agent results. Retain Trimethoprim/Sulfamethoxazole as co-formulated AST (no separate TMP/SMX rows in this extract); class as Sulfonamides.",R/02
+R3,Resistance (CARSS),Name standardization,Correct spelling variants (e.g. Polymixin B → Polymyxin B). Assign the same pharmacological classes as the environmental table.,R/02
+Y1,Yearbook (NBS),Province and unit parse,Rename Xizang → Tibet. Parse unit suffixes into a unit column; strip them from metric names.,R/03
+Y2,Yearbook (NBS),Core vs full extract,"Primary yearbook_province.csv: 24 One Health metrics (livestock, wastewater, hospitals, GDP, urbanization, environment) with a year column. Supporting yearbook_full.csv: all cleaned metrics.","R/03, R/07"
+Y3,Yearbook (NBS),Year coverage rule,Population and urban share expanded to 2015–2024. Other 22 core metrics are the 2024 vintage only. Do not treat as a long multi-year panel for all metrics.,R/07
+J1,Join keys,Merge keys,Merge on English province (and antibiotic for env × CARSS). Optional year join for yearbook × CARSS. Cross-domain compound analyses start from the 15 exact name overlaps in meta/join_key.md. Compare concentrations only within matrix ↔ unit.,"R/05, R/06"

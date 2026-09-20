@@ -1,0 +1,8 @@
+stage,stage_lab,retained,removed
+1,Combined (Zhang unique + supplemental),8376,0
+2,After missing conc. / name,6475,1901
+3,After non-province place drop,5954,521
+4,After class totals / non-antibiotics / solid waste,5852,102
+5,After incompatible unit–matrix pairs,5842,10
+6,After duplicates (source-rank / season),5409,433
+7,env_records (cleaned),5409,0

@@ -1,0 +1,20 @@
+id,label,n,kind
+zhang_raw,Zhang 2022 Records,6929,input
+zhang_unique,Zhang after within-source unique(),6916,node
+drop_zhang_dup,Zhang within-source duplicates,13,exclude
+supp_raw,Supplemental literature,1460,input
+combined,Zhang unique + supplemental,8376,node
+drop_empty,Missing concentration or antibiotic name,1901,exclude
+after_empty,Rows with concentration + name,6475,node
+drop_non_province,"Non-province place (HK/Macau/Taiwan, multi-province, empty)",521,exclude
+after_province,Mapped to 31 CARSS provinces,5954,node
+drop_analyte,Class totals / non-antibiotics / solid waste,102,exclude
+after_analyte,Retained named antibiotics,5852,node
+drop_units,Incompatible unit–matrix pairs,10,exclude
+after_units,After place / analyte / unit filters,5842,node
+drop_site_dup,Site-level source-rank duplicates,149,exclude
+drop_duplicates,Duplicates (source-rank / season collapse),433,exclude
+env_records,env_records (cleaned measurements),5409,output
+env_province,env_province (province medians),1672,output
+env_site,env_site (site medians),4216,output
+env_site_records,env_site_records (site-level measurements),5693,output

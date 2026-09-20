@@ -6,6 +6,30 @@ source("R/utils/antibiotic_classes.R")
 source("R/utils/environmental_conversion_flags.R")
 source("R/utils/reproducible_csv.R")
 
+# Flow counts for Fig. 2 (exclusion diagram). Written under validation/.
+.flow_counts <- list()
+.flow_add <- function(id, label, n, kind = "node") {
+  .flow_counts[[length(.flow_counts) + 1]] <<- data.frame(
+    id = id,
+    label = label,
+    n = as.integer(n),
+    kind = kind,
+    stringsAsFactors = FALSE
+  )
+}
+
+# Stage totals for Fig. 2 stacked bars (retained vs removed; all sources pooled).
+.flow_stages <- list()
+.flow_add_stage <- function(stage, stage_lab, n_before, n_after) {
+  .flow_stages[[length(.flow_stages) + 1]] <<- data.frame(
+    stage = as.integer(stage),
+    stage_lab = stage_lab,
+    retained = as.integer(n_after),
+    removed = as.integer(n_before) - as.integer(n_after),
+    stringsAsFactors = FALSE
+  )
+}
+
 # 31 provincial-level units in CARSS (excludes National aggregate).
 CARSS_PROVINCES <- c(
   "Anhui", "Beijing", "Chongqing", "Fujian", "Gansu", "Guangdong", "Guangxi",
@@ -228,6 +252,7 @@ clean_season_label <- function(season) {
 
 # import Zhang data, wrangle into standard format
 zhang <- read_excel("data/raw/environmental_data/Zhang_2022.xls", sheet = "Records")
+.flow_add("zhang_raw", "Zhang 2022 Records", nrow(zhang), "input")
 
 zhang_formatted <- zhang %>%
   # add location variable (skip missing loc_l* / loc_Ref so paste does not emit "NA")
@@ -279,6 +304,18 @@ zhang_formatted <- zhang %>%
       max_concentration
     )
   )
+.flow_add(
+  "zhang_unique",
+  "Zhang after within-source unique()",
+  nrow(zhang_formatted),
+  "node"
+)
+.flow_add(
+  "drop_zhang_dup",
+  "Zhang within-source duplicates",
+  nrow(zhang) - nrow(zhang_formatted),
+  "exclude"
+)
 
 # import supplemental environmental antibiotics data
 supplemental <- read_csv(
@@ -292,11 +329,45 @@ supplemental <- read_csv(
     mean_concentration = as.numeric(mean_concentration),
     max_concentration = as.numeric(max_concentration)
   )
+.flow_add("supp_raw", "Supplemental literature", nrow(supplemental), "input")
 
 combined_data <- zhang_formatted %>%
-  bind_rows(supplemental) %>%
+  bind_rows(supplemental)
+.flow_add(
+  "combined",
+  "Zhang unique + supplemental",
+  nrow(combined_data),
+  "node"
+)
+.flow_add_stage(
+  1L,
+  "Combined (Zhang unique + supplemental)",
+  nrow(combined_data),
+  nrow(combined_data)
+)
+
+n_before_empty <- nrow(combined_data)
+combined_data <- combined_data %>%
   filter(!is.na(mean_concentration) | !is.na(max_concentration)) %>%
   filter(!is.na(antibiotic), str_squish(antibiotic) != "")
+.flow_add(
+  "drop_empty",
+  "Missing concentration or antibiotic name",
+  n_before_empty - nrow(combined_data),
+  "exclude"
+)
+.flow_add(
+  "after_empty",
+  "Rows with concentration + name",
+  nrow(combined_data),
+  "node"
+)
+.flow_add_stage(
+  2L,
+  "After missing conc. / name",
+  n_before_empty,
+  nrow(combined_data)
+)
 
 n_antibiotics_before <- n_distinct(combined_data$antibiotic)
 
@@ -407,8 +478,33 @@ environmental_clean <- combined_data %>%
       TRUE ~ NA_character_
     )
   ) %>%
-  select(-province_key) %>%
-  filter(!is.na(province)) %>%
+  select(-province_key)
+
+n_before_province <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
+  filter(!is.na(province))
+.flow_add(
+  "drop_non_province",
+  "Non-province place (HK/Macau/Taiwan, multi-province, empty)",
+  n_before_province - nrow(environmental_clean),
+  "exclude"
+)
+.flow_add(
+  "after_province",
+  "Mapped to 31 CARSS provinces",
+  nrow(environmental_clean),
+  "node"
+)
+.flow_add_stage(
+  3L,
+  "After non-province place drop",
+  n_before_province,
+  nrow(environmental_clean)
+)
+
+n_before_analyte <- nrow(environmental_clean)
+
+environmental_clean <- environmental_clean %>%
 
   #### Harmonize sample_year
   mutate(sample_year = parse_sample_year(sample_year)) %>%
@@ -610,13 +706,18 @@ environmental_clean <- combined_data %>%
         !vapply(antibiotic, is_aggregate_antibiotic, logical(1)),
         !vapply(antibiotic, is_tetracycline_class_total, logical(1))
       )
+    .n_drop_aggregate <<- n_before_agg - nrow(df)
     message(
-      "Removed ", n_before_agg - nrow(df),
+      "Removed ", .n_drop_aggregate,
       " aggregate / composite measurement(s)"
     )
     df
   } %>%
-  select(-antibiotic_raw) %>%
+  select(-antibiotic_raw)
+
+n_drop_aggregate <- .n_drop_aggregate
+n_before_non_abx <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
   filter(!antibiotic %in% c(
     "Atenolol",
     "Metoprolol",
@@ -631,10 +732,36 @@ environmental_clean <- combined_data %>%
     "Thiabendazole",
     "multiple classes",
     "sulfonamides"
-  )) %>%
+  ))
+n_drop_non_abx <- n_before_non_abx - nrow(environmental_clean)
+
+n_before_solid <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
   # Removed solid waste: different antibiotics concentration pattern from other
   # matrices and only n = 2 samples.
-  filter(sample_type != "solid waste") %>%
+  filter(sample_type != "solid waste")
+n_drop_solid <- n_before_solid - nrow(environmental_clean)
+
+.flow_add(
+  "drop_analyte",
+  "Class totals / non-antibiotics / solid waste",
+  as.integer(n_drop_aggregate + n_drop_non_abx + n_drop_solid),
+  "exclude"
+)
+.flow_add(
+  "after_analyte",
+  "Retained named antibiotics",
+  nrow(environmental_clean),
+  "node"
+)
+.flow_add_stage(
+  4L,
+  "After class totals / non-antibiotics / solid waste",
+  n_before_analyte,
+  nrow(environmental_clean)
+)
+
+environmental_clean <- environmental_clean %>%
   mutate(
     antibiotic = case_when(
       antibiotic == "Penicillin" ~ "Penicillin G",
@@ -650,7 +777,10 @@ environmental_clean <- combined_data %>%
   mutate(
     matrix = assign_environmental_matrix(sample_type, reference_number),
     .after = sample_type
-  ) %>%
+  )
+
+n_before_units <- nrow(environmental_clean)
+environmental_clean <- environmental_clean %>%
   # unclear how to convert measurments measured in liquid sample to solid sludge,
   # removed 7 measurements from sources N69, N92, N451
   filter(
@@ -674,7 +804,27 @@ environmental_clean <- combined_data %>%
       matrix == "surface water" &
         grepl("^ng/g", normalize_unit_string(concentration_unit))
     )
-  ) %>%
+  )
+.flow_add(
+  "drop_units",
+  "Incompatible unit–matrix pairs",
+  n_before_units - nrow(environmental_clean),
+  "exclude"
+)
+.flow_add(
+  "after_units",
+  "After place / analyte / unit filters",
+  nrow(environmental_clean),
+  "node"
+)
+.flow_add_stage(
+  5L,
+  "After incompatible unit–matrix pairs",
+  n_before_units,
+  nrow(environmental_clean)
+)
+
+environmental_clean <- environmental_clean %>%
   mutate(
     .unit_norm = normalize_unit_string(concentration_unit),
     .is_dw = unit_is_dry_weight(.unit_norm),
@@ -738,6 +888,12 @@ message(
   "Site-level rows: ", n_before_site_dedup, " -> ", nrow(environmental_by_site),
   " (kept latest source per site/season)"
 )
+.flow_add(
+  "drop_site_dup",
+  "Site-level source-rank duplicates",
+  n_before_site_dedup - nrow(environmental_by_site),
+  "exclude"
+)
 dir.create("data/output/supporting", showWarnings = FALSE, recursive = TRUE)
 write_csv_reproducible(
   environmental_by_site,
@@ -750,9 +906,12 @@ environmental_clean <- environmental_clean %>%
 
 # Province-oriented collapse (unchanged): drop season so same-year seasonal
 # duplicates collapse, then keep one source per province measurement key.
+n_before_duplicates <- nrow(environmental_clean)
+n_before_season_collapse <- nrow(environmental_clean)
 environmental_clean <- environmental_clean %>%
   select(-season) %>%
   unique()
+n_season_collapse <- n_before_season_collapse - nrow(environmental_clean)
 
 n_before_measurement_dedup <- nrow(environmental_clean)
 environmental_clean <- environmental_clean %>%
@@ -770,9 +929,35 @@ environmental_clean <- environmental_clean %>%
   ungroup() %>%
   select(-.source_rank)
 
+n_source_dedup <- n_before_measurement_dedup - nrow(environmental_clean)
 message(
-  "Removed ", n_before_measurement_dedup - nrow(environmental_clean),
-  " duplicate measurement(s) (kept latest source)"
+  "Removed ", n_source_dedup,
+  " duplicate measurement(s) (kept latest source); ",
+  n_season_collapse, " seasonal duplicate row(s) collapsed"
+)
+.flow_add(
+  "drop_duplicates",
+  "Duplicates (source-rank / season collapse)",
+  n_season_collapse + n_source_dedup,
+  "exclude"
+)
+.flow_add(
+  "env_records",
+  "env_records (cleaned measurements)",
+  nrow(environmental_clean),
+  "output"
+)
+.flow_add_stage(
+  6L,
+  "After duplicates (source-rank / season)",
+  n_before_duplicates,
+  nrow(environmental_clean)
+)
+.flow_add_stage(
+  7L,
+  "env_records (cleaned)",
+  nrow(environmental_clean),
+  nrow(environmental_clean)
 )
 
 if (any(is.na(environmental_clean$concentration_unit))) {
@@ -895,3 +1080,42 @@ write_csv_reproducible(
   environmental_clean,
   "data/output/supporting/env_records.csv"
 )
+
+# Append downstream product sizes when present (from R/04, R/04b).
+if (file.exists("data/output/primary/env_province.csv")) {
+  .flow_add(
+    "env_province",
+    "env_province (province medians)",
+    nrow(read_csv("data/output/primary/env_province.csv", show_col_types = FALSE)),
+    "output"
+  )
+}
+if (file.exists("data/output/supporting/env_site.csv")) {
+  .flow_add(
+    "env_site",
+    "env_site (site medians)",
+    nrow(read_csv("data/output/supporting/env_site.csv", show_col_types = FALSE)),
+    "output"
+  )
+}
+if (file.exists("data/output/supporting/env_site_records.csv")) {
+  .flow_add(
+    "env_site_records",
+    "env_site_records (site-level measurements)",
+    nrow(read_csv("data/output/supporting/env_site_records.csv", show_col_types = FALSE)),
+    "output"
+  )
+}
+
+flow_path <- file.path(validation_dir, "flow_counts.csv")
+flow_df <- dplyr::bind_rows(.flow_counts)
+write_csv_reproducible(flow_df, flow_path)
+message("Wrote flow counts for Fig. 2: ", flow_path)
+
+flow_stages_path <- file.path(validation_dir, "flow_stages.csv")
+flow_stages_df <- dplyr::bind_rows(.flow_stages)
+write_csv_reproducible(flow_stages_df, flow_stages_path)
+message("Wrote flow stage totals for Fig. 2: ", flow_stages_path)
+if (file.exists(file.path(validation_dir, "flow_by_source.csv"))) {
+  unlink(file.path(validation_dir, "flow_by_source.csv"))
+}
