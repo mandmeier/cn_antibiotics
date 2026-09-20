@@ -1,6 +1,6 @@
 {
   "title": "cn_antibiotics: harmonized environmental antibiotics, CARSS resistance, and China yearbook covariates",
-  "description": "R pipeline that turns literature-derived environmental antibiotic concentrations (harmonized from Zhang et al. 2022 Figshare https://doi.org/10.6084/m9.figshare.19692241.v1 plus supplemental literature; we did not generate those primary occurrence rows), CARSS clinical resistance data, and NBS China Statistical Yearbook variables into analysis-ready tables. Curated data: https://doi.org/10.5281/zenodo.22862670 (CC BY 4.0 on the curation layer). SimpleMaps China provinces shapefile (CC BY 4.0; attribute https://simplemaps.com) is used for maps in this repository and is not part of the Zenodo data zip.",
+  "description": "R pipeline that turns literature-derived environmental antibiotic concentrations (harmonized from Zhang et al. 2022 Figshare https://doi.org/10.6084/m9.figshare.19692241.v1 plus supplemental literature; we did not generate those primary occurrence rows), CARSS clinical resistance data, and NBS China Statistical Yearbook variables into analysis-ready tables. Curated data: https://doi.org/10.5281/zenodo.22807174 (CC BY 4.0 on the curation layer). SimpleMaps China provinces shapefile (CC BY 4.0; attribute https://simplemaps.com) is used for maps in this repository and is not part of the Zenodo data zip.",
   "upload_type": "software",
   "license": "mit",
   "creators": [
@@ -29,7 +29,7 @@
       "resource_type": "software"
     },
     {
-      "identifier": "10.5281/zenodo.22862670",
+      "identifier": "10.5281/zenodo.22807174",
       "relation": "isSupplementTo",
       "resource_type": "dataset",
       "scheme": "doi"

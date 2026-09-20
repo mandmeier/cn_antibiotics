@@ -113,7 +113,7 @@ Curated tables for Zenodo are staged by `R/08_stage_deposit.R` into `deposit/cn_
 
 | Resource | License | Identifier |
 |---|---|---|
-| Curated data (Zenodo record) | CC BY 4.0 (curation layer) | https://doi.org/10.5281/zenodo.22862670 |
+| Curated data (Zenodo record) | CC BY 4.0 (curation layer) | https://doi.org/10.5281/zenodo.22807174 (concept; latest version) |
 | R code / pipeline (GitHub → Zenodo archive) | MIT | https://doi.org/10.5281/zenodo.22807986 |
 | GitHub repository | MIT (code); upstream raw inputs under their own terms | https://github.com/mandmeier/cn_antibiotics |
 
@@ -123,4 +123,4 @@ Curated tables for Zenodo are staged by `R/08_stage_deposit.R` into `deposit/cn_
 
 Paste-ready Data Availability blurb:
 
-> The curated datasets are available on Zenodo under CC BY 4.0 for our harmonization layer (https://doi.org/10.5281/zenodo.22862670; files restricted during review). Environmental occurrence rows derived from Zhang et al. must also cite their Figshare dataset (https://doi.org/10.6084/m9.figshare.19692241.v1) and Data Descriptor (https://doi.org/10.1038/s41597-022-01384-5). Resistance and yearbook covariates are derived from CARSS and NBS China Statistical Yearbook products respectively; originals are not redistributed in the deposit. The R pipeline is archived at https://doi.org/10.5281/zenodo.22807986 (source https://github.com/mandmeier/cn_antibiotics).
+> The curated datasets are available on Zenodo under CC BY 4.0 for our harmonization layer (https://doi.org/10.5281/zenodo.22807174; files restricted during review). Environmental occurrence rows derived from Zhang et al. must also cite their Figshare dataset (https://doi.org/10.6084/m9.figshare.19692241.v1) and Data Descriptor (https://doi.org/10.1038/s41597-022-01384-5). Resistance and yearbook covariates are derived from CARSS and NBS China Statistical Yearbook products respectively; originals are not redistributed in the deposit. The R pipeline is archived at https://doi.org/10.5281/zenodo.22807986 (source https://github.com/mandmeier/cn_antibiotics).
