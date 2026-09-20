@@ -1,6 +1,6 @@
 # Sources and licenses
 
-This repository and the Zenodo data deposit (https://doi.org/10.5281/zenodo.22807175) provide **harmonized, derived tables**. Upstream providers retain rights in their original works. The deposit package is released under **CC BY 4.0** for our curation layer only.
+This repository and the Zenodo data deposit (https://doi.org/10.5281/zenodo.22862670) provide **harmonized, derived tables**. Upstream providers retain rights in their original works. The deposit package is released under **CC BY 4.0** for our curation layer only.
 
 | Source | What it is | Cite / attribute | In Zenodo deposit? | In this GitHub repo? |
 |---|---|---|---|---|

@@ -6,7 +6,7 @@ Harmonized environmental antibiotic concentrations (China), CARSS clinical resis
 
 **Software / pipeline:** https://github.com/mandmeier/cn_antibiotics (MIT). Software DOI: https://doi.org/10.5281/zenodo.22807986 (GitHub release v1.0.1).
 
-**Data DOI:** https://doi.org/10.5281/zenodo.22807175 (version 1.0.0; files restricted until acceptance). Concept DOI for all versions: https://doi.org/10.5281/zenodo.22807174.
+**Data DOI:** https://doi.org/10.5281/zenodo.22862670 (version 1.0.0; files restricted until acceptance). Concept DOI for all versions: https://doi.org/10.5281/zenodo.22807174.
 
 ## Layout
 
@@ -77,7 +77,7 @@ This Zenodo package contains **derived / curated tables only**. We do **not** re
 
 ### How to cite
 
-1. **This curated deposit** — https://doi.org/10.5281/zenodo.22807175  
+1. **This curated deposit** — https://doi.org/10.5281/zenodo.22862670  
 2. **The R pipeline** — https://doi.org/10.5281/zenodo.22807986  
 3. **Zhang et al. 2022 Figshare** (and/or the *Scientific Data* article) for environmental occurrence rows derived from their compilation  
 4. **CARSS** and **NBS** as appropriate for resistance and yearbook-derived covariates  

@@ -2,7 +2,7 @@
 
 ## Done
 
-- Data deposit published (restricted files): https://doi.org/10.5281/zenodo.22807175  
+- Data deposit published (restricted files): https://doi.org/10.5281/zenodo.22862670  
   Concept DOI (all versions): https://doi.org/10.5281/zenodo.22807174  
 - Software archive (GitHub release v1.0.1): https://doi.org/10.5281/zenodo.22807986  
 - Repo scaffolding + source licensing docs: `LICENSE`, `CITATION.cff`, `.zenodo.json`, `SOURCES_AND_LICENSES.md`, `deposit/README_deposit.md`, `R/08_stage_deposit.R`
@@ -15,7 +15,7 @@ Rscript R/08_stage_deposit.R
 
 ## Sync licensing text to the published Zenodo data record (do this)
 
-On https://doi.org/10.5281/zenodo.22807175 → **Edit**:
+On https://doi.org/10.5281/zenodo.22862670 → **Edit**:
 
 1. Replace **Description** with the “Sources, licensing, and attribution” section from `deposit/README_deposit.md` (or the full README body).
 2. Add **Related works**:
@@ -35,6 +35,6 @@ On https://doi.org/10.5281/zenodo.22807175 → **Edit**:
 
 1. Open the Zenodo **data** files (public download) under CC BY 4.0.
 2. Confirm both DOIs plus Zhang Figshare citation in the Data Descriptor Data Availability section:
-   - Data: https://doi.org/10.5281/zenodo.22807175
+   - Data: https://doi.org/10.5281/zenodo.22862670
    - Software: https://doi.org/10.5281/zenodo.22807986
    - Zhang Figshare: https://doi.org/10.6084/m9.figshare.19692241.v1

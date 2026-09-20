@@ -29,5 +29,5 @@ identifiers:
     value: "10.5281/zenodo.22807986"
     description: "Software DOI (Zenodo archive of GitHub release v1.0.1)"
   - type: doi
-    value: "10.5281/zenodo.22807175"
+    value: "10.5281/zenodo.22862670"
     description: "Data deposit DOI (Zenodo curated tables, version 1.0.0; restricted files until acceptance)"
