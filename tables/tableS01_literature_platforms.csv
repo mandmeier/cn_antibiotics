@@ -1,0 +1,20 @@
+category,platform,url,language_coverage,role
+Bibliographic search,Web of Science,https://www.webofscience.com/,English and international literature,Bibliographic search
+Bibliographic search,Scopus,https://www.scopus.com/,English and international literature,Bibliographic search
+Bibliographic search,PubMed,https://pubmed.ncbi.nlm.nih.gov/,Biomedical English/international literature,Bibliographic search
+Bibliographic search,CNKI,http://www.cnki.net/,Chinese and English records in Chinese database,Bibliographic search (Chinese export 25 April 2026; update May 2026)
+Full-text and dataset access,DOI resolver / publisher DOI links,https://doi.org/,,Main route for DOI-based article access and publisher landing pages
+Full-text and dataset access,Google Scholar,https://scholar.google.com/,,Title and DOI searching, especially for Chinese titles or records without direct DOI links
+Full-text and dataset access,Nature / Springer Nature,https://www.nature.com/,,Article pages and PDFs, including Scientific Data / Nature-family material
+Full-text and dataset access,CNKI,https://kns.cnki.net/,,Chinese article and thesis searches/download traces
+Full-text and dataset access,CNKI mirror/detail page,https://cnki.istiz.org.cn/,,Chinese article detail pages
+Full-text and dataset access,Oxford Academic,https://academic.oup.com/,,Article/PDF access, including Environmental Toxicology and Chemistry items
+Full-text and dataset access,Figshare,https://figshare.com/,,Dataset repository for Zhang 2022
+Full-text and dataset access,DrWater Antiboard / Wu 2025 database,https://dash.drwater.net/antiboard/#home,,Pharmaceutical-industry wastewater and solid-waste antibiotic database
+Full-text and dataset access,Environmental Science / Huanjing Kexue,https://www.hjkx.ac.cn/,,Chinese journal article pages
+Full-text and dataset access,Journal of Ecology and Environment Sciences / JEESCI,https://www.jeesci.com/,,Chinese journal article pages
+Full-text and dataset access,MDPI,https://www.mdpi.com/,,Article and supplementary downloads, e.g. Antibiotics journal
+Full-text and dataset access,PubMed Central,https://pmc.ncbi.nlm.nih.gov/,,Free full-text article source
+Full-text and dataset access,Royal Society of Chemistry,https://www.rsc.org/,,Supplementary PDF/data files
+Full-text and dataset access,ScienceDirect / Elsevier,https://www.sciencedirect.com/,,Article pages and supplementary research data
+Full-text and dataset access,SSRN,https://ssrn.com/,,Preprint/article source link where present
